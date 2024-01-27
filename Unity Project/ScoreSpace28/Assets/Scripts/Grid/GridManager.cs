@@ -9,7 +9,8 @@ public class GridManager : MonoBehaviour
     public int Height = 7;
     public Vector2 TileSize = Vector2.one;
 
-    public GameObject SelectedTile = null;
+    [HideInInspector]
+    public ReactiveTile HoveredTile = null;
 
     List<List<GameObject>> tiles = new List<List<GameObject>>();
 
