@@ -23,7 +23,24 @@ public class GridManager : MonoBehaviour
 
     void GenerateGrid()
     {
+        Vector2 startPos = new Vector2(TileSize.x * -0.5f * Width, 0.0f);
 
+        for (int x = 0; x < Width; ++x)
+        {
+            tiles.Add(new List<GameObject>());
+            Vector2 pos = startPos;
+
+            for (int y = 0; y < Height; ++y)
+            {
+                pos.x += TileSize.x / 2.0f;
+                pos.y += (TileSize.y / 2.0f);
+
+                GameObject tile = Instantiate(TilePrefab, pos, Quaternion.identity, transform);
+                tiles[x].Add(tile);
+            }
+            startPos.x += TileSize.x / 2.0f;
+            startPos.y -= TileSize.y / 2.0f;
+        }
     }
 
     public GameObject GetNearestTile(Vector2 pos)
