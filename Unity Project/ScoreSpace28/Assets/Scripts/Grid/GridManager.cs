@@ -9,6 +9,8 @@ public class GridManager : MonoBehaviour
     public int Height = 7;
     public Vector2 TileSize = Vector2.one;
 
+    public GameObject SelectedTile = null;
+
     List<List<GameObject>> tiles = new List<List<GameObject>>();
 
     void Awake()
@@ -44,6 +46,17 @@ public class GridManager : MonoBehaviour
             startPos.x += TileSize.x * 0.7f;
             startPos.y -= TileSize.y * 0.7f;
         }
+
+
+        // SORT Z
+        foreach(List<GameObject> tilesColumn in tiles)
+        {
+            foreach(GameObject tile in tilesColumn)
+            {
+                Vector3 pos = tile.transform.localPosition;
+                pos.z = pos.y / 10.0f;
+            }
+        }    
     }
 
     public GameObject GetNearestTile(Vector2 pos)
