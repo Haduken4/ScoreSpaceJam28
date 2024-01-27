@@ -35,7 +35,9 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
         {
             if(cl.PlayCard())
             {
+                Debug.Log("Destroying card");
                 Destroy(gameObject);
+                return;
             }
         }
 

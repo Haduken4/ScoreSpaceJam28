@@ -579,4 +579,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ManaCost: 0
   DiscardOnPlay: 1
-  DiscardAnimPrefab: {fileID: 0}
+  PlantToSpawn: {fileID: 6690405453201354691, guid: 1579d6ea2dcd6ec46a731a0aa08b6e2a, type: 3}

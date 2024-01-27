@@ -205,7 +205,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
 --- !u!114 &122978006
 MonoBehaviour:
@@ -234,9 +234,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122978003}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -250,7 +250,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!1 &128214526
@@ -306,7 +306,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.1
 --- !u!4 &128214528
 Transform:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128214526}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -357,9 +357,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &304831348
 GameObject:
@@ -558,7 +558,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1250, y: 250}
   m_EdgeRadius: 0
 --- !u!114 &330816796
 MonoBehaviour:
@@ -582,7 +582,7 @@ MonoBehaviour:
   EmptySpotSpacing: 30
   PositionParentPrefab: {fileID: 1009650217473430203, guid: 95047ae29fb3432469515436ce17a968, type: 3}
   TestCard: {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
-  TestCardsToAdd: 5
+  TestCardsToAdd: 0
   TestCardTime: 0
 --- !u!1 &491696946
 GameObject:
@@ -926,7 +926,16 @@ MonoBehaviour:
   CardDrawDelay: 0.1
   DeckObject: {fileID: 491696947}
   DebugDeckCards:
-  - {fileID: 0}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  - {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
   DebugInitialDraw: 5
 --- !u!1 &1270938605
 GameObject:

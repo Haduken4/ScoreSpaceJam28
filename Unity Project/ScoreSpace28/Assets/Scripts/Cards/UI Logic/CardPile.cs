@@ -22,6 +22,10 @@ public class CardPile : MonoBehaviour
         hm = FindFirstObjectByType<HandManager>();
 
         cardPrefabs.AddOptions(DebugDeckCards);
+        if(DebugInitialDraw != 0)
+        {
+            DrawX(DebugInitialDraw);
+        }
     }
 
     public void DrawX(int toDraw)
