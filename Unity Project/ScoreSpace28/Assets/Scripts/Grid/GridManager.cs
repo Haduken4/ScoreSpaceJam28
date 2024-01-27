@@ -60,8 +60,40 @@ public class GridManager : MonoBehaviour
         }    
     }
 
-    public GameObject GetNearestTile(Vector2 pos)
+    public List<GameObject> GetAdjacentTiles(GameObject tile)
     {
-        return null;
+        int xCenter = 0;
+        int yCenter = 0;
+
+        for(int x = 0; x < tiles.Count; ++x)
+        {
+            List<GameObject> column = tiles[x];
+            if(column.Contains(tile))
+            {
+                xCenter = x;
+                yCenter = column.IndexOf(tile);
+            }
+        }
+
+        List<GameObject> adjacents = new List<GameObject>();
+        for(int x = xCenter - 1; x <= xCenter + 1; ++x)
+        {
+            if(x < 0 || x >= Width)
+            {
+                continue;
+            }
+
+            for(int y = yCenter - 1; y <= yCenter + 1; ++y)
+            {
+                if(y < 0 || y >= Height || (y == yCenter && x == xCenter))
+                {
+                    continue;
+                }
+
+                adjacents.Add(tiles[x][y]);
+            }
+        }
+
+        return adjacents;
     }
 }

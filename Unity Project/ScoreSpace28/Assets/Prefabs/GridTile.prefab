@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2287797801152109418}
   m_Layer: 0
   m_Name: GridTile
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -480,6 +480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d512ff42a05dd42aebbbe939ff5fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlantScaleLerpSpeed: 8
+  PlantScaleLerpSpeed: 12
   PlantScaleSnapDist: 0.05
-  PlantLocalPos: {x: 0, y: 0, z: -1}
+  Alignment: 0

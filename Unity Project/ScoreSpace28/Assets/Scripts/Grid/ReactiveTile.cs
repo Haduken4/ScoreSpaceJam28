@@ -34,29 +34,20 @@ public class ReactiveTile : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void CursorEnter()
     {
-        if(collision.CompareTag("Mouse"))
+        if (gm.HoveredTile != null)
         {
-            if (gm.HoveredTile != null)
-            {
-                gm.HoveredTile.targetColor = DefaultTint;
-            }
-            gm.HoveredTile = this;
-            targetColor = HoveredTint;
+            gm.HoveredTile.targetColor = DefaultTint;
         }
+        gm.HoveredTile = this;
+        targetColor = HoveredTint;
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void CursorExit()
     {
-        if (collision.CompareTag("Mouse"))
-        {
-            if (gm.HoveredTile == this)
-            {
-                gm.HoveredTile = null;
-            }
-            targetColor = DefaultTint;
-        }
+        gm.HoveredTile = null;
+        targetColor = DefaultTint;
     }
 
     float ColorDist(Color c1, Color c2)
