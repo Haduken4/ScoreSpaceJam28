@@ -23,7 +23,9 @@ public class GridManager : MonoBehaviour
 
     void GenerateGrid()
     {
-        Vector2 startPos = new Vector2(TileSize.x * -0.5f * Width, 0.0f);
+        Vector3 tileScale = TileSize / new Vector2(2.0f, 1.0f);
+        tileScale.z = 1;
+        Vector2 startPos = new Vector2(TileSize.x * -0.7f * Width, 0.0f);
 
         for (int x = 0; x < Width; ++x)
         {
@@ -32,14 +34,15 @@ public class GridManager : MonoBehaviour
 
             for (int y = 0; y < Height; ++y)
             {
-                pos.x += TileSize.x / 2.0f;
-                pos.y += (TileSize.y / 2.0f);
+                pos.x += TileSize.x * 0.7f;
+                pos.y += TileSize.y * 0.7f;
 
                 GameObject tile = Instantiate(TilePrefab, pos, Quaternion.identity, transform);
+                tile.transform.localScale = tileScale;
                 tiles[x].Add(tile);
             }
-            startPos.x += TileSize.x / 2.0f;
-            startPos.y -= TileSize.y / 2.0f;
+            startPos.x += TileSize.x * 0.7f;
+            startPos.y -= TileSize.y * 0.7f;
         }
     }
 

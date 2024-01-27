@@ -155,8 +155,7 @@ MonoBehaviour:
   TilePrefab: {fileID: 2638039143814621530, guid: 33e60b14b885eff4399bbd40812db1f6, type: 3}
   Width: 7
   Height: 7
-  CutoffExtremes: 0
-  TileSize: {x: 2, y: 1}
+  TileSize: {x: 1.5, y: 0.75}
 --- !u!4 &304831350
 Transform:
   m_ObjectHideFlags: 0
