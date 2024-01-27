@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3235586760823969556}
   - component: {fileID: 1841448719443914339}
+  - component: {fileID: 8442860534952840218}
   m_Layer: 0
   m_Name: GridTile
   m_TagString: Untagged
@@ -84,3 +85,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8442860534952840218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638039143814621530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327e36613a400e746986d56c2ae872d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpriteVariations:
+  - {fileID: 21300000, guid: a4b4f0dcb5b180c40b27ab4a6cb9e419, type: 3}
+  - {fileID: 21300000, guid: b0d4b92dffd525640a29cf9c929005ee, type: 3}
+  - {fileID: 21300000, guid: 1028e73df9019bc48aa58bc3d0f96f92, type: 3}
+  - {fileID: 21300000, guid: 3971a81146deb704dac8a3668eadc81e, type: 3}
