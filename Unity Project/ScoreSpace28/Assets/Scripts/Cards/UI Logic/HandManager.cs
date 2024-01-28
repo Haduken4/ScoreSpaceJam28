@@ -170,4 +170,9 @@ public class HandManager : MonoBehaviour
     {
         return (((val - min1) / (max1 - min1)) * (max2 - min2)) + min2;
     }
+
+    public int NumCardsInHand()
+    {
+        return cards.Count;
+    }
 }

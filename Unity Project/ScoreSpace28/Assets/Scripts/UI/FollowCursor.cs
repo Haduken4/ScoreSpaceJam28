@@ -10,10 +10,12 @@ public class FollowCursor : MonoBehaviour
     TrashCan lastTrash = null;
 
     ClickedCardParent clickParent = null;
+    TurnManager tm = null;
 
     private void Start()
     {
         clickParent = FindFirstObjectByType<ClickedCardParent>();
+        tm = FindFirstObjectByType<TurnManager>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,11 @@ public class FollowCursor : MonoBehaviour
         mousePos.z = 0;
         transform.position = mousePos;
 
-        last = null;
+        if (last != null)
+        {
+            last.CursorExit();
+            last = null;
+        }
         TrashCan trash = null;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, MouseCollisionSize);
@@ -37,20 +43,18 @@ public class FollowCursor : MonoBehaviour
 
             trash = hit.GetComponent<TrashCan>();
 
-            if (trash && clickParent.transform.childCount == 1)
+            if (trash && clickParent.transform.childCount == 1 && tm.CanTrash())
             {
                 // Open trash can
                 trash.OpenLid();
                 lastTrash = trash;
             }
-        }
+        }        
 
-        if(last != null)
+        if(!tm.CanTrash())
         {
-            last.CursorExit();
-            last = null;
+            return;
         }
-
         if(trash == null && lastTrash != null)
         {
             // Close trash can using lastTrash

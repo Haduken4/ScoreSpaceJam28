@@ -11,14 +11,14 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
     Transform lastParent = null;
     Transform currParent = null;
 
-    HandManager hm = null;
+    TurnManager tm = null;
     CardLogic cl = null;
 
     protected override void Start()
     {
         base.Start();
 
-        hm = FindFirstObjectByType<HandManager>();
+        tm = FindFirstObjectByType<TurnManager>();
         cl = GetComponent<CardLogic>();
 
         if (!ClickedParent || !HoveredParent)
@@ -34,9 +34,11 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
         if(lastState == ReactiveState.L_CLICKED && cl.InPlayArea())
         {
             FollowCursor fc = FindFirstObjectByType<FollowCursor>();
-            if(fc.GetTrash() != null)
+            if(fc.GetTrash() != null && tm.CanTrash())
             {
                 Destroy(gameObject);
+                tm.CardTrashed();
+                fc.GetTrash().CloseLid();
                 return;
             }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mouse
   - Tile
+  - Bee
   layers:
   - Default
   - TransparentFX
