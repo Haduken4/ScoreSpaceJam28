@@ -69,6 +69,7 @@ public class TurnManager : MonoBehaviour
         foreach(GameObject bee in bees)
         {
             BeeBehavior bb = bee.GetComponent<BeeBehavior>();
+            bb.GoToNewTarget();
         }
 
         timer = bees.Length > 0 ? TurnTransitionTimeBees : TurnTransitionTime;

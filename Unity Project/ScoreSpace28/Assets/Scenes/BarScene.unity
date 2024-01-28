@@ -325,9 +325,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e874ae550bd9675408fd225c2e3a1951, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 325bb63237a5fdc4ea27e2323251cdc8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1207,6 +1207,11 @@ MonoBehaviour:
   - {fileID: 2713850017538833940, guid: 6104955c56594be49b95720b96db597d, type: 3}
   - {fileID: 2713850017538833940, guid: 6104955c56594be49b95720b96db597d, type: 3}
   - {fileID: 2713850017538833940, guid: 6104955c56594be49b95720b96db597d, type: 3}
+  - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
+  - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
+  - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
+  - {fileID: 6417268586331506863, guid: 1a1577a4fdd6ae441b5d8d3bc71f430c, type: 3}
+  - {fileID: 6417268586331506863, guid: 1a1577a4fdd6ae441b5d8d3bc71f430c, type: 3}
   DebugInitialDraw: 0
 --- !u!114 &1266204946
 MonoBehaviour:

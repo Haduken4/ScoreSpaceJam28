@@ -8,6 +8,6 @@ public class FlowerPlayEffect : OnPlayEffect
 
     protected override void GameplayEffect()
     {
-        Instantiate(BeePrefab, transform.position, Quaternion.identity);
+        Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
     }
 }

@@ -13,6 +13,9 @@ public abstract class OnPlayEffect : MonoBehaviour
     public float ScoreValue = 2;
     public bool IsTree = false;
 
+    [HideInInspector]
+    public GameObject Pollinator = null;
+
     float timer = 0.0f;
     bool played = false;
 
