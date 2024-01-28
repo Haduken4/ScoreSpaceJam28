@@ -13,6 +13,7 @@ public class TileLogic : MonoBehaviour
     public PlantAlignment Alignment = PlantAlignment.CENTER_BOTTOM;
 
     Vector3 plantNormalSize = Vector3.one;
+    Vector3 plantPosOffset = Vector3.zero;
     Transform plant = null;
 
     private void Update()
@@ -38,13 +39,14 @@ public class TileLogic : MonoBehaviour
         return plant;
     }
 
-    public void InitPlant()
+    public void InitPlant(Vector3 posOffset)
     {
         GetPlant();
         if(plant)
         {
             plantNormalSize = plant.localScale;
             plant.localPosition = CalcAlignedPosition();
+            plantPosOffset = posOffset;
         }
     }
 
@@ -58,6 +60,6 @@ public class TileLogic : MonoBehaviour
             pos.y = plant.localScale.y / 2.0f;
         }
 
-        return pos;
+        return pos + plantPosOffset;
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TreePlayEffect : OnPlayEffect
 {
     public GameObject RootPrefab = null;
+    public Vector3 rootPosOffset = Vector3.zero;
 
     protected override void GameplayEffect()
     {
@@ -20,7 +21,7 @@ public class TreePlayEffect : OnPlayEffect
             }
 
             GameObject plant = Instantiate(RootPrefab, tile.transform);
-            tl.InitPlant();
+            tl.InitPlant(rootPosOffset);
             plant.transform.position -= Vector3.forward;
             plant.transform.localScale *= 0.1f; // Start plant small so it can grow
         }

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class CardLogic : MonoBehaviour
 {
-    public int ManaCost = 0;
-    public bool DiscardOnPlay = true;
     public GameObject PlantToSpawn = null;
+    public Vector3 SpawnOffset = Vector3.zero;
     bool inPlayArea = false;
 
     GridManager gm = null;
@@ -43,8 +42,9 @@ public class CardLogic : MonoBehaviour
             }
 
             GameObject plant = Instantiate(PlantToSpawn, gm.HoveredTile.transform);
-            tl.InitPlant();
+            tl.InitPlant(SpawnOffset);
             plant.transform.position -= Vector3.forward;
+            plant.transform.localPosition += SpawnOffset;
             plant.transform.localScale *= 0.1f; // Start plant small so it can grow
 
             FindFirstObjectByType<TurnManager>().CardPlayed();
