@@ -7,6 +7,14 @@ public class FollowCursor : MonoBehaviour
     public float MouseCollisionSize = 0.05f;
 
     ReactiveTile last = null;
+    TrashCan lastTrash = null;
+
+    ClickedCardParent clickParent = null;
+
+    private void Start()
+    {
+        clickParent = FindFirstObjectByType<ClickedCardParent>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -15,14 +23,25 @@ public class FollowCursor : MonoBehaviour
         mousePos.z = 0;
         transform.position = mousePos;
 
+        last = null;
+        TrashCan trash = null;
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, MouseCollisionSize);
         foreach(Collider2D hit in hits)
         {
-            if(hit.gameObject.CompareTag("Tile"))
+            if(hit.gameObject.CompareTag("Tile") && last == null)
             {
                 last = hit.GetComponent<ReactiveTile>();
                 last.CursorEnter();
-                return;
+            }
+
+            trash = hit.GetComponent<TrashCan>();
+
+            if (trash && clickParent.transform.childCount == 1)
+            {
+                // Open trash can
+                trash.OpenLid();
+                lastTrash = trash;
             }
         }
 
@@ -31,5 +50,17 @@ public class FollowCursor : MonoBehaviour
             last.CursorExit();
             last = null;
         }
+
+        if(trash == null && lastTrash != null)
+        {
+            // Close trash can using lastTrash
+            lastTrash.CloseLid();
+            lastTrash = null;
+        }
+    }
+
+    public TrashCan GetTrash()
+    {
+        return lastTrash;
     }
 }
