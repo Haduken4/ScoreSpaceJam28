@@ -29,6 +29,7 @@ public class TileLogic : MonoBehaviour
 
     public Transform GetPlant()
     {
+        plant = null;
         if(transform.childCount != 0)
         {
             plant = transform.GetChild(0);
