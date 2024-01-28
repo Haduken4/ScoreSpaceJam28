@@ -16,10 +16,14 @@ public class CardPile : MonoBehaviour
     public List<GameObject> DebugDeckCards = new List<GameObject>();
     public int DebugInitialDraw = 0;
 
+    SoundPlayer sp = null;
+
     // Start is called before the first frame update
     void Awake()
     {
         hm = FindFirstObjectByType<HandManager>();
+
+        sp = GetComponent<SoundPlayer>();
 
         cardPrefabs.AddOptions(DebugDeckCards);
         if(DebugInitialDraw != 0)
@@ -38,6 +42,8 @@ public class CardPile : MonoBehaviour
             StartCoroutine(CreateAndInitCard(prefab, i * CardDrawDelay));
             ++i;
         }
+
+        sp.PlaySound();
     }
 
     IEnumerator CreateAndInitCard(GameObject prefab, float delay)

@@ -10,7 +10,6 @@ public class CardLogic : MonoBehaviour
     bool inPlayArea = false;
 
     GridManager gm = null;
-
     private void Start()
     {
         gm = FindFirstObjectByType<GridManager>();
