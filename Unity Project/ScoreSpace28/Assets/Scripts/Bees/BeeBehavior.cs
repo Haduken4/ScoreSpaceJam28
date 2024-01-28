@@ -14,6 +14,13 @@ public class BeeBehavior : MonoBehaviour
     float timer = 0.0f;
     float moveTime = 0.0f;
 
+    SoundPlayer sp = null;
+
+    private void Start()
+    {
+        sp = GetComponent<SoundPlayer>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +31,8 @@ public class BeeBehavior : MonoBehaviour
 
             if(timer >= moveTime)
             {
+                sp.PlaySound();
+
                 target.GetComponent<OnPlayEffect>().Pollinator = null;
                 target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
                 target = null;
@@ -60,6 +69,7 @@ public class BeeBehavior : MonoBehaviour
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
             target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
+            sp.PlaySound();
             target = null;
             return;
         }
