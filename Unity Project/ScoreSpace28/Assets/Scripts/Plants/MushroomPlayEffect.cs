@@ -24,7 +24,8 @@ public class MushroomPlayEffect : OnPlayEffect
                 ScoreValue += NeighborBonus;
                 plant.GetComponent<OnPlayEffect>().AddScore(NeighborBonus);
             }
-            else if(plant && Parasitic)
+            
+            if(plant && Parasitic && !plant.gameObject.name.Contains("Mushroom"))
             {
                 Vector3 oldPlantPos = tl.GetPlant().position;
                 Destroy(tl.GetPlant().gameObject);

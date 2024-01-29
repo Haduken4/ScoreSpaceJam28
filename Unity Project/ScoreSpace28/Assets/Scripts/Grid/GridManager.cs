@@ -40,7 +40,9 @@ public class GridManager : MonoBehaviour
                 pos.x += TileSize.x * 0.7f;
                 pos.y += TileSize.y * 0.7f;
 
-                GameObject tile = Instantiate(TilePrefab, pos, Quaternion.identity, transform);
+                Vector2 addPos = transform.position;
+
+                GameObject tile = Instantiate(TilePrefab, pos + addPos, Quaternion.identity, transform);
                 tile.transform.localScale = tileScale;
                 tiles[x].Add(tile);
             }

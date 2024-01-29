@@ -25,10 +25,10 @@ public class ScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = ScoreValue == 0 ? PreText + GlobalGameData.Score : PreText + ScoreValue;
+        text.text = ScoreValue == 0 ? PreText + Mathf.Ceil(GlobalGameData.Score) : PreText + ScoreValue;
 
         vel += Acceleration * Time.deltaTime;
         vel = Vector3.Max(vel, VelocityMin);
-        transform.position += vel * Time.deltaTime;
+        transform.parent.position += vel * Time.deltaTime;
     }
 }

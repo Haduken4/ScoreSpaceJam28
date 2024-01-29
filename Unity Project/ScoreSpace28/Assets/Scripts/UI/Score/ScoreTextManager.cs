@@ -9,6 +9,6 @@ public class ScoreTextManager : MonoBehaviour
     public void SpawnScoreText(Vector3 pos, float value)
     {
         GameObject t = Instantiate(ScorePrefab, pos, Quaternion.identity, transform);
-        t.GetComponent<ScoreText>().ScoreValue = value;
+        t.GetComponentInChildren<ScoreText>().ScoreValue = value;
     }
 }

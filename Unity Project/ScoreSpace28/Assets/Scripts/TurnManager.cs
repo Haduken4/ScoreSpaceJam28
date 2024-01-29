@@ -74,6 +74,18 @@ public class TurnManager : MonoBehaviour
 
     void CheckEndCondition()
     {
+        if(Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.G) && Input.GetKeyDown(KeyCode.E))
+        {
+            GameEnded = true;
+            if (GlobalGameData.Score > GlobalGameData.HighScore)
+            {
+                NewHighScore = true;
+                GlobalGameData.HighScore = GlobalGameData.Score;
+            }
+            timer = 2.0f;
+            return;
+        }
+
         foreach (TileLogic tl in FindObjectsOfType<TileLogic>())
         {
             if (tl.GetPlant() == null)

@@ -109,7 +109,7 @@ MonoBehaviour:
   Pollinator: {fileID: 0}
   RootPrefab: {fileID: 6340240229663703301, guid: 07decdc7e02bce8449a15677ff11d7bb, type: 3}
   rootPosOffset: {x: 0, y: -0.8, z: 0}
-  GlobalMultiplierAdd: 0.1
+  GlobalMultiplierAdd: 0
 --- !u!82 &-6409466854831620151
 AudioSource:
   m_ObjectHideFlags: 0

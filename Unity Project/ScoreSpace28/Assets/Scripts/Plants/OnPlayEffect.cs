@@ -52,7 +52,10 @@ public abstract class OnPlayEffect : MonoBehaviour
 
         float toAdd = ScoreValue * GlobalGameData.PlantValueMultiplier;
 
-        AddScore(Mathf.Ceil(toAdd));
+        if(toAdd != 0)
+        {
+            AddScore(Mathf.Ceil(toAdd));
+        }
 
         if(VisualEffect)
         {
