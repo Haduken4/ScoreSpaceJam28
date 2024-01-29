@@ -44,7 +44,6 @@ public class CardLogic : MonoBehaviour
             GameObject plant = Instantiate(PlantToSpawn, gm.HoveredTile.transform);
             tl.InitPlant(SpawnOffset);
             plant.transform.position -= Vector3.forward;
-            plant.transform.localPosition += SpawnOffset;
             plant.transform.localScale *= 0.1f; // Start plant small so it can grow
 
             FindFirstObjectByType<TurnManager>().CardPlayed();

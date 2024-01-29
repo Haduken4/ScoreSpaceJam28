@@ -15,18 +15,26 @@ public class ReactiveTile : MonoBehaviour
 
     Color targetColor = Color.white;
     SpriteRenderer sr = null;
+    TurnManager tm = null;
 
     // Start is called before the first frame update
     void Start()
     {
         targetColor = DefaultTint;
         gm = FindFirstObjectByType<GridManager>();
+        tm = FindFirstObjectByType<TurnManager>();
         sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(tm.GameEnded)
+        {
+            sr.color = DefaultTint;
+            return;
+        }
+
         sr.color = Color.Lerp(sr.color, targetColor, Time.deltaTime * LerpSpeed);
         if(ColorDist(sr.color, targetColor) < SnapDist)
         {

@@ -16,8 +16,15 @@ public class TurnManager : MonoBehaviour
 
     public HandManager hm = null;
     public CardPile cards = null;
+    public GameObject FinalScoreWindow = null;
 
     float timer = 0.0f;
+
+    [HideInInspector]
+    public bool NewHighScore = false;
+
+    [HideInInspector]
+    public bool GameEnded = false;
 
     void Awake()
     {
@@ -31,6 +38,18 @@ public class TurnManager : MonoBehaviour
 
     void Update()
     {
+        if (GameEnded)
+        {
+            hm.DiscardHand();
+            timer -= Time.deltaTime;
+            if(timer <= 0.0f)
+            {
+                FinalScoreWindow.SetActive(true);
+            }
+
+            return;
+        }
+
         // Counting down to next turn
         if(timer > 0.0f && cardsPlayed == PlaysPerTurn)
         {
@@ -78,6 +97,21 @@ public class TurnManager : MonoBehaviour
     public void CardPlayed()
     {
         cardsPlayed++;
+
+        foreach(TileLogic tl in FindObjectsOfType<TileLogic>())
+        {
+            if(tl.GetPlant() == null)
+            {
+                return;
+            }
+        }
+
+        GameEnded = true;
+        if(GlobalGameData.Score > GlobalGameData.HighScore)
+        {
+            NewHighScore = true;
+            GlobalGameData.HighScore = GlobalGameData.Score;
+        }
     }
 
     public bool CanTrash()

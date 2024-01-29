@@ -45,8 +45,8 @@ public class TileLogic : MonoBehaviour
         if(plant)
         {
             plantNormalSize = plant.localScale;
-            plant.localPosition = CalcAlignedPosition();
             plantPosOffset = posOffset;
+            plant.localPosition = CalcAlignedPosition();
         }
     }
 
