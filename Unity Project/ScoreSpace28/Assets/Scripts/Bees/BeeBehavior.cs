@@ -77,5 +77,6 @@ public class BeeBehavior : MonoBehaviour
         target.GetComponent<OnPlayEffect>().Pollinator = gameObject;
         timer = 0.0f;
         moveTime = Random.Range(MoveTimeRange.x, MoveTimeRange.y);
+        GetComponent<SpriteRenderer>().flipX = target.position.x < startPos.x;
     }
 }
