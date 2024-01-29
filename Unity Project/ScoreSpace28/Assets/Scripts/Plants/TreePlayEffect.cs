@@ -24,7 +24,7 @@ public class TreePlayEffect : OnPlayEffect
 
             GameObject plant = Instantiate(RootPrefab, tile.transform);
             tl.InitPlant(rootPosOffset);
-            plant.transform.position -= Vector3.forward;
+            plant.transform.position -= Vector3.forward * 0.5f;
             plant.transform.localScale *= 0.1f; // Start plant small so it can grow
         }
 
