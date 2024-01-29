@@ -49,10 +49,10 @@ public abstract class OnPlayEffect : MonoBehaviour
     void PlayEffect()
     {
         GameplayEffect();
-        
-        float toAdd = IsTree ? ScoreValue * GlobalGameData.TreeMultiplier : ScoreValue * GlobalGameData.NonTreeMultiplier;
 
-        AddScore(ScoreValue);
+        float toAdd = ScoreValue * GlobalGameData.PlantValueMultiplier;
+
+        AddScore(Mathf.Ceil(toAdd));
 
         if(VisualEffect)
         {

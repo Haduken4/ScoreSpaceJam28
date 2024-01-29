@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VenufFlyTrapPlayEffect : OnPlayEffect
 {
+    public SoundPlayer MyPlayer = null;
     public float ScorePerBee = 10.0f;
 
     protected override void GameplayEffect()
@@ -19,7 +20,7 @@ public class VenufFlyTrapPlayEffect : OnPlayEffect
             AddScore(ScorePerBee * bb.ScoreValue);
             Destroy(bb.gameObject);
 
-            // Change my sprite to closed
+            MyPlayer.PlaySound();
         }
     }
 }
