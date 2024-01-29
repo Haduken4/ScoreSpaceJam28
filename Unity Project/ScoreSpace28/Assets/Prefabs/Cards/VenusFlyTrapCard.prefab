@@ -444,9 +444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946367cee0c41284fb471230f65c130c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ManaCost: 0
-  DiscardOnPlay: 1
   PlantToSpawn: {fileID: 7193602633764507786, guid: a35d67833c3ed184dbec480ee863bcdf, type: 3}
+  SpawnOffset: {x: 0, y: -0.15, z: 0}
 --- !u!1 &3826854504566117366
 GameObject:
   m_ObjectHideFlags: 0
