@@ -49,6 +49,10 @@ public class TurnManager : MonoBehaviour
 
             return;
         }
+        else
+        {
+            CheckEndCondition();
+        }
 
         // Counting down to next turn
         if(timer > 0.0f && cardsPlayed == PlaysPerTurn)
@@ -66,6 +70,25 @@ public class TurnManager : MonoBehaviour
         {
             TurnEnd();
         }
+    }
+
+    void CheckEndCondition()
+    {
+        foreach (TileLogic tl in FindObjectsOfType<TileLogic>())
+        {
+            if (tl.GetPlant() == null)
+            {
+                return;
+            }
+        }
+
+        GameEnded = true;
+        if (GlobalGameData.Score > GlobalGameData.HighScore)
+        {
+            NewHighScore = true;
+            GlobalGameData.HighScore = GlobalGameData.Score;
+        }
+        timer = 2.0f;
     }
 
     void TurnStart()
@@ -97,21 +120,6 @@ public class TurnManager : MonoBehaviour
     public void CardPlayed()
     {
         cardsPlayed++;
-
-        foreach(TileLogic tl in FindObjectsOfType<TileLogic>())
-        {
-            if(tl.GetPlant() == null)
-            {
-                return;
-            }
-        }
-
-        GameEnded = true;
-        if(GlobalGameData.Score > GlobalGameData.HighScore)
-        {
-            NewHighScore = true;
-            GlobalGameData.HighScore = GlobalGameData.Score;
-        }
     }
 
     public bool CanTrash()
