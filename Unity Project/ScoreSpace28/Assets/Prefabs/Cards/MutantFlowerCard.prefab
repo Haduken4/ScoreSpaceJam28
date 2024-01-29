@@ -512,6 +512,8 @@ GameObject:
   - component: {fileID: 534177771096651849}
   - component: {fileID: 4001046730882878464}
   - component: {fileID: 7640616598829707856}
+  - component: {fileID: 7601351365135924696}
+  - component: {fileID: -3603708078599550168}
   m_Layer: 5
   m_Name: MutantFlowerCard
   m_TagString: Untagged
@@ -657,6 +659,125 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlantToSpawn: {fileID: 2240096728835574887, guid: 81f4dc5ec20223c4b8c0d81ac340c31c, type: 3}
   SpawnOffset: {x: 0, y: -0.1, z: 0}
+--- !u!82 &7601351365135924696
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417268586331506863}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.02
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-3603708078599550168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417268586331506863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac056ec83e566844b0ae1179856ac26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0.1
+  SoundVariations:
+  - {fileID: 8300000, guid: 727dfd5012d2dde489a416cd2149482d, type: 3}
+  - {fileID: 8300000, guid: 4ee85238f311d3d49b6096c6b8789d52, type: 3}
+  - {fileID: 8300000, guid: bed8692fd1dfa8c428d2152992d26e18, type: 3}
+  - {fileID: 8300000, guid: c0abbf92bea0b9f4fa00521bbe68c932, type: 3}
+  - {fileID: 8300000, guid: a7a8018c7f1e52f4c931608a00a4cb08, type: 3}
+  - {fileID: 8300000, guid: 9a3ab5d199a12074a9de2cd5322d3cff, type: 3}
+  - {fileID: 8300000, guid: 0091ea778f9507d4fb979456dcabc196, type: 3}
+  - {fileID: 8300000, guid: 7ba94d285551c094cb708452386af2e8, type: 3}
+  PlayOnStart: 0
 --- !u!1 &7279667880036661992
 GameObject:
   m_ObjectHideFlags: 0

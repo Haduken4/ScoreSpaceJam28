@@ -14,12 +14,15 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
     TurnManager tm = null;
     CardLogic cl = null;
 
+    SoundPlayer sp = null;
+
     protected override void Start()
     {
         base.Start();
 
         tm = FindFirstObjectByType<TurnManager>();
         cl = GetComponent<CardLogic>();
+        sp = GetComponent<SoundPlayer>();
 
         if (!ClickedParent || !HoveredParent)
         {
@@ -125,7 +128,8 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(ClickedParent.childCount == 1)
+        sp.PlaySound();
+        if (ClickedParent.childCount == 1)
         {
             return;
         }
