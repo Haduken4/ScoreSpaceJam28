@@ -29,6 +29,7 @@ public class TurnManager : MonoBehaviour
     void Awake()
     {
         GlobalGameData.Score = 0;
+        GlobalGameData.PlantValueMultiplier = 1.0f;
     }
 
     private void Start()
