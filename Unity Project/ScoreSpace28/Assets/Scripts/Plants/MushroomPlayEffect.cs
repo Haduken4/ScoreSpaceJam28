@@ -27,11 +27,12 @@ public class MushroomPlayEffect : OnPlayEffect
             else if(plant && Parasitic)
             {
                 Destroy(tl.GetPlant().gameObject);
-                obj.transform.DetachChildren();
+                tl.transform.DetachChildren();
 
                 GameObject mush = Instantiate(MushroomPrefab, tl.transform);
                 tl.InitPlant(SpawnOffset);
                 mush.transform.position -= Vector3.forward;
+                mush.transform.localPosition += SpawnOffset;
                 mush.transform.localScale *= 0.1f; // Start plant small so it can grow
             }
         }
