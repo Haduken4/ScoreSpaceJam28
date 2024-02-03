@@ -50,6 +50,16 @@ public class TileLogic : MonoBehaviour
         }
     }
 
+    public void CreateTooltip()
+    {
+
+    }
+
+    public void DestroyTooltip()
+    {
+
+    }
+
     Vector3 CalcAlignedPosition()
     {
         Vector3 pos = Vector3.zero;

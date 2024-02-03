@@ -9,10 +9,15 @@ public class GridManager : MonoBehaviour
     public int Height = 7;
     public Vector2 TileSize = Vector2.one;
 
+    public float TooltipTime = 1.0f;
+
     [HideInInspector]
     public ReactiveTile HoveredTile = null;
 
     List<List<GameObject>> tiles = new List<List<GameObject>>();
+
+    float tooltipTimer = 1.0f;
+    bool tooltip = false;
 
     void Awake()
     {
@@ -21,7 +26,15 @@ public class GridManager : MonoBehaviour
 
     void Update()
     {
-        
+        if(HoveredTile && !tooltip)
+        {
+            tooltipTimer -= Time.deltaTime;
+            if(tooltipTimer <= 0.0f)
+            {
+                tooltip = true;
+                HoveredTile.GetComponent<TileLogic>().CreateTooltip();
+            }
+        }
     }
 
     void GenerateGrid()
@@ -97,5 +110,20 @@ public class GridManager : MonoBehaviour
         }
 
         return adjacents;
+    }
+
+    public void SetHoveredTile(ReactiveTile newTile)
+    {
+        if(HoveredTile != newTile)
+        {
+            if(HoveredTile)
+            {
+                HoveredTile.GetComponent<TileLogic>().DestroyTooltip();
+            }
+
+            HoveredTile = newTile;
+            tooltipTimer = TooltipTime;
+            tooltip = false;
+        }
     }
 }
