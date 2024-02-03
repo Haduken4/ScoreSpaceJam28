@@ -65,6 +65,11 @@ public abstract class OnPlayEffect : MonoBehaviour
 
     public void AddScore(float val)
     {
+        if(val == 0)
+        {
+            return;
+        }
+
         GlobalGameData.Score += val;
         stm.SpawnScoreText(ScoreTextPoint.position, val);
     }

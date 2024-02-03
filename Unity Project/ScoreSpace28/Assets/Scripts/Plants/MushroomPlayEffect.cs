@@ -19,7 +19,7 @@ public class MushroomPlayEffect : OnPlayEffect
             TileLogic tl = obj.GetComponent<TileLogic>();
             Transform plant = tl.GetPlant();
 
-            if(plant && plant.gameObject.name.Contains("Mushroom"))
+            if(NeighborBonus != 0 && plant && plant.gameObject.name.Contains("Mushroom"))
             {
                 ScoreValue += NeighborBonus;
                 plant.GetComponent<OnPlayEffect>().AddScore(NeighborBonus);
