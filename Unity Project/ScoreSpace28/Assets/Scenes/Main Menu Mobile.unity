@@ -495,7 +495,7 @@ MonoBehaviour:
   TilePrefab: {fileID: 4006047544914389414, guid: 67a7a789a678d544d9afffd8e21fff19, type: 3}
   Width: 7
   Height: 7
-  TileSize: {x: 1.65, y: 0.825}
+  TileSize: {x: 1.2045, y: 0.825}
   HoveredTile: {fileID: 0}
 --- !u!4 &690014730
 Transform:
@@ -505,7 +505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690014728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: -0.74, z: 0}
+  m_LocalPosition: {x: 0.14, y: -0.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
