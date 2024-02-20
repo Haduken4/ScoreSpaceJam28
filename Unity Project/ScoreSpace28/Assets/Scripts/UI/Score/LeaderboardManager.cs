@@ -10,6 +10,7 @@ public class LeaderboardData
 }
 
 
+
 public class LeaderboardManager : MonoBehaviour
 {
     public string Leaderboard = "Classic Set";
@@ -17,6 +18,8 @@ public class LeaderboardManager : MonoBehaviour
     bool loaded = false;
     bool thinking = false;
     bool succeeded = false;
+
+    string playerID = "";
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +30,14 @@ public class LeaderboardManager : MonoBehaviour
             {
                 // Failed to start session
                 loaded = false;
+                playerID = response.player_identifier;
                 return;
             }
 
             loaded = true;
         });
+
+        LootLockerSDKManager.StartGuestSession("hello", (response) => { });
     }
 
     public bool SubmitScore(int score)
@@ -42,7 +48,8 @@ public class LeaderboardManager : MonoBehaviour
         }
 
         thinking = true;
-        LootLockerSDKManager.SubmitScore(GlobalGameData.PlayerName, score, Leaderboard, GlobalGameData.PlayerName, SubmitResponse);
+        LootLockerSDKManager.SetPlayerName(GlobalGameData.PlayerName, (response) => { });
+        LootLockerSDKManager.SubmitScore(playerID, score, Leaderboard, GlobalGameData.PlayerName, SubmitResponse);
 
         return true;
     }
@@ -64,11 +71,11 @@ public class LeaderboardManager : MonoBehaviour
     {
         LootLockerSDKManager.GetScoreList(Leaderboard, place, (response) =>
         {
-            if(response.statusCode == 200 && dataOut != null)
+            if(response.statusCode == 200 && dataOut != null && response.items != null)
             {
                 if(response.items.Length > place - 1)
                 {
-                    dataOut.name = response.items[place - 1].metadata;
+                    dataOut.name = response.items[place - 1].player.name;
                     dataOut.score = response.items[place - 1].score;
 
                     Debug.Log(response.text);
