@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6050805210282676515}
   - component: {fileID: 6588132812418238968}
   - component: {fileID: 805411465413706351}
+  - component: {fileID: 6153910790298369392}
   m_Layer: 0
   m_Name: GridTile_Menu
   m_TagString: Tile
@@ -102,3 +103,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b0d4b92dffd525640a29cf9c929005ee, type: 3}
   - {fileID: 21300000, guid: 1028e73df9019bc48aa58bc3d0f96f92, type: 3}
   - {fileID: 21300000, guid: 3971a81146deb704dac8a3668eadc81e, type: 3}
+--- !u!114 &6153910790298369392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006047544914389414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85cffb07c05e3b4baeeb8f956b1e907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpTime: 0.4
+  DescentTime: 0.25
+  OpactiyTime: 0.2
+  Bottom: {x: 0, y: -0.3, z: 0}
+  Top: {x: 0, y: 0.5, z: 0}

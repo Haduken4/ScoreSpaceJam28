@@ -10,6 +10,7 @@ public class GridManager : MonoBehaviour
     public Vector2 TileSize = Vector2.one;
 
     public float TooltipTime = 1.0f;
+    public float WaveActivationTimer = 0.0f;
 
     [HideInInspector]
     public ReactiveTile HoveredTile = null;
@@ -18,6 +19,9 @@ public class GridManager : MonoBehaviour
 
     float tooltipTimer = 1.0f;
     bool tooltip = false;
+
+    float waveTimer = 0.0f;
+    float waveIndex = 0;
 
     void Awake()
     {
@@ -33,6 +37,32 @@ public class GridManager : MonoBehaviour
             {
                 tooltip = true;
                 HoveredTile.GetComponent<TileLogic>().CreateTooltip();
+            }
+        }
+
+        if(WaveActivationTimer != 0.0f && waveIndex <= Width + Height - 2)
+        {
+            int maxIndex = Width + Height - 2;
+
+            waveTimer += Time.deltaTime;
+            if (waveTimer >= WaveActivationTimer)
+            {
+                for(int x = 0; x <= waveIndex && x < Width; ++x)
+                {
+                    for(int y = 0; y <= waveIndex - x && y < Height; ++y)
+                    {
+                        if(x + y == waveIndex)
+                        {
+                            tiles[x][y].SetActive(true);
+                            TileInitialAnimation tia = tiles[x][y].GetComponent<TileInitialAnimation>();
+                            tia.Bottom += Vector3.forward * -(y / 10.0f);
+                            tia.Top += Vector3.forward * -(y / 10.0f);
+                        }
+                    }
+                }
+
+                waveTimer = 0.0f;
+                waveIndex++;
             }
         }
     }
@@ -58,6 +88,10 @@ public class GridManager : MonoBehaviour
                 GameObject tile = Instantiate(TilePrefab, pos + addPos, Quaternion.identity, transform);
                 tile.transform.localScale = tileScale;
                 tiles[x].Add(tile);
+                if(WaveActivationTimer != 0.0f)
+                {
+                    tile.SetActive(false);
+                }
             }
             startPos.x += TileSize.x * 0.7f;
             startPos.y -= TileSize.y * 0.7f;
