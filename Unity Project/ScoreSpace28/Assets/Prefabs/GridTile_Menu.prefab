@@ -117,6 +117,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpTime: 0.4
   DescentTime: 0.25
-  OpactiyTime: 0.2
   Bottom: {x: 0, y: -0.3, z: 0}
   Top: {x: 0, y: 0.5, z: 0}
+  OpactiyTime: 0.2
+  MiddleScaleTime: 0.7
+  FinalScaleTime: 0.1
+  StartScale: {x: 0.3, y: 0.3, z: 1}
+  MiddleScale: {x: 1.1, y: 1.1, z: 1}
