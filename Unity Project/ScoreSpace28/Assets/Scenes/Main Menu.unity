@@ -1003,7 +1003,7 @@ MonoBehaviour:
   Height: 7
   TileSize: {x: 1.65, y: 0.825}
   TooltipTime: 1
-  WaveActivationTimer: 0.2
+  WaveActivationTimer: 0.07
   HoveredTile: {fileID: 0}
 --- !u!4 &1615994356
 Transform:
