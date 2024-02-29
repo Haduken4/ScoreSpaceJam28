@@ -12,6 +12,8 @@ public class TileLogic : MonoBehaviour
     //public Vector3 PlantLocalPos = new Vector3(0, 0, -1.0f);
     public PlantAlignment Alignment = PlantAlignment.CENTER_BOTTOM;
 
+    public List<PlantType> AllowedPlants = new List<PlantType>();
+
     Vector3 plantNormalSize = Vector3.one;
     Vector3 plantPosOffset = Vector3.zero;
     Transform plant = null;
@@ -37,6 +39,16 @@ public class TileLogic : MonoBehaviour
         }
 
         return plant;
+    }
+
+    public bool CanPlant(PlantType type)
+    {
+        if(AllowedPlants.Count == 0 || AllowedPlants.Contains(type))
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public void InitPlant(Vector3 posOffset)
