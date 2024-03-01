@@ -108,12 +108,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0c23f3f7b8f8d54fb425adebdefaa04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed8b224f351a79f4eb3514cf7c5e0821, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.6697039}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -139,6 +139,9 @@ MonoBehaviour:
   IsTree: 0
   Pollinator: {fileID: 0}
   NeighborBonus: 1
+  Parasitic: 0
+  MushroomPrefab: {fileID: 0}
+  SpawnOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &7376736099147253139
 MonoBehaviour:
   m_ObjectHideFlags: 0

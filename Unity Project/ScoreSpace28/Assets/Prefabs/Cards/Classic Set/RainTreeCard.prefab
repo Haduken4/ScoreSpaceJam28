@@ -31,8 +31,8 @@ RectTransform:
   m_GameObject: {fileID: 1030287632800318898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 939760103429473582}
   - {fileID: 3676005974152014773}
@@ -156,7 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantToSpawn: {fileID: 7731606206895379721, guid: 88dfeda90fbae9c429aeea20f4fd62bb, type: 3}
-  SpawnOffset: {x: 0, y: 0, z: 0}
+  SpawnOffset: {x: 0.15, y: 0, z: 0}
+  TileModifier: 0
+  CardType: 3
 --- !u!82 &7624306123384573106
 AudioSource:
   m_ObjectHideFlags: 0
