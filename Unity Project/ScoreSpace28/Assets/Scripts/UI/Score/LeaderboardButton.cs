@@ -40,6 +40,9 @@ public class LeaderboardButton : MonoBehaviour
             else if(!lm.Succeeded())
             {
                 StatusText.text = "Failed to send score to leaderboard";
+
+                submitted = false;
+                GetComponent<Button>().interactable = true;
             }
             else
             {
@@ -69,5 +72,8 @@ public class LeaderboardButton : MonoBehaviour
         {
             StatusText.text = "You must submit a name";
         }
+
+        // Lock button
+        GetComponent<Button>().interactable = false;
     }
 }
