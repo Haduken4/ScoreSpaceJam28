@@ -252,7 +252,7 @@ MonoBehaviour:
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 9066002686469323401}
-  ScoreValue: 3
+  ScoreValue: 4
   IsTree: 0
   Pollinator: {fileID: 0}
   BeePrefab: {fileID: 6230501909409345086, guid: 06e45015df43df94e8787c073f6e5d1b, type: 3}

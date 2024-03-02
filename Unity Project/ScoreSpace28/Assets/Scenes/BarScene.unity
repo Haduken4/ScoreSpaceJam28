@@ -2055,7 +2055,7 @@ MonoBehaviour:
   MaxCardSpacing: 10
   EmptySpotSpacing: 30
   PositionParentPrefab: {fileID: 1009650217473430203, guid: 95047ae29fb3432469515436ce17a968, type: 3}
-  TestCard: {fileID: 5274861047034796609, guid: 91c5a13a97a2c74489754b3ca8c8447f, type: 3}
+  TestCard: {fileID: 5490272689771217381, guid: 1ede8beb6b4bcfb468375ff896e28171, type: 3}
   TestCardsToAdd: 0
   TestCardTime: 0
 --- !u!1 &396477948
@@ -6817,6 +6817,9 @@ MonoBehaviour:
   - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
   - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
   - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
+  - {fileID: 5490272689771217381, guid: 1ede8beb6b4bcfb468375ff896e28171, type: 3}
+  - {fileID: 5490272689771217381, guid: 1ede8beb6b4bcfb468375ff896e28171, type: 3}
+  - {fileID: 5490272689771217381, guid: 1ede8beb6b4bcfb468375ff896e28171, type: 3}
   - {fileID: 6417268586331506863, guid: 1a1577a4fdd6ae441b5d8d3bc71f430c, type: 3}
   - {fileID: 6417268586331506863, guid: 1a1577a4fdd6ae441b5d8d3bc71f430c, type: 3}
   - {fileID: 3518260854106869502, guid: fea1125d1bfa2f64989aead49f5c8da9, type: 3}
@@ -6825,6 +6828,8 @@ MonoBehaviour:
   - {fileID: 1030287632800318898, guid: a64b59120a30cf140bc86f7b19a8735a, type: 3}
   - {fileID: 7137398748871533902, guid: a42546f6384581c42ae2f16551a5dd08, type: 3}
   - {fileID: 7137398748871533902, guid: a42546f6384581c42ae2f16551a5dd08, type: 3}
+  - {fileID: 6352018398395114246, guid: a6fca8641a26b7c498ac3d988fc2049d, type: 3}
+  - {fileID: 6352018398395114246, guid: a6fca8641a26b7c498ac3d988fc2049d, type: 3}
   DebugInitialDraw: 0
 --- !u!114 &1266204946
 MonoBehaviour:

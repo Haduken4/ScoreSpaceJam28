@@ -22,6 +22,8 @@ public abstract class OnPlayEffect : MonoBehaviour
     protected GridManager gm = null;
     protected ScoreTextManager stm = null;
 
+    protected float effectScore = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +52,7 @@ public abstract class OnPlayEffect : MonoBehaviour
     {
         GameplayEffect();
 
-        float toAdd = ScoreValue * GlobalGameData.PlantValueMultiplier;
+        float toAdd = (ScoreValue * GlobalGameData.PlantValueMultiplier) + effectScore;
 
         if(toAdd != 0)
         {

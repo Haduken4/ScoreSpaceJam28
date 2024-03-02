@@ -21,8 +21,8 @@ public class MushroomPlayEffect : OnPlayEffect
 
             if(NeighborBonus != 0 && plant && plant.gameObject.name.Contains("Mushroom"))
             {
-                ScoreValue += NeighborBonus;
-                plant.GetComponent<OnPlayEffect>().AddScore(NeighborBonus);
+                effectScore += NeighborBonus;
+                plant.GetComponent<OnPlayEffect>().AddScore(Mathf.Ceil(NeighborBonus));
             }
             
             if(plant && Parasitic && !plant.gameObject.name.Contains("Mushroom"))
@@ -36,7 +36,7 @@ public class MushroomPlayEffect : OnPlayEffect
 
                 Vector3 mushPos = mush.transform.position;
                 mushPos.z = oldPlantPos.z;
-                mush.transform.position = oldPlantPos;
+                mush.transform.position = mushPos;
                 mush.transform.localScale *= 0.1f; // Start plant small so it can grow
             }
         }

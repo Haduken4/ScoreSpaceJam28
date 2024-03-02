@@ -234,7 +234,7 @@ MonoBehaviour:
   PlantToSpawn: {fileID: 6197302424519206360, guid: 3b09090047e682341838e3bd97c2a869, type: 3}
   SpawnOffset: {x: 0.2, y: -0.34, z: 0}
   TileModifier: 0
-  CardType: 0
+  CardType: 2
 --- !u!82 &3089080615788484487
 AudioSource:
   m_ObjectHideFlags: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '4
+  m_text: '7
 
 '
   m_isRightToLeft: 0

@@ -57,6 +57,7 @@ public class CardLogic : MonoBehaviour
         {
             // Get tile modifier component and modify the tile I guess
             GetComponent<CardTileModifier>().ModifyTile(tl);
+            FindFirstObjectByType<TurnManager>().CardPlayed();
             return true;
         }
 

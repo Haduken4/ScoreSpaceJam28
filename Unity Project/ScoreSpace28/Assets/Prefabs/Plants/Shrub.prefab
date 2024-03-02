@@ -135,7 +135,7 @@ MonoBehaviour:
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 8870012062052312223}
-  ScoreValue: 4
+  ScoreValue: 7
   IsTree: 0
   Pollinator: {fileID: 0}
 --- !u!114 &7005410154586526125
