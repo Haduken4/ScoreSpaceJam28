@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 58168e210662faf4a93d21d04d16fd7d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19dd3413baf5fae42aadeb06119dfad0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameChange: GrassyTile
-  SpriteChange: {fileID: 21300000, guid: 58168e210662faf4a93d21d04d16fd7d, type: 3}
+  SpriteChange: {fileID: 21300000, guid: 19dd3413baf5fae42aadeb06119dfad0, type: 3}
   AllowedPlantsChange: 0100000002000000
   ScoreOnModify: 4
   ForceOverride: 0
