@@ -133,6 +133,12 @@ public class TurnManager : MonoBehaviour
     public void CardPlayed()
     {
         cardsPlayed++;
+
+        // Check if we can still play any cards
+        if (!cards.CheckCardsPlayable(hm.GetCardObjects()))
+        {
+            GameEnded = true;
+        }
     }
 
     public bool CanTrash()

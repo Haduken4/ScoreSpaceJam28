@@ -175,4 +175,16 @@ public class HandManager : MonoBehaviour
     {
         return cards.Count;
     }
+
+    public List<GameObject> GetCardObjects()
+    {
+        List<GameObject> ret = new List<GameObject>();
+
+        foreach(Transform c in cards)
+        {
+            ret.Add(c.gameObject);
+        }
+
+        return ret;
+    }
 }
