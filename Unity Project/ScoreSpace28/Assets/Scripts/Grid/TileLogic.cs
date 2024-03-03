@@ -18,6 +18,9 @@ public class TileLogic : MonoBehaviour
     Vector3 plantPosOffset = Vector3.zero;
     Transform plant = null;
 
+    [HideInInspector]
+    public bool IsPlant = false;
+
     private void Update()
     {
         if(plant)

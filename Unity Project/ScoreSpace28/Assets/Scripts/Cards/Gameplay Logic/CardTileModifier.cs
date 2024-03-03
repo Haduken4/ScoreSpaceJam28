@@ -8,6 +8,7 @@ public class CardTileModifier : MonoBehaviour
     public Sprite SpriteChange = null;
     public List<PlantType> AllowedPlantsChange = new List<PlantType>();
     public int ScoreOnModify = 0;
+    public bool BecomePlant = false;
 
     [Space(5)]
     public bool ForceOverride = false;
@@ -37,6 +38,8 @@ public class CardTileModifier : MonoBehaviour
         {
             tl.AllowedPlants = AllowedPlantsChange;
         }
+
+        tl.IsPlant = ForceOverride ? BecomePlant : (BecomePlant || tl.IsPlant);
 
         if(ScoreOnModify != 0)
         {

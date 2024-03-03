@@ -18,7 +18,7 @@ public class BambooPlayEffect : OnPlayEffect
             Transform plant = tl.GetPlant();
 
             // Modified tile
-            if(tl.gameObject.name != "GridTile" && !uniquePlants.Contains(tl.gameObject.name))
+            if(tl.IsPlant && !uniquePlants.Contains(tl.gameObject.name))
             {
                 uniquePlants.Add(tl.gameObject.name);
                 effectScore += ScorePerUnique;
