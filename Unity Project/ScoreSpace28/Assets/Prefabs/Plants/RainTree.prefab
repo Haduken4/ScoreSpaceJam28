@@ -139,7 +139,7 @@ MonoBehaviour:
   IsTree: 1
   Pollinator: {fileID: 0}
   RootPrefab: {fileID: 6060883838121738609, guid: 9f19f4c81673b2d41a4bc155b9762f22, type: 3}
-  rootPosOffset: {x: 0, y: -0.8, z: 0}
+  rootPosOffset: {x: 0, y: -0.65, z: 0}
   GlobalMultiplierAdd: 0.4
 --- !u!82 &3642860721065589553
 AudioSource:
