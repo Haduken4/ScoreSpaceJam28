@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
 
 public class CardPile : MonoBehaviour
 {
@@ -16,14 +17,12 @@ public class CardPile : MonoBehaviour
     public List<GameObject> DebugDeckCards = new List<GameObject>();
     public int DebugInitialDraw = 0;
 
-    SoundPlayer sp = null;
+    [SerializeField] private EventReference drawPacketsSound;
 
     // Start is called before the first frame update
     void Awake()
     {
         hm = FindFirstObjectByType<HandManager>();
-
-        sp = GetComponent<SoundPlayer>();
 
         cardPrefabs.AddOptions(DebugDeckCards);
         if(DebugInitialDraw != 0)
@@ -48,8 +47,8 @@ public class CardPile : MonoBehaviour
             StartCoroutine(CreateAndInitCard(prefab, i * CardDrawDelay));
             ++i;
         }
+        AudioManager.instance.PlayOneShot(drawPacketsSound, this.transform.position);
 
-        sp.PlaySound();
     }
 
     public bool CheckCardsPlayable(List<GameObject> cards)
