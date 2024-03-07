@@ -32,6 +32,8 @@ public class MuteToggleButton : MonoBehaviour
 
         MutedCrossout?.SetActive(muted);
 
+        GlobalGameData.VolumeMultiplier = muted ? 0.0f : 1.0f;
+
         if(MusicSource)
         {
             MusicSource.volume = muted ? 0.0f : musicVol;
