@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VenufFlyTrapPlayEffect : OnPlayEffect
 {
-    public SoundPlayer MyPlayer = null;
+    //public SoundPlayer MyPlayer = null;
     public float ScorePerBee = 10.0f;
 
     protected override void GameplayEffect()
@@ -20,7 +20,7 @@ public class VenufFlyTrapPlayEffect : OnPlayEffect
             AddScore(ScorePerBee * bb.ScoreValue);
             Destroy(bb.gameObject);
 
-            MyPlayer.PlaySound();
+            //AudioManager.instance.PlayOneShot(FMODEvents.instance3.VenusFlyChomps, this.transform.position);
         }
     }
 }

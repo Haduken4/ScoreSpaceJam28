@@ -14,7 +14,7 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
     TurnManager tm = null;
     CardLogic cl = null;
 
-    SoundPlayer sp = null;
+    //SoundPlayer sp = null;
 
     protected override void Start()
     {
@@ -22,7 +22,7 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
 
         tm = FindFirstObjectByType<TurnManager>();
         cl = GetComponent<CardLogic>();
-        sp = GetComponent<SoundPlayer>();
+        //sp = GetComponent<SoundPlayer>();
 
         if (!ClickedParent || !HoveredParent)
         {
@@ -128,7 +128,10 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        sp.PlaySound();
+        //playsoundHere
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.PlantSeedShuffle, transform.position);
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/PlantSeedShuffle", GetComponent<Transform>().position);
+
         if (ClickedParent.childCount == 1)
         {
             return;

@@ -14,11 +14,12 @@ public class BeeBehavior : MonoBehaviour
     float timer = 0.0f;
     float moveTime = 0.0f;
 
-    SoundPlayer sp = null;
+    //SoundPlayer sp = null;
 
     private void Start()
     {
-        sp = GetComponent<SoundPlayer>();
+        //sp = GetComponent<SoundPlayer>();
+        GetComponent<FMODEvents>();
     }
 
     // Update is called once per frame
@@ -31,8 +32,9 @@ public class BeeBehavior : MonoBehaviour
 
             if(timer >= moveTime)
             {
-                sp.PlaySound();
-
+                //sp.PlaySound();
+                //AudioManager.instance.PlayOneShot(FMODEvents.BeeBuzz.BeeBuzzSound, this.transform.position);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/Bees", GetComponent<Transform>().position);
                 target.GetComponent<OnPlayEffect>().Pollinator = null;
                 target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
                 target = null;
@@ -69,7 +71,7 @@ public class BeeBehavior : MonoBehaviour
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
             target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
-            sp.PlaySound();
+            //sp.PlaySound();
             target = null;
             return;
         }

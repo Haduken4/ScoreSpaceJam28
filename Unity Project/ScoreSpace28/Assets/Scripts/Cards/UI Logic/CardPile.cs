@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using FMODUnity;
 
 public class CardPile : MonoBehaviour
 {
@@ -17,7 +16,6 @@ public class CardPile : MonoBehaviour
     public List<GameObject> DebugDeckCards = new List<GameObject>();
     public int DebugInitialDraw = 0;
 
-    [SerializeField] private EventReference drawPacketsSound;
 
     // Start is called before the first frame update
     void Awake()
@@ -47,7 +45,10 @@ public class CardPile : MonoBehaviour
             StartCoroutine(CreateAndInitCard(prefab, i * CardDrawDelay));
             ++i;
         }
-        AudioManager.instance.PlayOneShot(drawPacketsSound, this.transform.position);
+
+        //Plays the card packet draw sound
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.PacketDraw, transform.position);
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/DrawSeeds", GetComponent<Transform>().position);
 
     }
 

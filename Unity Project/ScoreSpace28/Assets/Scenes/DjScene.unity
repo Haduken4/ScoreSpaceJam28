@@ -1395,6 +1395,7 @@ MonoBehaviour:
   UnloadEvent: 2
   Banks:
   - Master
+  - SFX
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &221449602
@@ -1408,7 +1409,8 @@ Transform:
   m_LocalPosition: {x: 2.0583172, y: -2.4699895, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 978981926}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4164,6 +4166,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977174933}
   m_CullTransparentMesh: 1
+--- !u!1 &978981925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978981926}
+  - component: {fileID: 978981927}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &978981926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978981925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 221449602}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978981927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978981925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac056ec83e566844b0ae1179856ac26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <PacketDraw>k__BackingField:
+    Guid:
+      Data1: 251507826
+      Data2: 1135520761
+      Data3: 22917254
+      Data4: 1679407705
+    Path: event:/SFX/PlantSFX/DrawSeeds
+  <PlantSeedShuffle>k__BackingField:
+    Guid:
+      Data1: -10834950
+      Data2: 1078873716
+      Data3: 626577567
+      Data4: -704108956
+    Path: event:/SFX/PlantSFX/PlantSeedShuffle
+  <BeeBuzzSound>k__BackingField:
+    Guid:
+      Data1: 822689939
+      Data2: 1286356823
+      Data3: -789168000
+      Data4: -525277706
+    Path: event:/SFX/PlantSFX/Bees
+  <VenusFlyChomps>k__BackingField:
+    Guid:
+      Data1: -1405202801
+      Data2: 1161431914
+      Data3: -1057600091
+      Data4: -689152920
+    Path: event:/SFX/PlantSFX/VenusFlyChomps
 --- !u!1 &1000967966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,13 +4552,6 @@ MonoBehaviour:
   - {fileID: 6352018398395114246, guid: a6fca8641a26b7c498ac3d988fc2049d, type: 3}
   - {fileID: 6352018398395114246, guid: a6fca8641a26b7c498ac3d988fc2049d, type: 3}
   DebugInitialDraw: 0
-  drawPacketsSound:
-    Guid:
-      Data1: 251507826
-      Data2: 1135520761
-      Data3: 22917254
-      Data4: 1679407705
-    Path: event:/SFX/PlantSFX/DrawSeeds
 --- !u!1 &1070269795
 GameObject:
   m_ObjectHideFlags: 0
