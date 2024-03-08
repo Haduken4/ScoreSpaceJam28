@@ -41,13 +41,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5182547665466156056}
   - component: {fileID: 5200202915659922088}
-  - component: {fileID: 4033142082836375775}
   - component: {fileID: 8253090494024737112}
   - component: {fileID: 2555405611949140975}
   - component: {fileID: 118491310642548998}
-  - component: {fileID: -4648517893977267266}
-  - component: {fileID: 3909674145929182282}
-  - component: {fileID: 1583300829095644823}
+  - component: {fileID: 1241157335661765939}
   m_Layer: 0
   m_Name: Venus Fly Trap
   m_TagString: Plant
@@ -123,27 +120,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4033142082836375775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7193602633764507786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac056ec83e566844b0ae1179856ac26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume: 2
-  SoundVariations:
-  - {fileID: 8300000, guid: 177c5bd722a5c7249a5d481107729800, type: 3}
-  - {fileID: 8300000, guid: 1c02401016b0c3747a6cbdb66baf26f9, type: 3}
-  - {fileID: 8300000, guid: 8e8a4b8ae0407be45bc3ac9c719acced, type: 3}
-  - {fileID: 8300000, guid: b55035de429b5cc4ea12949b73a47f5f, type: 3}
-  - {fileID: 8300000, guid: ac104fe5af7a20641b0389ee703d5654, type: 3}
-  - {fileID: 8300000, guid: c3a82dd8ac6a8a04e83b313cdb7fc7e4, type: 3}
-  PlayOnStart: 1
 --- !u!82 &8253090494024737112
 AudioSource:
   m_ObjectHideFlags: 0
@@ -302,7 +278,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4648517893977267266
+--- !u!114 &1241157335661765939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,7 +287,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7193602633764507786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86a265007d803f442b06b0bd48d3a4de, type: 3}
+  m_Script: {fileID: 11500000, guid: 215a77970d52d1d4ab70a6db4e63851a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ActivationDelay: 0.1
@@ -321,120 +297,4 @@ MonoBehaviour:
   ScoreValue: 5
   IsTree: 0
   Pollinator: {fileID: 0}
-  MyPlayer: {fileID: 1583300829095644823}
   ScorePerBee: 10
---- !u!82 &3909674145929182282
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7193602633764507786}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1583300829095644823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7193602633764507786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac056ec83e566844b0ae1179856ac26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume: 5
-  SoundVariations:
-  - {fileID: 8300000, guid: 09bf881833ab991429b9a7a61c386d6d, type: 3}
-  - {fileID: 8300000, guid: 05fcaa209ff653c4fb3fb3e2a70d0b9e, type: 3}
-  - {fileID: 8300000, guid: 0d35cdc469acb1647bf3a62a37552e25, type: 3}
-  - {fileID: 8300000, guid: 2e3713ebfcdc57642a42611d6f1a0e59, type: 3}
-  PlayOnStart: 0

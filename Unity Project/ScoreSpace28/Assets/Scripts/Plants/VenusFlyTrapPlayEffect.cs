@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VenufFlyTrapPlayEffect : OnPlayEffect
+public class VenusFlyTrapPlayEffect : OnPlayEffect
 {
     //public SoundPlayer MyPlayer = null;
     public float ScorePerBee = 10.0f;
@@ -14,7 +14,7 @@ public class VenufFlyTrapPlayEffect : OnPlayEffect
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Bee"))
+        if (collision.CompareTag("Bee"))
         {
             BeeBehavior bb = collision.GetComponent<BeeBehavior>();
             AddScore(ScorePerBee * bb.ScoreValue);
