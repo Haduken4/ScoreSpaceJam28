@@ -21,6 +21,11 @@ public class FMODEvents : MonoBehaviour
 
     private void Awake()
     {
+        if(instance != null)
+        {
+            Debug.LogError("Instance already exists");
+        }
+
         instance = this;
     }
 
