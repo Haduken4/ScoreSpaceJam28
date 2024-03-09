@@ -11,7 +11,6 @@ public abstract class OnPlayEffect : MonoBehaviour
 
     public Transform ScoreTextPoint = null;
     public float ScoreValue = 2;
-    public bool IsTree = false;
 
     [HideInInspector]
     public GameObject Pollinator = null;
