@@ -9,8 +9,6 @@ public class LeaderboardData
     public string name;
 }
 
-
-
 public class LeaderboardManager : MonoBehaviour
 {
     public string Leaderboard = "Classic Set";
@@ -30,14 +28,12 @@ public class LeaderboardManager : MonoBehaviour
             {
                 // Failed to start session
                 loaded = false;
-                playerID = response.player_identifier;
                 return;
             }
 
+            playerID = response.player_identifier;
             loaded = true;
         });
-
-        LootLockerSDKManager.StartGuestSession("hello", (response) => { });
     }
 
     public bool SubmitScore(int score)
@@ -57,14 +53,7 @@ public class LeaderboardManager : MonoBehaviour
     void SubmitResponse(LootLockerSubmitScoreResponse response)
     {
         thinking = false;
-        if (response.statusCode == 200)
-        {
-            succeeded = true;
-        }
-        else
-        {
-            succeeded = false;
-        }
+        succeeded = response.success;
     }
 
     public void GetScore(int place, LeaderboardData dataOut)
