@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1675286562905798746}
   - component: {fileID: 8546072962861843372}
   - component: {fileID: 4159756215473724343}
+  - component: {fileID: 1314383728637811694}
   m_Layer: 0
   m_Name: Shrub
   m_TagString: Plant
@@ -134,5 +135,18 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 8870012062052312223}
   ScoreValue: 7
-  IsTree: 0
+--- !u!114 &1314383728637811694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6197302424519206360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9a50b6376e40041b4db901359de98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 2
   Pollinator: {fileID: 0}
+  TotalScoreGained: 0

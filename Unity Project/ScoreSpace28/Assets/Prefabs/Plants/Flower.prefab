@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7469654622942156120}
   - component: {fileID: 2844375628811779606}
   - component: {fileID: 4744476718335957288}
+  - component: {fileID: 8500657727020306294}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Plant
@@ -134,7 +135,20 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 2414656718098190594}
   ScoreValue: 5
-  IsTree: 0
-  Pollinator: {fileID: 0}
   BeePrefab: {fileID: 8866145182330373645, guid: f1a00c103654dc64ba8a6e4a647f2e57, type: 3}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
+--- !u!114 &8500657727020306294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836156947436353786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9a50b6376e40041b4db901359de98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 1
+  Pollinator: {fileID: 0}
+  TotalScoreGained: 0

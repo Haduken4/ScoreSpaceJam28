@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7246604043899132447}
   - component: {fileID: 4382410533708911750}
   - component: {fileID: 2604250477612231842}
+  - component: {fileID: 2737281502169088207}
   m_Layer: 0
   m_Name: RainTree
   m_TagString: Plant
@@ -134,8 +135,21 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 3994571685055593224}
   ScoreValue: 0
-  IsTree: 1
-  Pollinator: {fileID: 0}
   RootPrefab: {fileID: 6060883838121738609, guid: 9f19f4c81673b2d41a4bc155b9762f22, type: 3}
   rootPosOffset: {x: 0, y: -0.65, z: 0}
   GlobalMultiplierAdd: 0.4
+--- !u!114 &2737281502169088207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731606206895379721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9a50b6376e40041b4db901359de98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 3
+  Pollinator: {fileID: 0}
+  TotalScoreGained: 0

@@ -12,9 +12,6 @@ public abstract class OnPlayEffect : MonoBehaviour
     public Transform ScoreTextPoint = null;
     public float ScoreValue = 2;
 
-    [HideInInspector]
-    public GameObject Pollinator = null;
-
     float timer = 0.0f;
     bool played = false;
 
@@ -23,11 +20,14 @@ public abstract class OnPlayEffect : MonoBehaviour
 
     protected float effectScore = 0;
 
+    protected PlantData pd = null;
+
     // Start is called before the first frame update
     void Start()
     {
         gm = FindFirstObjectByType<GridManager>();
         stm = FindFirstObjectByType<ScoreTextManager>();
+        pd = GetComponent<PlantData>();
         timer = ActivationDelay;
     }
 
@@ -73,6 +73,7 @@ public abstract class OnPlayEffect : MonoBehaviour
 
         GlobalGameData.Score += val;
         stm.SpawnScoreText(ScoreTextPoint.position, val);
+        pd.TotalScoreGained += val;
     }
 
     protected abstract void GameplayEffect();

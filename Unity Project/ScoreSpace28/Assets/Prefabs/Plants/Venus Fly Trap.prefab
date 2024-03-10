@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2555405611949140975}
   - component: {fileID: 118491310642548998}
   - component: {fileID: 1241157335661765939}
+  - component: {fileID: -2637551164846315323}
   m_Layer: 0
   m_Name: Venus Fly Trap
   m_TagString: Plant
@@ -295,6 +296,19 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 8362948055850572583}
   ScoreValue: 5
-  IsTree: 0
-  Pollinator: {fileID: 0}
   ScorePerBee: 10
+--- !u!114 &-2637551164846315323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193602633764507786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9a50b6376e40041b4db901359de98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 2
+  Pollinator: {fileID: 0}
+  TotalScoreGained: 0

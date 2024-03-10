@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5238023797721845899}
   - component: {fileID: 2939403986612681835}
   - component: {fileID: 5863756096740025223}
+  - component: {fileID: -5169609742129157265}
   m_Layer: 0
   m_Name: Bamboo
   m_TagString: Plant
@@ -103,9 +104,22 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 2163693649637044487}
   ScoreValue: 3
-  IsTree: 0
-  Pollinator: {fileID: 0}
   ScorePerUnique: 3
+--- !u!114 &-5169609742129157265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3378818797764241267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9a50b6376e40041b4db901359de98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 4
+  Pollinator: {fileID: 0}
+  TotalScoreGained: 0
 --- !u!1 &3556614026663590568
 GameObject:
   m_ObjectHideFlags: 0

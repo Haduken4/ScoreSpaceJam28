@@ -6,9 +6,10 @@ public class BeeBehavior : MonoBehaviour
 {
     public Vector2 MoveTimeRange = new Vector2(2.0f, 3.0f);
     public float ScoreValue = 1.0f;
-    public bool PollinatesMushrooms = false;
+    public List<PlantType> PollinatorTypes = new List<PlantType>();
 
     Transform target = null;
+    Transform lastTarget = null;
     Vector3 startPos = Vector3.zero;
 
     float timer = 0.0f;
@@ -18,8 +19,6 @@ public class BeeBehavior : MonoBehaviour
 
     private void Start()
     {
-        //sp = GetComponent<SoundPlayer>();
-        GetComponent<FMODEvents>();
     }
 
     // Update is called once per frame
@@ -35,7 +34,7 @@ public class BeeBehavior : MonoBehaviour
                 //sp.PlaySound();
                 //AudioManager.instance.PlayOneShot(FMODEvents.BeeBuzz.BeeBuzzSound, this.transform.position);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/Bees", GetComponent<Transform>().position);
-                target.GetComponent<OnPlayEffect>().Pollinator = null;
+                target.GetComponent<PlantData>().Pollinator = null;
                 target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
                 target = null;
             }
@@ -50,35 +49,47 @@ public class BeeBehavior : MonoBehaviour
 
         foreach(GameObject plant in plants)
         {
-            if(plant.name.Contains("Flower") || (PollinatesMushrooms && plant.name.Contains("Mushroom")))
+            PlantData pd = plant.GetComponent<PlantData>();
+
+            if(PollinatorTypes.Contains(pd.Type))
             {
-                OnPlayEffect ope = plant.GetComponent<OnPlayEffect>();
-                if (ope.Pollinator == null)
+                if (pd.Pollinator == null && pd.transform != lastTarget)
                 {
-                    validPlants.Add(ope.transform);
+                    validPlants.Add(pd.transform);
                 }
             }
         }
 
         if(validPlants.Count == 0)
         {
-            return;
+            // There were no plants which could be pollinated, fly away
+            if(lastTarget == null)
+            {
+                GoToDespawnPoint();
+                return;
+            }
+            validPlants.Add(lastTarget);
         }
 
         startPos = transform.position;
         target = validPlants[Random.Range(0, validPlants.Count)];
 
+        // If we chose the same plant as last time for some reason
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
             target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
-            //sp.PlaySound();
             target = null;
             return;
         }
 
-        target.GetComponent<OnPlayEffect>().Pollinator = gameObject;
+        target.GetComponent<PlantData>().Pollinator = gameObject;
         timer = 0.0f;
         moveTime = Random.Range(MoveTimeRange.x, MoveTimeRange.y);
         GetComponent<SpriteRenderer>().flipX = target.position.x < startPos.x;
+    }
+
+    void GoToDespawnPoint()
+    {
+
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5352376833385154615}
   - component: {fileID: 8333592950413735068}
   - component: {fileID: 1654712769660145595}
+  - component: {fileID: 8243744989553615025}
   m_Layer: 0
   m_Name: ParasiticMushroom
   m_TagString: Plant
@@ -103,12 +104,25 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreTextPoint: {fileID: 6157431222168057029}
   ScoreValue: 4
-  IsTree: 0
-  Pollinator: {fileID: 0}
   NeighborBonus: 0
   Parasitic: 1
   MushroomPrefab: {fileID: 6690405453201354691, guid: 1579d6ea2dcd6ec46a731a0aa08b6e2a, type: 3}
   SpawnOffset: {x: 0, y: -0.4, z: 0}
+--- !u!114 &8243744989553615025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59785727496515118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9a50b6376e40041b4db901359de98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  Pollinator: {fileID: 0}
+  TotalScoreGained: 0
 --- !u!1 &8962274306792231802
 GameObject:
   m_ObjectHideFlags: 0
