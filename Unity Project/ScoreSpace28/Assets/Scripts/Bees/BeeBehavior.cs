@@ -92,4 +92,9 @@ public class BeeBehavior : MonoBehaviour
     {
 
     }
+
+    public void SetSpawnerPlant(Transform plant)
+    {
+        lastTarget = plant;
+    }
 }

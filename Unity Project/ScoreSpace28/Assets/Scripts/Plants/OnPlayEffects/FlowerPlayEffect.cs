@@ -12,5 +12,6 @@ public class FlowerPlayEffect : OnPlayEffect
     {
         GameObject bee = Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
         bee.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
+        bee.GetComponent<BeeBehavior>().SetSpawnerPlant(transform);
     }
 }

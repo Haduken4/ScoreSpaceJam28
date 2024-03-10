@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveTimeRange: {x: 1.5, y: 2.5}
   ScoreValue: 2
-  PollinatorTypes: 
+  PollinatorTypes: 0000000001000000
 --- !u!82 &-2730970510214751848
 AudioSource:
   m_ObjectHideFlags: 0

@@ -161,7 +161,10 @@ public class HandManager : MonoBehaviour
         foreach(Transform t in cards)
         {
             // We can just destroy our hand on turn end
-            Destroy(t.gameObject);
+            if(t)
+            {
+                Destroy(t.gameObject);
+            }
         }
     }
 
