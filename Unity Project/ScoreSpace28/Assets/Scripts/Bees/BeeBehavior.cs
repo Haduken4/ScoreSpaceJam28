@@ -15,8 +15,6 @@ public class BeeBehavior : MonoBehaviour
     float timer = 0.0f;
     float moveTime = 0.0f;
 
-    //SoundPlayer sp = null;
-
     private void Start()
     {
     }
@@ -68,6 +66,8 @@ public class BeeBehavior : MonoBehaviour
                 GoToDespawnPoint();
                 return;
             }
+
+            // Add our last target because there were no other targets
             validPlants.Add(lastTarget);
         }
 
