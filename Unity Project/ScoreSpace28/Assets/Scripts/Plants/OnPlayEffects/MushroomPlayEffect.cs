@@ -19,12 +19,13 @@ public class MushroomPlayEffect : OnPlayEffect
             TileLogic tl = obj.GetComponent<TileLogic>();
             Transform plant = tl.GetPlant();
 
-            if(NeighborBonus != 0 && plant && plant.gameObject.name.Contains("Mushroom"))
+            if(plant && plant.GetComponent<PlantData>().Type == PlantType.MUSHROOM)
             {
                 effectScore += NeighborBonus;
                 plant.GetComponent<OnPlayEffect>().AddScore(Mathf.Ceil(NeighborBonus));
             }
             
+            /* Commenting out parasitic code for now
             if(plant && Parasitic && !plant.gameObject.name.Contains("Mushroom"))
             {
                 Vector3 oldPlantPos = tl.GetPlant().position;
@@ -39,6 +40,7 @@ public class MushroomPlayEffect : OnPlayEffect
                 mush.transform.position = mushPos;
                 mush.transform.localScale *= 0.1f; // Start plant small so it can grow
             }
+            */
         }
     }
 }

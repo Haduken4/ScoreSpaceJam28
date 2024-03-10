@@ -22,6 +22,8 @@ public abstract class OnPlayEffect : MonoBehaviour
 
     protected PlantData pd = null;
 
+    float scoreThisFrame = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,12 @@ public abstract class OnPlayEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(scoreThisFrame != 0)
+        {
+            AddScoreReal(scoreThisFrame);
+            scoreThisFrame = 0;
+        }
+
         if(played)
         {
             return;
@@ -66,7 +74,12 @@ public abstract class OnPlayEffect : MonoBehaviour
 
     public void AddScore(float val)
     {
-        if(val == 0)
+        scoreThisFrame += val;
+    }
+
+    void AddScoreReal(float val)
+    {
+        if (val == 0)
         {
             return;
         }

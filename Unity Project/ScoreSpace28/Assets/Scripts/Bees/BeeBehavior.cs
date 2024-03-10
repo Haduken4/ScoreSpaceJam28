@@ -34,6 +34,8 @@ public class BeeBehavior : MonoBehaviour
                 FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/Bees", GetComponent<Transform>().position);
                 target.GetComponent<PlantData>().Pollinator = null;
                 target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
+                target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
+                lastTarget = target;
                 target = null;
             }
         }
@@ -49,7 +51,7 @@ public class BeeBehavior : MonoBehaviour
         {
             PlantData pd = plant.GetComponent<PlantData>();
 
-            if(PollinatorTypes.Contains(pd.Type))
+            if(pd && PollinatorTypes.Contains(pd.Type))
             {
                 if (pd.Pollinator == null && pd.transform != lastTarget)
                 {
@@ -78,6 +80,8 @@ public class BeeBehavior : MonoBehaviour
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
             target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
+            target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
+            lastTarget = target;
             target = null;
             return;
         }

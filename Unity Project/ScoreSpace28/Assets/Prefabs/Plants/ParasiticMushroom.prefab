@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5352376833385154615}
   - component: {fileID: 8333592950413735068}
-  - component: {fileID: 1654712769660145595}
   - component: {fileID: 8243744989553615025}
+  - component: {fileID: -6574658466369300419}
   m_Layer: 0
   m_Name: ParasiticMushroom
   m_TagString: Plant
@@ -87,27 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1654712769660145595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59785727496515118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ae295f6f740ef4ab817ff6d722a30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ActivationDelay: 0.1
-  VisualEffect: {fileID: 0}
-  VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 6157431222168057029}
-  ScoreValue: 4
-  NeighborBonus: 0
-  Parasitic: 1
-  MushroomPrefab: {fileID: 6690405453201354691, guid: 1579d6ea2dcd6ec46a731a0aa08b6e2a, type: 3}
-  SpawnOffset: {x: 0, y: -0.4, z: 0}
 --- !u!114 &8243744989553615025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,8 +100,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
+  Identifier: 11
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!114 &-6574658466369300419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59785727496515118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297d0bc52a589764f95d1f37232aacf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivationDelay: 0.1
+  VisualEffect: {fileID: 0}
+  VFXPoint: {fileID: 0}
+  ScoreTextPoint: {fileID: 6157431222168057029}
+  ScoreValue: 4
+  BeePrefab: {fileID: 6230501909409345086, guid: 06e45015df43df94e8787c073f6e5d1b, type: 3}
+  ScoreGainsPerSiphon: 1
+  SizeGainsPerSiphon: 0.1
+  SiphonTargets: 0a000000
 --- !u!1 &8962274306792231802
 GameObject:
   m_ObjectHideFlags: 0

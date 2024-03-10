@@ -12,6 +12,25 @@ public class ParasiticMushroomPlayEffect : OnPlayEffect
 
     protected override void GameplayEffect()
     {
-        
+        List<GameObject> neighbors = gm.GetAdjacentTiles(transform.parent.gameObject);
+        int siphonCount = 0;
+        foreach(GameObject tile in neighbors)
+        {
+            TileLogic tl = tile.GetComponent<TileLogic>();
+            Transform plant = tl.GetPlant();
+
+            if (plant && SiphonTargets.Contains(plant.GetComponent<PlantData>().Identifier))
+            {
+                ++siphonCount;
+            }
+        }
+
+        float extraScore = Mathf.Floor(ScoreGainsPerSiphon * siphonCount);
+        float sizeMult = 1.0f + (SizeGainsPerSiphon * siphonCount);
+
+        GameObject bee = Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
+        bee.transform.localScale *= sizeMult;
+        bee.GetComponent<BeeBehavior>().SetSpawnerPlant(transform);
+        bee.GetComponent<BeeBehavior>().ScoreValue += extraScore;
     }
 }

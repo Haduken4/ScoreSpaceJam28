@@ -10,6 +10,11 @@ public class FlowerPlayEffect : OnPlayEffect
 
     protected override void GameplayEffect()
     {
+        if(!BeePrefab)
+        {
+            return;
+        }
+
         GameObject bee = Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
         bee.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
         bee.GetComponent<BeeBehavior>().SetSpawnerPlant(transform);

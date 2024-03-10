@@ -152,5 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
+  Identifier: 10
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
