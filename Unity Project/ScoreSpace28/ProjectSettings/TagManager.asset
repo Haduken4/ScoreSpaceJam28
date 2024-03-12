@@ -8,6 +8,7 @@ TagManager:
   - Tile
   - Bee
   - Plant
+  - CreatureDespawnPoint
   layers:
   - Default
   - TransparentFX

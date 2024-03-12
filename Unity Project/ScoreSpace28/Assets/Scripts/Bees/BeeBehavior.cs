@@ -15,6 +15,8 @@ public class BeeBehavior : MonoBehaviour
     float timer = 0.0f;
     float moveTime = 0.0f;
 
+    bool leavingGarden = false;
+
     private void Start()
     {
     }
@@ -29,8 +31,13 @@ public class BeeBehavior : MonoBehaviour
 
             if(timer >= moveTime)
             {
-                //sp.PlaySound();
-                //AudioManager.instance.PlayOneShot(FMODEvents.BeeBuzz.BeeBuzzSound, this.transform.position);
+                if(leavingGarden)
+                {
+                    Destroy(gameObject);
+                    target = null;
+                    return;
+                }
+
                 FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/Bees", GetComponent<Transform>().position);
                 target.GetComponent<PlantData>().Pollinator = null;
                 target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
@@ -94,7 +101,15 @@ public class BeeBehavior : MonoBehaviour
 
     void GoToDespawnPoint()
     {
+        leavingGarden = true;
 
+        GameObject[] points = GameObject.FindGameObjectsWithTag("CreatureDespawnPoint");
+        target = points[Random.Range(0, points.Length)].transform;
+
+        startPos = transform.position;
+        timer = 0.0f;
+        moveTime = Random.Range(MoveTimeRange.x, MoveTimeRange.y);
+        GetComponent<SpriteRenderer>().flipX = target.position.x < startPos.x;
     }
 
     public void SetSpawnerPlant(Transform plant)
