@@ -5,6 +5,7 @@ using UnityEngine;
 public enum PlantIdentifier
 {
     INVALID = 0,
+    ROOT = 1,
 
 
     // CLASSIC SET //

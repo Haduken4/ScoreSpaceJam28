@@ -123,7 +123,7 @@ MonoBehaviour:
   BeePrefab: {fileID: 6230501909409345086, guid: 06e45015df43df94e8787c073f6e5d1b, type: 3}
   ScoreGainsPerSiphon: 1
   SizeGainsPerSiphon: 0.1
-  SiphonTargets: 0a000000
+  SiphonTargets: 00000000
 --- !u!1 &8962274306792231802
 GameObject:
   m_ObjectHideFlags: 0

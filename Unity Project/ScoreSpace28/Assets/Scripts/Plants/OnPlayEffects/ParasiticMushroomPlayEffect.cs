@@ -8,7 +8,7 @@ public class ParasiticMushroomPlayEffect : OnPlayEffect
     public float ScoreGainsPerSiphon = 0.5f;
     public float SizeGainsPerSiphon = 0.1f;
 
-    public List<PlantIdentifier> SiphonTargets = new List<PlantIdentifier>();
+    public List<PlantType> SiphonTargets = new List<PlantType>();
 
     protected override void GameplayEffect()
     {
@@ -19,7 +19,7 @@ public class ParasiticMushroomPlayEffect : OnPlayEffect
             TileLogic tl = tile.GetComponent<TileLogic>();
             Transform plant = tl.GetPlant();
 
-            if (plant && SiphonTargets.Contains(plant.GetComponent<PlantData>().Identifier))
+            if (plant && SiphonTargets.Contains(plant.GetComponent<PlantData>().Type))
             {
                 ++siphonCount;
             }
