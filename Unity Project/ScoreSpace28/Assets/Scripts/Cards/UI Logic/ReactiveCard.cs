@@ -129,7 +129,7 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
         //playsoundHere
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.PlantSeedShuffle, transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.PlantSeedShuffle, transform.position);
         //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/PlantSeedShuffle", GetComponent<Transform>().position);
 
         if (ClickedParent.childCount == 1)

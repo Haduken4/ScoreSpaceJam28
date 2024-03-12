@@ -20,7 +20,7 @@ public class VenusFlyTrapPlayEffect : OnPlayEffect
             AddScore(ScorePerBee * bb.ScoreValue);
             Destroy(bb.gameObject);
 
-            //AudioManager.instance.PlayOneShot(FMODEvents.instance3.VenusFlyChomps, this.transform.position);
+            AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.VenusFlyChomps, this.transform.position);
         }
     }
 }

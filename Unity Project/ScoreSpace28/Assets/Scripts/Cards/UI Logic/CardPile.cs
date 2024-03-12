@@ -47,7 +47,7 @@ public class CardPile : MonoBehaviour
         }
 
         //Plays the card packet draw sound
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.PacketDraw, transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.PacketDraw, transform.position);
         //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/DrawSeeds", GetComponent<Transform>().position);
 
     }

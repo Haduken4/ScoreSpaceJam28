@@ -2499,6 +2499,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c077758062a2f4492e5adeeeb59e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <music>k__BackingField:
+    Guid:
+      Data1: -989432671
+      Data2: 1231265716
+      Data3: -964421491
+      Data4: 884806818
+    Path: event:/Music/CoreMusicSETUP
+  <ambience>k__BackingField:
+    Guid:
+      Data1: -1041569109
+      Data2: 1118100830
+      Data3: -34841178
+      Data4: -215374902
+    Path: event:/Ambience/ForestAmbience
 --- !u!114 &465978227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,6 +2530,7 @@ MonoBehaviour:
   Banks:
   - Master
   - SFX
+  - Music
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &465978228
@@ -7561,8 +7576,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1270938608}
   - component: {fileID: 1270938607}
-  - component: {fileID: 1270938606}
   - component: {fileID: 1270938609}
+  - component: {fileID: 1270938610}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7570,14 +7585,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1270938606
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1270938605}
-  m_Enabled: 1
 --- !u!20 &1270938607
 Camera:
   m_ObjectHideFlags: 0
@@ -7688,6 +7695,19 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1270938610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270938605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1345010259
 GameObject:
   m_ObjectHideFlags: 0

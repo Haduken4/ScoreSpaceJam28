@@ -310,6 +310,13 @@ MonoBehaviour:
   SpawnOffset: {x: 0.15, y: -0.1, z: 0}
   TileModifier: 0
   CardType: 1
+  OnPlaySound:
+    Guid:
+      Data1: -674571389
+      Data2: 1322512371
+      Data3: -148995676
+      Data4: 638150655
+    Path: event:/SFX/PlantSFX/Planting
 --- !u!1 &9140970183501821755
 GameObject:
   m_ObjectHideFlags: 0

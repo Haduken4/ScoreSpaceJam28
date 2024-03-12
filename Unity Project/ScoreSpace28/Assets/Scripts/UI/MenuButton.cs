@@ -15,5 +15,17 @@ public class MenuButton : MonoBehaviour
             return;
         }
         SceneManager.LoadScene(SceneToSwap);
+
+        AudioManager.instance.PlayOneShot(FmodEvents_UI.instance.ConfirmSound, this.transform.position);
     }
+    public void PlayHover()
+    {
+        AudioManager.instance.PlayOneShot(FmodEvents_UI.instance.HoverSound, this.transform.position);
+    }
+
+    public void MusicSwitch()
+    {
+        AudioManager.instance.SetMusicParameter("MusicSwitch", 1);
+    }
+
 }

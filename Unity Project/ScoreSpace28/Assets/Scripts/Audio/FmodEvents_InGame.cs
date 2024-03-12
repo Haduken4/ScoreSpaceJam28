@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 
-public class FMODEvents : MonoBehaviour
+public class FMODEvents_InGame : MonoBehaviour
 {
 
     [field: Header("Sound Effects")]
@@ -13,11 +13,13 @@ public class FMODEvents : MonoBehaviour
 
     [field: SerializeField] public EventReference VenusFlyChomps { get; private set; }
 
+
+
     //how to play sounds in other scripts
-    //        AudioManager.instance.PlayOneShot(FMODEvents.instance."name", this.transform.position);
+    //        AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance."name", this.transform.position);
 
     //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/PlantSeedShuffle", GetComponent<Transform>().position);
-    public static FMODEvents instance { get; private set; }
+    public static FMODEvents_InGame instance { get; private set; }
 
     private void Awake()
     {

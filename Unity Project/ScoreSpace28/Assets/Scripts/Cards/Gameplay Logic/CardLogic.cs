@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public enum PlantType { MUSHROOM, FLOWER, SHRUB, TREE, GRASS, ROOT }
 
@@ -11,6 +12,8 @@ public class CardLogic : MonoBehaviour
     public bool TileModifier = false;
 
     public PlantType CardType = PlantType.MUSHROOM;
+
+    public EventReference OnPlaySound;
 
     bool inPlayArea = false;
 
@@ -58,6 +61,7 @@ public class CardLogic : MonoBehaviour
             // Get tile modifier component and modify the tile I guess
             GetComponent<CardTileModifier>().ModifyTile(tl);
             FindFirstObjectByType<TurnManager>().CardPlayed();
+            AudioManager.instance.PlayOneShot(OnPlaySound, this.transform.position);
             return true;
         }
 
@@ -77,6 +81,8 @@ public class CardLogic : MonoBehaviour
         plant.transform.localScale *= 0.1f; // Start plant small so it can grow
 
         FindFirstObjectByType<TurnManager>().CardPlayed();
+
+        AudioManager.instance.PlayOneShot(OnPlaySound, this.transform.position);
 
         return true;
     }
