@@ -95,6 +95,12 @@ public class TurnManager : MonoBehaviour
             }
         }
 
+        // Check if we can still play any cards
+        if (cards.CheckCardsPlayable(hm.GetCardObjects()))
+        {
+            return;
+        }
+
         GameEnded = true;
         if (GlobalGameData.Score > GlobalGameData.HighScore)
         {
@@ -133,12 +139,6 @@ public class TurnManager : MonoBehaviour
     public void CardPlayed()
     {
         cardsPlayed++;
-
-        // Check if we can still play any cards
-        if (!cards.CheckCardsPlayable(hm.GetCardObjects()))
-        {
-            GameEnded = true;
-        }
     }
 
     public bool CanTrash()
