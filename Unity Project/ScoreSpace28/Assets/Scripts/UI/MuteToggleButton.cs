@@ -1,29 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class MuteToggleButton : MonoBehaviour
 {
     public GameObject MutedCrossout = null;
-    public AudioSource MusicSource = null;
-    public AudioSource AmbientSource = null;
 
     bool muted = false;
 
-    float musicVol = 0.0f;
-    float ambientVol = 0.0f;
+    Bus masterBus;
 
-    private void Start()
+    private void Awake()
     {
-        if (MusicSource)
-        {
-            musicVol = MusicSource.volume;
-        }
-
-        if(AmbientSource)
-        {
-            ambientVol = AmbientSource.volume;
-        }
+        masterBus = RuntimeManager.GetBus("bus:/");
     }
 
     public void ToggleMuted()
@@ -32,16 +23,6 @@ public class MuteToggleButton : MonoBehaviour
 
         MutedCrossout?.SetActive(muted);
 
-        GlobalGameData.VolumeMultiplier = muted ? 0.0f : 1.0f;
-
-        if(MusicSource)
-        {
-            MusicSource.volume = muted ? 0.0f : musicVol;
-        }
-
-        if(AmbientSource)
-        {
-            AmbientSource.volume = muted ? 0.0f : ambientVol;
-        }
+        masterBus.setMute(muted);
     }
 }
