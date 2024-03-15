@@ -23,6 +23,6 @@ public class MuteToggleButton : MonoBehaviour
 
         MutedCrossout?.SetActive(muted);
 
-        masterBus.setMute(muted);
+        masterBus.setVolume(muted ? 0 : 1);
     }
 }
