@@ -5,6 +5,7 @@ using UnityEngine;
 public class MushroomPlayEffect : OnPlayEffect
 {
     public float NeighborBonus = 1.0f;
+    public PlantType BonusType = PlantType.MUSHROOM;
 
     public bool Parasitic = false;
     public GameObject MushroomPrefab = null;
@@ -19,7 +20,7 @@ public class MushroomPlayEffect : OnPlayEffect
             TileLogic tl = obj.GetComponent<TileLogic>();
             Transform plant = tl.GetPlant();
 
-            if(plant && plant.GetComponent<PlantData>().Type == PlantType.MUSHROOM)
+            if(plant && plant.GetComponent<PlantData>().Type == BonusType)
             {
                 effectScore += NeighborBonus;
                 plant.GetComponent<OnPlayEffect>().AddScore(Mathf.Ceil(NeighborBonus));
