@@ -8,7 +8,7 @@ public class EndOfTurnEffect : MonoBehaviour
     protected GridManager gm = null;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         pd = GetComponent<PlantData>();
         gm = FindFirstObjectByType<GridManager>();
