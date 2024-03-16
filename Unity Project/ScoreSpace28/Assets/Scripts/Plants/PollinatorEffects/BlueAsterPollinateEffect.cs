@@ -8,6 +8,6 @@ public class BlueAsterPollinateEffect : OnPollinateEffect
 
     public override void PollinateEffect()
     {
-        ope.AddScore(Mathf.Ceil(ExtraScoreOnPollinate));
+        pd.AddScore(Mathf.Ceil(ExtraScoreOnPollinate));
     }
 }

@@ -17,7 +17,7 @@ public class VenusFlyTrapPlayEffect : OnPlayEffect
         if (collision.CompareTag("Bee"))
         {
             BeeBehavior bb = collision.GetComponent<BeeBehavior>();
-            AddScore(ScorePerBee * bb.ScoreValue);
+            pd.AddScore(ScorePerBee * bb.ScoreValue);
             Destroy(bb.gameObject);
 
             AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.VenusFlyChomps, this.transform.position);

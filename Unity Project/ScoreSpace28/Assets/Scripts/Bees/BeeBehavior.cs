@@ -40,7 +40,7 @@ public class BeeBehavior : MonoBehaviour
 
                 FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/Bees", GetComponent<Transform>().position);
                 target.GetComponent<PlantData>().Pollinator = null;
-                target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
+                target.GetComponent<PlantData>().AddScore(ScoreValue);
                 target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
                 lastTarget = target;
                 target = null;
@@ -86,7 +86,7 @@ public class BeeBehavior : MonoBehaviour
         // If we chose the same plant as last time for some reason
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
-            target.GetComponent<OnPlayEffect>().AddScore(ScoreValue);
+            target.GetComponent<PlantData>().AddScore(ScoreValue);
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
             target = null;

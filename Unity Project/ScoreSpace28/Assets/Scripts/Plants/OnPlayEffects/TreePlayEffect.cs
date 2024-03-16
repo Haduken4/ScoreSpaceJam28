@@ -42,7 +42,7 @@ public class TreePlayEffect : OnPlayEffect
         }
         if(score != 0)
         {
-            AddScore(Mathf.Ceil(score));
+            pd.AddScore(Mathf.Ceil(score));
         }
     }
 }

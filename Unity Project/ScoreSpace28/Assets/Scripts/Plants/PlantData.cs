@@ -38,10 +38,48 @@ public class PlantData : MonoBehaviour
     public PlantType Type = PlantType.MUSHROOM;
     public PlantIdentifier Identifier = PlantIdentifier.INVALID;
 
+    public Transform ScoreTextPoint = null;
 
     [HideInInspector]
     public GameObject Pollinator = null;
     [HideInInspector]
     public float TotalScoreGained = 0;
 
+    float scoreThisFrame = 0;
+    ScoreTextManager stm = null;
+
+    private void Start()
+    {
+        stm = FindFirstObjectByType<ScoreTextManager>();
+        if(ScoreTextPoint == null)
+        {
+            ScoreTextPoint = transform;
+        }    
+    }
+
+    private void Update()
+    {
+        if (scoreThisFrame != 0)
+        {
+            AddScoreReal(scoreThisFrame);
+            scoreThisFrame = 0;
+        }
+    }
+
+    public void AddScore(float val)
+    {
+        scoreThisFrame += val;
+    }
+
+    void AddScoreReal(float val)
+    {
+        if (val == 0)
+        {
+            return;
+        }
+
+        GlobalGameData.Score += val;
+        stm.SpawnScoreText(ScoreTextPoint.position, val);
+        TotalScoreGained += val;
+    }
 }

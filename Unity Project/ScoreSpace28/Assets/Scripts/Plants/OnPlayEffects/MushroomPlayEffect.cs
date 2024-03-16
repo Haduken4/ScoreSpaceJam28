@@ -23,7 +23,7 @@ public class MushroomPlayEffect : OnPlayEffect
             if(plant && plant.GetComponent<PlantData>().Type == BonusType)
             {
                 effectScore += NeighborBonus;
-                plant.GetComponent<OnPlayEffect>().AddScore(Mathf.Ceil(NeighborBonus));
+                plant.GetComponent<PlantData>().AddScore(Mathf.Ceil(NeighborBonus));
             }
             
             /* Commenting out parasitic code for now
