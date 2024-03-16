@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class EndOfTurnEffect : MonoBehaviour
 {
+    protected PlantData pd = null;
+    protected GridManager gm = null;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        pd = GetComponent<PlantData>();
+        gm = FindFirstObjectByType<GridManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void OnEndOfTurn()
     {
-        
+
     }
 }

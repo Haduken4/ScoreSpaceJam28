@@ -125,6 +125,13 @@ public class TurnManager : MonoBehaviour
         Debug.Log("Turn Ended");
         hm.DiscardHand();
 
+        // Activate end of turn effects
+        EndOfTurnEffect[] eots = FindObjectsOfType<EndOfTurnEffect>();
+        foreach(EndOfTurnEffect eot in eots)
+        {
+            eot.OnEndOfTurn();
+        }
+
         // Activate bees
         GameObject[] bees = GameObject.FindGameObjectsWithTag("Bee");
         foreach(GameObject bee in bees)
