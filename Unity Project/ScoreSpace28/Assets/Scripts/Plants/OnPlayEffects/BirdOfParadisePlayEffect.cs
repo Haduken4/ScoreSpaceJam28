@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdOfParadisePlayEffect : MonoBehaviour
+public class BirdOfParadisePlayEffect : OnPlayEffect
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float BonusEffectStrength = 1;
 
-    // Update is called once per frame
-    void Update()
+    protected override void GameplayEffect()
     {
-        
+        JungleSetData.BirdOfParadiseBonus += BonusEffectStrength;
     }
 }
