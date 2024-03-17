@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KapokTreePlayEffect : MonoBehaviour
+public class KapokTreePlayEffect : OnPlayEffect
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject ParrotPrefab = null;
 
-    // Update is called once per frame
-    void Update()
+    public Vector2 ScaleMultiplierRange = new Vector2(0.9f, 1.1f);
+
+    protected override void GameplayEffect()
     {
-        
+        base.GameplayEffect();
     }
 }
