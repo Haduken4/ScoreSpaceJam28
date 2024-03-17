@@ -16,6 +16,6 @@ public class OnPollinateEffect : MonoBehaviour
 
     public virtual void PollinateEffect()
     {
-
+        Debug.Log("Pollinate Effect Not Implemented: " + gameObject.name);
     }
 }

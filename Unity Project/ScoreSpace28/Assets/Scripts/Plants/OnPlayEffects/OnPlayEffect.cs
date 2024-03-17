@@ -63,6 +63,6 @@ public class OnPlayEffect : MonoBehaviour
 
     protected virtual void GameplayEffect()
     {
-
+        Debug.Log("Gameplay Effect Not Implemented: " + gameObject.name);
     }
 }

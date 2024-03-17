@@ -71,6 +71,12 @@ public class PlantData : MonoBehaviour
         scoreThisFrame += val;
     }
 
+    public void AddScoreNoDisplay(float val)
+    {
+        GlobalGameData.Score += val;
+        TotalScoreGained += val;
+    }
+
     void AddScoreReal(float val)
     {
         if (val == 0)
@@ -79,7 +85,12 @@ public class PlantData : MonoBehaviour
         }
 
         GlobalGameData.Score += val;
-        stm.SpawnScoreText(ScoreTextPoint.position, val);
+        DisplayScore(val);
         TotalScoreGained += val;
+    }
+
+    public void DisplayScore(float val)
+    {
+        stm.SpawnScoreText(ScoreTextPoint.position, val);
     }
 }

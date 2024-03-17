@@ -16,6 +16,6 @@ public class EndOfTurnEffect : MonoBehaviour
 
     public virtual void OnEndOfTurn()
     {
-
+        Debug.Log("End Of Turn Effect Not Implemented: " + gameObject.name);
     }
 }
