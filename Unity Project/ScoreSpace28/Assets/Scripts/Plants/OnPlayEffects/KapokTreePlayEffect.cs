@@ -10,6 +10,22 @@ public class KapokTreePlayEffect : OnPlayEffect
 
     protected override void GameplayEffect()
     {
-        base.GameplayEffect();
+        // Spawn parrot on a roost point child
+        if (!ParrotPrefab)
+        {
+            return;
+        }
+
+        RoostPoint[] points = GetComponentsInChildren<RoostPoint>();
+        if(points.Length == 0)
+        {
+            return;
+        }
+
+        Transform spawnPoint = points[Random.Range(0, points.Length)].transform;
+
+        GameObject pollinator = Instantiate(ParrotPrefab, spawnPoint.position + (Vector3.forward * -0.2f), Quaternion.identity);
+        pollinator.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
+        pollinator.GetComponent<CreatureBehavior>().SetSpawnerPlant(transform);
     }
 }

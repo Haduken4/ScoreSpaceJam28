@@ -9,6 +9,17 @@ public class EarthstarPollinateEffect : OnPollinateEffect
 
     public override void PollinateEffect()
     {
-        
+        List<GameObject> neighbors = gm.GetAdjacentTiles(transform.parent.gameObject);
+
+        foreach (GameObject obj in neighbors)
+        {
+            TileLogic tl = obj.GetComponent<TileLogic>();
+            Transform plant = tl.GetPlant();
+
+            if(plant && plant.GetComponent<PlantData>().Type == BuffEffectType)
+            {
+                plant.GetComponent<PlantData>().AddScore(BuffEffectValue);
+            }
+        }
     }
 }

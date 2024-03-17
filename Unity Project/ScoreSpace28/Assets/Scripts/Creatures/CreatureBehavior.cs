@@ -8,4 +8,9 @@ public class CreatureBehavior : MonoBehaviour
     {
 
     }
+
+    public virtual void SetSpawnerPlant(Transform plant)
+    {
+
+    }
 }

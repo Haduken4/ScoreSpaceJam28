@@ -117,7 +117,7 @@ public class BeeBehavior : CreatureBehavior
         GetComponent<SpriteRenderer>().flipX = target.position.x < startPos.x;
     }
 
-    public void SetSpawnerPlant(Transform plant)
+    public override void SetSpawnerPlant(Transform plant)
     {
         lastTarget = plant;
     }

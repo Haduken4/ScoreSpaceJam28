@@ -15,8 +15,8 @@ public class FlowerPlayEffect : OnPlayEffect
             return;
         }
 
-        GameObject bee = Instantiate(PollinatorPrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
-        bee.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
-        bee.GetComponent<BeeBehavior>().SetSpawnerPlant(transform);
+        GameObject pollinator = Instantiate(PollinatorPrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
+        pollinator.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
+        pollinator.GetComponent<CreatureBehavior>().SetSpawnerPlant(transform);
     }
 }
