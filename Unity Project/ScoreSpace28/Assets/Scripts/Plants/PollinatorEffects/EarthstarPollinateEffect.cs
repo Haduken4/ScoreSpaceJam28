@@ -2,16 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EarthstarPollinateEffect : MonoBehaviour
+public class EarthstarPollinateEffect : OnPollinateEffect
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlantType BuffEffectType = PlantType.MUSHROOM;
+    public float BuffEffectValue = 1;
 
-    // Update is called once per frame
-    void Update()
+    public override void PollinateEffect()
     {
         
     }

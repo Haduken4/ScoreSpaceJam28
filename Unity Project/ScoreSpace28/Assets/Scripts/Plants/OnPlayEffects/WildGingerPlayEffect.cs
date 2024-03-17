@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WildGingerPlayEffect : MonoBehaviour
+public class WildGingerPlayEffect : OnPlayEffect
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlantType SubtractType = PlantType.ROOT;
+    public float SubtractValue = 2;
 
-    // Update is called once per frame
-    void Update()
+    protected override void GameplayEffect()
     {
-        
+        List<GameObject> neighbors = gm.GetAdjacentTiles(transform.parent.gameObject);
+
+        foreach (GameObject obj in neighbors)
+        {
+            TileLogic tl = obj.GetComponent<TileLogic>();
+            Transform plant = tl.GetPlant();
+
+            if (plant && plant.GetComponent<PlantData>().Type == SubtractType)
+            {
+                plant.GetComponent<PlantData>().AddScore(Mathf.Ceil(SubtractValue));
+            }
+        }
     }
 }
