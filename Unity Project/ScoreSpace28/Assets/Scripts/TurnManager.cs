@@ -132,15 +132,14 @@ public class TurnManager : MonoBehaviour
             eot.OnEndOfTurn();
         }
 
-        // Activate bees
-        GameObject[] bees = GameObject.FindGameObjectsWithTag("Bee");
-        foreach(GameObject bee in bees)
+        // Activate creature end of turns
+        CreatureBehavior[] creatures = FindObjectsOfType<CreatureBehavior>();
+        foreach(CreatureBehavior creature in creatures)
         {
-            BeeBehavior bb = bee.GetComponent<BeeBehavior>();
-            bb.GoToNewTarget();
+            creature.OnEndOfTurn();
         }
 
-        timer = bees.Length > 0 ? TurnTransitionTimeBees : TurnTransitionTime;
+        timer = creatures.Length > 0 ? TurnTransitionTimeBees : TurnTransitionTime;
     }
 
     public void CardPlayed()

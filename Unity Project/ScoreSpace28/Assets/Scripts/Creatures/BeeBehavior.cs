@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeeBehavior : MonoBehaviour
+public class BeeBehavior : CreatureBehavior
 {
     public Vector2 MoveTimeRange = new Vector2(2.0f, 3.0f);
     public float ScoreValue = 1.0f;
@@ -46,6 +46,11 @@ public class BeeBehavior : MonoBehaviour
                 target = null;
             }
         }
+    }
+
+    public override void OnEndOfTurn()
+    {
+        GoToNewTarget();
     }
 
     public void GoToNewTarget()
