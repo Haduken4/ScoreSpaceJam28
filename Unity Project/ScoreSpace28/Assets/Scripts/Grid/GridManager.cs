@@ -23,9 +23,15 @@ public class GridManager : MonoBehaviour
     float waveTimer = 0.0f;
     float waveIndex = 0;
 
+    bool finishedMakingGrid = false;
+
     void Awake()
     {
         GenerateGrid();
+        if(WaveActivationTimer == 0.0f)
+        {
+            finishedMakingGrid = true;
+        }
     }
 
     void Update()
@@ -63,6 +69,11 @@ public class GridManager : MonoBehaviour
 
                 waveTimer = 0.0f;
                 waveIndex++;
+
+                if(waveIndex > Width + Height - 2)
+                {
+                    finishedMakingGrid = true;
+                }
             }
         }
     }
@@ -159,5 +170,10 @@ public class GridManager : MonoBehaviour
             tooltipTimer = TooltipTime;
             tooltip = false;
         }
+    }
+
+    public bool DoneMakingGrid()
+    {
+        return finishedMakingGrid;
     }
 }

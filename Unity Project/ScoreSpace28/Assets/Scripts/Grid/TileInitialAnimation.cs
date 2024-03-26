@@ -24,6 +24,7 @@ public class TileInitialAnimation : MonoBehaviour
     float timer = 0.0f;
     bool jumping = true;
     SpriteRenderer sr = null;
+    Collider2D c2d = null;
 
     Vector3 basePos = Vector3.zero;
     Vector3 addPos = Vector3.zero;
@@ -43,6 +44,11 @@ public class TileInitialAnimation : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        c2d = GetComponent<Collider2D>();
+        if(c2d)
+        {
+            c2d.enabled = false;
+        }
         basePos = transform.localPosition;
         baseScale = transform.localScale;
         scale = StartScale;
@@ -79,6 +85,10 @@ public class TileInitialAnimation : MonoBehaviour
         if(doneScaling && doneJumping)
         {
             done = true;
+            if(c2d)
+            {
+                c2d.enabled = true;
+            }
         }
     }
 

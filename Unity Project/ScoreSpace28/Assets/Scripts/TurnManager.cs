@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurnManager : MonoBehaviour
 {
+    public float InitialTimer = 3.0f;
+
     public int DrawPerTurn = 5;
 
     public int PlaysPerTurn = 3;
@@ -15,6 +18,7 @@ public class TurnManager : MonoBehaviour
     public float TurnTransitionTimeBees = 4.0f;
 
     public HandManager hm = null;
+    public GridManager gm = null;
     public CardPile cards = null;
     public GameObject FinalScoreWindow = null;
 
@@ -34,11 +38,25 @@ public class TurnManager : MonoBehaviour
 
     private void Start()
     {
-        TurnStart();
     }
 
     void Update()
     {
+        if(InitialTimer > 0.0f)
+        {
+            InitialTimer -= Time.deltaTime;
+            if(InitialTimer <= 0.0f)
+            {
+                TurnStart();
+            }
+            return;
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         if (GameEnded)
         {
             hm.DiscardHand();
@@ -84,6 +102,11 @@ public class TurnManager : MonoBehaviour
                 GlobalGameData.HighScore = GlobalGameData.Score;
             }
             timer = 2.0f;
+            return;
+        }
+
+        if(!gm.DoneMakingGrid())
+        {
             return;
         }
 

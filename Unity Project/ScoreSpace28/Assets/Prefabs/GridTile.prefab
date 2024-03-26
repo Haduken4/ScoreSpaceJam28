@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 448952736125056140}
   - component: {fileID: 8942647109848818022}
   - component: {fileID: 2287797801152109418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GridTile
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -483,3 +483,5 @@ MonoBehaviour:
   PlantScaleLerpSpeed: 12
   PlantScaleSnapDist: 0.05
   Alignment: 0
+  AllowedPlants: 
+  IsPlant: 0

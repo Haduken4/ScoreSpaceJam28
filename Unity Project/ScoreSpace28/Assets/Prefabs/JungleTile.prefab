@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1206452517341420139}
   - component: {fileID: 4794759610230083476}
   - component: {fileID: 2837677066822084593}
-  m_Layer: 0
+  - component: {fileID: -6976528870161703925}
+  m_Layer: 6
   m_Name: JungleTile
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -485,3 +486,24 @@ MonoBehaviour:
   Alignment: 0
   AllowedPlants: 
   IsPlant: 0
+--- !u!114 &-6976528870161703925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6622047883102914728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85cffb07c05e3b4baeeb8f956b1e907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpTime: 0.25
+  DescentTime: 0.4
+  Bottom: {x: 0, y: -0.3, z: 0}
+  Top: {x: 0, y: 0.8, z: 0}
+  OpactiyTime: 0.5
+  MiddleScaleTime: 0
+  FinalScaleTime: 0
+  StartScale: {x: 0.5, y: 0.5, z: 1}
+  MiddleScale: {x: 1, y: 1, z: 1}
