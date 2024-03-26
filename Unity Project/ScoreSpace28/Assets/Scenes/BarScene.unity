@@ -1915,7 +1915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -657, y: -550}
+  m_AnchoredPosition: {x: -725, y: -567}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &330816794
@@ -1988,7 +1988,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1050, y: 250}
+  m_Size: {x: 900, y: 180}
   m_EdgeRadius: 0
 --- !u!114 &330816796
 MonoBehaviour:
@@ -2009,7 +2009,7 @@ MonoBehaviour:
   RelativeArcStrength: 1
   CardWidth: 200
   MaxCardSpacing: 10
-  EmptySpotSpacing: 30
+  EmptySpotSpacing: 45
   PositionParentPrefab: {fileID: 1009650217473430203, guid: 95047ae29fb3432469515436ce17a968, type: 3}
   TestCard: {fileID: 5490272689771217381, guid: 1ede8beb6b4bcfb468375ff896e28171, type: 3}
   TestCardsToAdd: 0
@@ -8357,8 +8357,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardLerpSpeed: 10
   MinSnapDistance: 0.2
-  LocalPositionOffset: {x: 0, y: 75, z: 0}
-  HoveredLocalScale: {x: 1.5, y: 1.5, z: 1}
+  LocalPositionOffset: {x: 0, y: 150, z: 0}
+  HoveredLocalScale: {x: 2, y: 2, z: 1}
 --- !u!1 &1540910226
 GameObject:
   m_ObjectHideFlags: 0
