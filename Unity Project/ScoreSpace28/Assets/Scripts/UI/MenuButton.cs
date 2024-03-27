@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    public string SceneToSwap = "BarScene";    
+    public string SceneToSwap = "BarScene";
+    public int MusicSwap = 1;
 
     public void ClickButton()
     {
@@ -25,7 +26,7 @@ public class MenuButton : MonoBehaviour
 
     public void MusicSwitch()
     {
-        AudioManager.instance.SetMusicParameter("MusicSwitch", 1);
+        AudioManager.instance.SetMusicParameter(MusicSwap);
     }
 
 }

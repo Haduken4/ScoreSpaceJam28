@@ -17,6 +17,8 @@ public class TurnManager : MonoBehaviour
     public float TurnTransitionTime = 2.0f;
     public float TurnTransitionTimeBees = 4.0f;
 
+    public int GameEndMusicSwap = 2;
+
     public HandManager hm = null;
     public GridManager gm = null;
     public CardPile cards = null;
@@ -131,6 +133,7 @@ public class TurnManager : MonoBehaviour
             GlobalGameData.HighScore = GlobalGameData.Score;
         }
         timer = 2.0f;
+        AudioManager.instance.SetMusicParameter(GameEndMusicSwap);
     }
 
     void TurnStart()

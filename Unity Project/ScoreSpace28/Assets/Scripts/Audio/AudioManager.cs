@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     
     
-    private List<EventInstance> eventInstances;
+    private List<EventInstance> eventInstances = new List<EventInstance>();
 
     private EventInstance ambienceEventInstance;
 
@@ -20,6 +20,8 @@ public class AudioManager : MonoBehaviour
     [field: Header("Music")]
 
     [field: SerializeField] public EventReference music { get; private set; }
+    public string MusicSwitchParameter = "";
+
 
     [field: Header("Ambience")]
 
@@ -33,8 +35,6 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        eventInstances = new List<EventInstance>();
 
         instance = this;
         DontDestroyOnLoad(gameObject);
@@ -57,8 +57,6 @@ public class AudioManager : MonoBehaviour
     {
         musicEventInstance = CreateInstance(musicEventReference);
         musicEventInstance.start();
-
-
     }
 
     private void InitializeAmbience(EventReference ambienceEventReference)
@@ -67,10 +65,9 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
-    public void SetMusicParameter(string switchID, int value)
+    public void SetMusicParameter(int value)
     {
-
-        musicEventInstance.setParameterByName(switchID, value);
+        musicEventInstance.setParameterByName(MusicSwitchParameter, value);
     }
 
     public void PlayOneShot(EventReference sound, Vector2 worldPos)
@@ -81,14 +78,20 @@ public class AudioManager : MonoBehaviour
 
     private void CleanUp()
     {
-        /*foreach (EventInstance eventInstance in eventInstances)
+        foreach (EventInstance eventInstance in eventInstances)
         {
             eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             eventInstance.release();
-        }*/
+        }
+
+        musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        musicEventInstance.release();
+
+        ambienceEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        ambienceEventInstance.release();
     }
     private void OnDestroy()
     {
-        //CleanUp();
+        CleanUp();
     }
 }
