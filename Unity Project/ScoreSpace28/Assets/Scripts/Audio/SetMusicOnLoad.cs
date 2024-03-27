@@ -10,6 +10,5 @@ public class SetMusicOnLoad : MonoBehaviour
     void Start()
     {
         AudioManager.instance.SetMusicParameter(MusicSwap);
-        Debug.Log("Hello????");
     }
 }
