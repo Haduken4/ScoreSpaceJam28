@@ -133,9 +133,8 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 2414656718098190594}
   ScoreValue: 5
-  BeePrefab: {fileID: 8866145182330373645, guid: f1a00c103654dc64ba8a6e4a647f2e57, type: 3}
+  PollinatorPrefab: {fileID: 8866145182330373645, guid: f1a00c103654dc64ba8a6e4a647f2e57, type: 3}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
 --- !u!114 &8500657727020306294
 MonoBehaviour:
@@ -151,5 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Identifier: 12
+  ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
