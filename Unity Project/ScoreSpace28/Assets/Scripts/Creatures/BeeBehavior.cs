@@ -17,10 +17,6 @@ public class BeeBehavior : CreatureBehavior
 
     bool leavingGarden = false;
 
-    private void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -53,7 +49,7 @@ public class BeeBehavior : CreatureBehavior
         GoToNewTarget();
     }
 
-    public void GoToNewTarget()
+    void GoToNewTarget()
     {
         GameObject[] plants = GameObject.FindGameObjectsWithTag("Plant");
 

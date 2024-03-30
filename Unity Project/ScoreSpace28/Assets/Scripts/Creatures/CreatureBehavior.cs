@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CreatureBehavior : MonoBehaviour
 {
+    protected virtual void Start()
+    {
+
+    }
+
     public virtual void OnEndOfTurn()
     {
 
