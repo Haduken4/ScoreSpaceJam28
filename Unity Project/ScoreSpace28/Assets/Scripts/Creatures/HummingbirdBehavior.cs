@@ -10,6 +10,7 @@ public class HummingbirdBehavior : CreatureBehavior
     public float MoveSpeed = 12.0f;
     public Vector2 StopTimeRange = new Vector2(0.15f, 0.25f);
     public float AcceptableStopDist = 0.1f;
+    public float MinDistanceForFancyMovement = 4.0f;
 
     [Header("Pollinating")]
     public float ScoreValue = 1.0f;
@@ -19,6 +20,7 @@ public class HummingbirdBehavior : CreatureBehavior
     Transform target = null;
     Transform lastTarget = null;
     Vector3 nextPos = Vector3.zero;
+    Vector3 lastPos = Vector3.zero;
     Rigidbody2D rb2d = null;
     float timer = 0.0f;
     int moveCount = 0;
@@ -47,7 +49,7 @@ public class HummingbirdBehavior : CreatureBehavior
             return;
         }
 
-        if(Vector3.Distance(nextPos, transform.position) <= AcceptableStopDist)
+        if(CheckArrival())
         {
             CalculateNextPos();
         }
@@ -57,8 +59,18 @@ public class HummingbirdBehavior : CreatureBehavior
         rb2d.velocity = dir * MoveSpeed;
     }
 
+    bool CheckArrival()
+    {
+        bool arrived = Vector3.Distance(nextPos, transform.position) <= AcceptableStopDist;
+        arrived |= (nextPos - lastPos).magnitude < (transform.position - lastPos).magnitude;
+
+        return arrived;
+    }
+
     void CalculateNextPos()
     {
+        lastPos = nextPos;
+
         if (moveCount == 0) // Done moving
         {
             target.GetComponent<PlantData>().Pollinator = null;
@@ -69,6 +81,7 @@ public class HummingbirdBehavior : CreatureBehavior
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
             target = null;
+            rb2d.velocity = Vector2.zero;
 
             return;
         }
@@ -86,6 +99,7 @@ public class HummingbirdBehavior : CreatureBehavior
             nextPos = transform.position + dir;
         }
 
+        timer = Random.Range(StopTimeRange.x, StopTimeRange.y);
         --moveCount;
     }
 
@@ -157,7 +171,13 @@ public class HummingbirdBehavior : CreatureBehavior
 
         target.GetComponent<PlantData>().Pollinator = gameObject;
         timer = 0.0f;
+        moveCount = Random.Range((int)MoveCountRange.x, (int)MoveCountRange.y);
+        if(Vector3.Distance(target.position, transform.position) < MinDistanceForFancyMovement)
+        {
+            moveCount = 1;
+        }
         CalculateNextPos();
+        lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
     }
 
