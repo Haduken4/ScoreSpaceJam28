@@ -76,7 +76,7 @@ public class HummingbirdBehavior : CreatureBehavior
             target.GetComponent<PlantData>().Pollinator = null;
             if(!fake)
             {
-                target.GetComponent<PlantData>().AddScore(ScoreValue);
+                target.GetComponent<PlantData>().AddScore(ScoreValue + JungleSetData.BirdOfParadiseBonus);
             }
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
@@ -161,7 +161,7 @@ public class HummingbirdBehavior : CreatureBehavior
         {
             if(!fake)
             {
-                target.GetComponent<PlantData>().AddScore(ScoreValue);
+                target.GetComponent<PlantData>().AddScore(ScoreValue + JungleSetData.BirdOfParadiseBonus);
             }
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;

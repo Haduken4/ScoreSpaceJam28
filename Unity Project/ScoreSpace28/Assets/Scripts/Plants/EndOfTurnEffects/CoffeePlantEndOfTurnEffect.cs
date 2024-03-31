@@ -10,6 +10,7 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
 
     int turnTimer = 0;
     bool hasFruit = false;
+    bool fruitClaimed = false;
     SpriteRenderer sr = null;
     Sprite originalSprite;
 
@@ -38,14 +39,20 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
         }
     }
 
-    public bool HasFruit()
+    public bool HasFruitAvailable()
     {
-        return hasFruit;
+        return hasFruit && !fruitClaimed;
+    }
+
+    public void ClaimFruit()
+    {
+        fruitClaimed = true;
     }
 
     public void EatFruit()
     {
         hasFruit = false;
+        fruitClaimed = false;
         sr.sprite = originalSprite;
     }
 }
