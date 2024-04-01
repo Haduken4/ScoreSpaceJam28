@@ -61,7 +61,7 @@ public class HummingbirdBehavior : CreatureBehavior
 
     bool CheckArrival()
     {
-        bool arrived = Vector3.Distance(nextPos, transform.position) <= AcceptableStopDist;
+        bool arrived = Vector2.Distance(nextPos, transform.position) <= AcceptableStopDist;
         arrived |= (nextPos - lastPos).magnitude < (transform.position - lastPos).magnitude;
 
         return arrived;
