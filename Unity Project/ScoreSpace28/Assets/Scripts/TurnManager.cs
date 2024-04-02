@@ -151,6 +151,13 @@ public class TurnManager : MonoBehaviour
         Debug.Log("Turn Ended");
         hm.DiscardHand();
 
+        // Reset turn specific plant data
+        PlantData[] pds = FindObjectsOfType<PlantData>();
+        foreach(PlantData pd in pds)
+        {
+            pd.ResetPollinate();
+        }
+
         // Activate end of turn effects
         EndOfTurnEffect[] eots = FindObjectsOfType<EndOfTurnEffect>();
         foreach(EndOfTurnEffect eot in eots)

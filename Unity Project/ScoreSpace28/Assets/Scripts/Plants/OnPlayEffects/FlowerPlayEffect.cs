@@ -18,6 +18,6 @@ public class FlowerPlayEffect : OnPlayEffect
         GameObject pollinator = Instantiate(PollinatorPrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
         pollinator.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
         pollinator.GetComponent<CreatureBehavior>().SetSpawnerPlant(transform);
-        pd.Pollinator = pollinator;
+        //pd.Pollinator = pollinator;
     }
 }

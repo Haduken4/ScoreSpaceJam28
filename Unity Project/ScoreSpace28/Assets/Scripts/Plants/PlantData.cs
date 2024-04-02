@@ -48,6 +48,8 @@ public class PlantData : MonoBehaviour
     float scoreThisFrame = 0;
     ScoreTextManager stm = null;
 
+    bool pollinatedThisTurn = false;
+
     private void Start()
     {
         stm = FindFirstObjectByType<ScoreTextManager>();
@@ -87,6 +89,21 @@ public class PlantData : MonoBehaviour
         GlobalGameData.Score += val;
         DisplayScore(val);
         TotalScoreGained += val;
+    }
+
+    public bool CanPollinate()
+    {
+        return !pollinatedThisTurn;
+    }
+
+    public void ClaimPollinate()
+    {
+        pollinatedThisTurn = true;
+    }
+
+    public void ResetPollinate()
+    {
+        pollinatedThisTurn = false;
     }
 
     public void DisplayScore(float val)

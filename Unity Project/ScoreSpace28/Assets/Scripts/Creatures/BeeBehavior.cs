@@ -61,13 +61,9 @@ public class BeeBehavior : CreatureBehavior
 
             if(pd && PollinatorTypes.Contains(pd.Type))
             {
-                if (pd.Pollinator == null && pd.transform != lastTarget)
+                if (pd.Pollinator == null && pd.CanPollinate() && pd.transform != lastTarget)
                 {
                     validPlants.Add(pd.transform);
-                }
-                else if(pd.Pollinator == gameObject)
-                {
-                    pd.Pollinator = null;
                 }
             }
         }
@@ -75,7 +71,7 @@ public class BeeBehavior : CreatureBehavior
         if(validPlants.Count == 0)
         {
             // There were no plants which could be pollinated, fly away
-            if(lastTarget == null)
+            if(lastTarget == null || !lastTarget.GetComponent<PlantData>().CanPollinate())
             {
                 GoToDespawnPoint();
                 return;
@@ -87,11 +83,11 @@ public class BeeBehavior : CreatureBehavior
 
         startPos = transform.position;
         target = validPlants[Random.Range(0, validPlants.Count)];
+        target.GetComponent<PlantData>().ClaimPollinate();
 
         // If we chose the same plant as last time for some reason
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
-            target.GetComponent<PlantData>().Pollinator = gameObject;
             target.GetComponent<PlantData>().AddScore(ScoreValue);
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
