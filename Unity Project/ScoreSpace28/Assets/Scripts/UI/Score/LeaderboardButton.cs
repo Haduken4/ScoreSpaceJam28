@@ -13,15 +13,35 @@ public class LeaderboardButton : MonoBehaviour
     bool submitted = false;
     LeaderboardManager lm = null;
 
+    bool cheated = false;
+
     // Start is called before the first frame update
     void Awake()
     {
         lm = FindFirstObjectByType<LeaderboardManager>();
     }
 
+    private void Start()
+    {
+        CheatCodeManager ccm = FindFirstObjectByType<CheatCodeManager>();
+        if(ccm)
+        {
+            cheated = ccm.UsedCheats;
+
+            StatusText.text = "Used cheats! No leaderboard submission allowed.";
+
+            // Hello
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if(cheated)
+        {
+            return;
+        }
+
         if(!submitted)
         {
             StatusText.text = StatusText.text;
