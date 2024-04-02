@@ -65,6 +65,10 @@ public class BeeBehavior : CreatureBehavior
                 {
                     validPlants.Add(pd.transform);
                 }
+                else if(pd.Pollinator == gameObject)
+                {
+                    pd.Pollinator = null;
+                }
             }
         }
 
@@ -87,6 +91,7 @@ public class BeeBehavior : CreatureBehavior
         // If we chose the same plant as last time for some reason
         if(Vector2.Distance(startPos, target.position) <= 0.1f)
         {
+            target.GetComponent<PlantData>().Pollinator = gameObject;
             target.GetComponent<PlantData>().AddScore(ScoreValue);
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;

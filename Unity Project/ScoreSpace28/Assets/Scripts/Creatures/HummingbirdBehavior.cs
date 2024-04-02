@@ -26,6 +26,8 @@ public class HummingbirdBehavior : CreatureBehavior
     int moveCount = 0;
     bool fake = false;
 
+    bool leavingGarden = false;
+
     override protected void Start()
     {
         base.Start();
@@ -73,6 +75,12 @@ public class HummingbirdBehavior : CreatureBehavior
 
         if (moveCount == 0) // Done moving
         {
+            if(leavingGarden)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             target.GetComponent<PlantData>().Pollinator = null;
             if(!fake)
             {
@@ -141,7 +149,7 @@ public class HummingbirdBehavior : CreatureBehavior
             // There were no plants which could be pollinated, fly away
             if (lastTarget == null)
             {
-                //GoToDespawnPoint();
+                GoToDespawnPoint();
                 return;
             }
 
@@ -176,6 +184,20 @@ public class HummingbirdBehavior : CreatureBehavior
         {
             moveCount = 1;
         }
+        CalculateNextPos();
+        lastPos = transform.position;
+        GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
+    }
+
+    void GoToDespawnPoint()
+    {
+        leavingGarden = true;
+
+        GameObject[] points = GameObject.FindGameObjectsWithTag("CreatureDespawnPoint");
+        target = points[Random.Range(0, points.Length)].transform;
+
+        timer = 0.0f;
+        moveCount = Random.Range((int)MoveCountRange.x, (int)MoveCountRange.y);
         CalculateNextPos();
         lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;

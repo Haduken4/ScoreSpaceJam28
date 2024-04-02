@@ -20,6 +20,8 @@ public class TileLogic : MonoBehaviour
 
     [HideInInspector]
     public bool IsPlant = false;
+    [HideInInspector]
+    public float BaseScoreValue = 0;
 
     private void Update()
     {
@@ -46,7 +48,7 @@ public class TileLogic : MonoBehaviour
 
     public bool CanPlant(PlantType type)
     {
-        if((AllowedPlants.Count == 0 || AllowedPlants.Contains(type)) && plant != null)
+        if((AllowedPlants.Count == 0 || AllowedPlants.Contains(type)) && plant == null)
         {
             return true;
         }
