@@ -134,7 +134,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 5
+  ScoreValue: 4
   PollinatorPrefab: {fileID: 0}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
 --- !u!114 &3972676971174365775
@@ -166,4 +166,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892018bd1f0f18146a08ab5c254af1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExtraScoreOnPollinate: 4
+  ExtraScoreOnPollinate: 5
