@@ -171,6 +171,7 @@ public class TurnManager : MonoBehaviour
     public void CardPlayed()
     {
         cardsPlayed++;
+        CheckEndCondition();
     }
 
     public bool CanTrash()

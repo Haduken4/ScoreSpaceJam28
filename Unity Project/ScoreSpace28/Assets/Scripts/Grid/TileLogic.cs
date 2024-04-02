@@ -46,7 +46,7 @@ public class TileLogic : MonoBehaviour
 
     public bool CanPlant(PlantType type)
     {
-        if(AllowedPlants.Count == 0 || AllowedPlants.Contains(type))
+        if((AllowedPlants.Count == 0 || AllowedPlants.Contains(type)) && plant != null)
         {
             return true;
         }
