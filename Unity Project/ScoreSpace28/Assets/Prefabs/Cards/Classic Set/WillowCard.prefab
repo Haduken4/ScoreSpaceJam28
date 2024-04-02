@@ -371,11 +371,11 @@ MonoBehaviour:
   CardType: 3
   OnPlaySound:
     Guid:
-      Data1: -674571389
-      Data2: 1322512371
-      Data3: -148995676
-      Data4: 638150655
-    Path: event:/SFX/PlantSFX/Planting
+      Data1: -518836534
+      Data2: 1290854266
+      Data3: 968138922
+      Data4: 1642783170
+    Path: event:/SFX/PlantSFX/WillowTreePlanting
 --- !u!1 &8376595734609202566
 GameObject:
   m_ObjectHideFlags: 0
