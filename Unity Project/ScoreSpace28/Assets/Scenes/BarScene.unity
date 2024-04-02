@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b0fac5010f23848a6be6411f967d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TilePrefab: {fileID: 6622047883102914728, guid: fce5f772bbff9bb459eddf5a22e27e78, type: 3}
+  TilePrefab: {fileID: 2638039143814621530, guid: 33e60b14b885eff4399bbd40812db1f6, type: 3}
   Width: 7
   Height: 7
   TileSize: {x: 1.596, y: 0.7975}
