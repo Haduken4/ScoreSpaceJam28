@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ParrotBehavior : CreatureBehavior
 {
+    public float ScoreValue = 4;
     public float MoveSpeed = 4.5f;
     public float CoffeeSpeed = 7.0f;
     public float CurveStrength = 0.2f;
@@ -57,6 +58,7 @@ public class ParrotBehavior : CreatureBehavior
         }
 
         // Gain score for going to a tree
+        target.GetComponent<PlantData>().AddScore(ScoreValue + JungleSetData.BirdOfParadiseBonus);
 
         if(extraTree)
         {
@@ -75,13 +77,42 @@ public class ParrotBehavior : CreatureBehavior
                 return;
             }
         }
+
+        GameObject[] roostPoints = GameObject.FindGameObjectsWithTag("RoostPoint");
+
+        List<Transform> validPoints = new List<Transform>();
+
+        foreach (GameObject rp in roostPoints)
+        {
+            if(rp.GetComponent<RoostPoint>().RoostingParrot == null && rp.transform.parent != lastTree)
+            {
+                validPoints.Add(rp.transform);
+            }
+        }
     }
 
     bool AttemptGoToCoffee()
     {
+        CoffeePlantEndOfTurnEffect[] coffees = FindObjectsOfType<CoffeePlantEndOfTurnEffect>();
 
+        foreach(var coffee in coffees)
+        {
+            if(coffee.HasFruitAvailable())
+            {
+                coffee.ClaimFruit();
+                SetTarget(coffee.transform);
+                goingToCoffee = true;
+                break;
+            }
+        }
 
         return goingToCoffee;
+    }
+
+    void SetTarget(Transform t)
+    {
+        target = t;
+        // Set curve affector
     }
 
     Vector2 PerpendicularUp(Vector2 v)
