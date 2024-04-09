@@ -102,8 +102,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 5719830825093181502}
-  ScoreValue: 35
+  ScoreValue: 30
   RootPrefab: {fileID: 6340240229663703301, guid: 07decdc7e02bce8449a15677ff11d7bb, type: 3}
   rootPosOffset: {x: 0, y: -0.65, z: 0}
   GlobalMultiplierAdd: 0
@@ -121,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   Identifier: 16
+  ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
 --- !u!1 &6990435296372078168

@@ -1433,12 +1433,13 @@ MonoBehaviour:
       Data3: -964421491
       Data4: 884806818
     Path: event:/Music/CoreMusicSETUP
+  MusicSwitchParameter: 
   <ambience>k__BackingField:
     Guid:
-      Data1: -1041569109
-      Data2: 1118100830
-      Data3: -34841178
-      Data4: -215374902
+      Data1: 1647099981
+      Data2: 1100600119
+      Data3: -978869333
+      Data4: -867520249
     Path: event:/Ambience/ForestAmbience
 --- !u!1 &241790350
 GameObject:
@@ -3720,8 +3721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MutedCrossout: {fileID: 435520381}
-  MusicSource: {fileID: 0}
-  AmbientSource: {fileID: 0}
 --- !u!114 &974597919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4206,12 +4205,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fff17901746edb42bb70eea7eda72cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitialTimer: 3
   DrawPerTurn: 5
   PlaysPerTurn: 3
   TrashesPerTurn: 2
   TurnTransitionTime: 2
   TurnTransitionTimeBees: 4
+  GameEndMusicSwap: 2
   hm: {fileID: 1706396112}
+  gm: {fileID: 0}
   cards: {fileID: 1055456931}
   FinalScoreWindow: {fileID: 189389116}
   NewHighScore: 0
@@ -4732,6 +4734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToSwap: Main Menu
+  MusicSwap: 1
 --- !u!114 &1117078215
 MonoBehaviour:
   m_ObjectHideFlags: 0

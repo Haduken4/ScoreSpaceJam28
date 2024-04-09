@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b0fac5010f23848a6be6411f967d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TilePrefab: {fileID: 6622047883102914728, guid: fce5f772bbff9bb459eddf5a22e27e78, type: 3}
+  TilePrefab: {fileID: 2638039143814621530, guid: 33e60b14b885eff4399bbd40812db1f6, type: 3}
   Width: 7
   Height: 7
   TileSize: {x: 1.596, y: 0.7975}
@@ -2002,9 +2002,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0ef2ae54a1bed4195bda21f1d0e369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHandSize: 5
-  MaxArcStrength: 0.2
-  MaxArcAngle: 7
+  MaxHandSize: 7
+  MaxArcStrength: 0.25
+  MaxArcAngle: 9
   MinCardsForArc: 4
   RelativeArcStrength: 1
   CardWidth: 200
@@ -2509,10 +2509,10 @@ MonoBehaviour:
   MusicSwitchParameter: 
   <ambience>k__BackingField:
     Guid:
-      Data1: -1041569109
-      Data2: 1118100830
-      Data3: -34841178
-      Data4: -215374902
+      Data1: 1647099981
+      Data2: 1100600119
+      Data3: -978869333
+      Data4: -867520249
     Path: event:/Ambience/ForestAmbience
 --- !u!114 &465978227
 MonoBehaviour:
@@ -10178,6 +10178,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &2135496547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135496548}
+  - component: {fileID: 2135496549}
+  m_Layer: 0
+  m_Name: CheatCodeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2135496548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135496547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135496549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135496547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5faf8eadc04990c419457ac582a52adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetCardList:
+  - {fileID: 5794887880720200811, guid: af858033f3ef4154bb98fc1186a371f0, type: 3}
+  - {fileID: 7137398748871533902, guid: a42546f6384581c42ae2f16551a5dd08, type: 3}
+  - {fileID: 4899263745554795085, guid: 4b174eff36ac40246b871f42eb59f454, type: 3}
+  - {fileID: 6417268586331506863, guid: 1a1577a4fdd6ae441b5d8d3bc71f430c, type: 3}
+  - {fileID: 2713850017538833940, guid: 6104955c56594be49b95720b96db597d, type: 3}
+  - {fileID: 3518260854106869502, guid: fea1125d1bfa2f64989aead49f5c8da9, type: 3}
+  - {fileID: 2258076464096782538, guid: 6d55e4e1c5e00ae48bae49cd5c201535, type: 3}
+  - {fileID: 6450306896428924679, guid: 907c095237726da479bafeff252d3871, type: 3}
+  - {fileID: 6352018398395114246, guid: a6fca8641a26b7c498ac3d988fc2049d, type: 3}
+  - {fileID: 5490272689771217381, guid: 1ede8beb6b4bcfb468375ff896e28171, type: 3}
+  CheatKey: 304
+  HM: {fileID: 330816796}
+  UsedCheats: 0
 --- !u!1001 &8953727235597007505
 PrefabInstance:
   m_ObjectHideFlags: 0

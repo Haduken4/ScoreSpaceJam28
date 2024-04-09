@@ -8,13 +8,18 @@ public class MuteToggleButton : MonoBehaviour
 {
     public GameObject MutedCrossout = null;
 
-    bool muted = false;
+    static bool muted = false;
 
     Bus masterBus;
 
     private void Awake()
     {
         masterBus = RuntimeManager.GetBus("bus:/");
+    }
+
+    private void Start()
+    {
+        MutedCrossout?.SetActive(muted);
     }
 
     public void ToggleMuted()

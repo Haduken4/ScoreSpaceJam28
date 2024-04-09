@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed8b224f351a79f4eb3514cf7c5e0821, type: 3}
-  m_Color: {r: 0.41960785, g: 0.96862745, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ee40decb584a76147abc144ed56455e1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,10 +102,9 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 7138023652097450253}
   ScoreValue: 3
   NeighborBonus: 2
-  BonusType: 5
+  BonusType: 0
   Parasitic: 0
   MushroomPrefab: {fileID: 0}
   SpawnOffset: {x: 0, y: 0, z: 0}
@@ -123,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Identifier: 20
+  ScoreTextPoint: {fileID: 7138023652097450253}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
 --- !u!1 &1715581376633312139
@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715581376633312139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.387, z: 0}
+  m_LocalPosition: {x: -0.021, y: 0.337, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

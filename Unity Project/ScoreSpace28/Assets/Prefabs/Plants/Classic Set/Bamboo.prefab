@@ -102,9 +102,8 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 2163693649637044487}
-  ScoreValue: 3
-  ScorePerUnique: 5
+  ScoreValue: 5
+  ScorePerUnique: 7
 --- !u!114 &-5169609742129157265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 4
   Identifier: 19
+  ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
 --- !u!1 &3556614026663590568
