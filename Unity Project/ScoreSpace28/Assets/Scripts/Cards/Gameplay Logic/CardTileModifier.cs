@@ -46,7 +46,7 @@ public class CardTileModifier : MonoBehaviour
             Vector3 scorePos = tl.transform.position;
             scorePos.y += tl.transform.lossyScale.y / 2.0f;
 
-            AddScore(ScoreOnModify * GlobalGameData.PlantValueMultiplier, scorePos);
+            AddScore(Mathf.Ceil(ScoreOnModify * GlobalGameData.PlantValueMultiplier), scorePos);
         }
     }
 

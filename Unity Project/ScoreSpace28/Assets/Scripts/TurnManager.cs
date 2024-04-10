@@ -54,7 +54,7 @@ public class TurnManager : MonoBehaviour
             return;
         }
 
-        if(Input.GetKey(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
+        if(Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

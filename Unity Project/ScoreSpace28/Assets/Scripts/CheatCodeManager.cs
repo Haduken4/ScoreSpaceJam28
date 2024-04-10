@@ -14,6 +14,11 @@ public class CheatCodeManager : MonoBehaviour
     [HideInInspector]
     public bool UsedCheats = false;
 
+    private void Awake()
+    {
+        UsedCheats = false;
+    }
+
     // Update is called once per frame
     void Update()
     {

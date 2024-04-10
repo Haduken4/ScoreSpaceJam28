@@ -110,4 +110,9 @@ public class PlantData : MonoBehaviour
     {
         stm.SpawnScoreText(ScoreTextPoint.position, val);
     }
+
+    public void DisplayEffect(string effect)
+    {
+
+    }
 }
