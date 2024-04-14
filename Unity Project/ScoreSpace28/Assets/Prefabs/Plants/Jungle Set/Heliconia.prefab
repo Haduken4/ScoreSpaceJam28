@@ -119,7 +119,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 2
+  ScoreValue: 6
   PollinatorPrefab: {fileID: 2525737197141914225, guid: 69818b502af407240bd6d7717ad8ecc3, type: 3}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
 --- !u!1 &6989654263530811017

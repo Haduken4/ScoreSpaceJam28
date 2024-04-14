@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 6532813085618105776}
   - component: {fileID: 6173497548955743705}
   - component: {fileID: 39449740424618951}
+  - component: {fileID: 6465892641027241880}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -227,10 +228,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreText: 
+  ScoreValue: 1
+--- !u!114 &6465892641027241880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246678843577256311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20719ac26617ffd46a54c0879af98e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toMove: {fileID: 549920023789430007}
   VelocityStart: {x: 0, y: 1.5, z: 0}
   Acceleration: {x: 0, y: -2, z: 0}
   VelocityMin: {x: 0, y: 0, z: 0}
-  ScoreValue: 1
 --- !u!1 &4691914776726008078
 GameObject:
   m_ObjectHideFlags: 0

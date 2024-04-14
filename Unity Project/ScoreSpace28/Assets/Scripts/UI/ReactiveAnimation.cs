@@ -104,11 +104,11 @@ public class ReactiveAnimation : MonoBehaviour
 
         List<Transform> parents = overrides ? newState.AffectedParents : AffectedParents;
 
-        foreach(Transform t in parents)
-        {
-            // Start our worker recursive function, start depth at 0
-            UpdateParentAndChildrenRecursive(t, newState, maxDepth, 0);
-        }
+        //foreach(Transform t in parents)
+        //{
+        //    // Start our worker recursive function, start depth at 0
+        //    UpdateParentAndChildrenRecursive(t, newState, maxDepth, 0);
+        //}
     }
 
     public void ResetState()
