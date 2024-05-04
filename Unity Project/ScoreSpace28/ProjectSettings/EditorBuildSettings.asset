@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 296572b13f4838f40a04060555dbdf33
   - enabled: 1
+    path: Assets/Scenes/Game Scenes/Jungle Set Game.unity
+    guid: 13c5860826a0b434ca4937af15ff9ff8
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Classic Set Game.unity
+    guid: 25fa19328d25d2647bccf2ffefea0bcb
+  - enabled: 0
     path: Assets/Scenes/BarScene.unity
     guid: 8cf20e6620e261943a50dc4edcc8365b
   m_configObjects: {}
