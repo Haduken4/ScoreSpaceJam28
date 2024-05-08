@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 802401890488922884}
   m_Layer: 0
   m_Name: RoostPoint (1)
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 9166275822575871395}
   m_Layer: 0
   m_Name: RoostPoint (2)
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreValue: 10
   RootPrefab: {fileID: 4739318726843245153, guid: e982769e7ec0b0747bf85504c9e55178, type: 3}
-  rootPosOffset: {x: 0, y: 0, z: 0}
+  rootPosOffset: {x: 0, y: -0.65, z: 0}
   GlobalMultiplierAdd: 0
 --- !u!1 &9023157131928798812
 GameObject:
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 2036228281566419155}
   m_Layer: 0
   m_Name: RoostPoint
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,7 @@ TagManager:
   - Bee
   - Plant
   - CreatureDespawnPoint
+  - RoostPoint
   layers:
   - Default
   - TransparentFX

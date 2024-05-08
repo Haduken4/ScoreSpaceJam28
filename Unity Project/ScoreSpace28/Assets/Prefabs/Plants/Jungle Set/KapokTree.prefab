@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3901452071606501703}
   m_Layer: 0
   m_Name: RoostPoint
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
   ScoreValue: 12
-  ParrotPrefab: {fileID: 0}
+  ParrotPrefab: {fileID: 5889086739470752340, guid: 2b9560c1e74f8d241b8f64e267ec95d9, type: 3}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
 --- !u!114 &6196434178856050652
 MonoBehaviour:
@@ -219,7 +219,7 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreValue: 2
   RootPrefab: {fileID: 5282243181776957587, guid: 23d96e41185f0e5459fde32d0c9a092b, type: 3}
-  rootPosOffset: {x: 0, y: 0, z: 0}
+  rootPosOffset: {x: 0, y: -0.65, z: 0}
   GlobalMultiplierAdd: 0
 --- !u!1 &6884010325731894602
 GameObject:
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 6255325866151357085}
   m_Layer: 0
   m_Name: RoostPoint (2)
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 621484792063708248}
   m_Layer: 0
   m_Name: RoostPoint (1)
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6437364687862872912}
   m_Layer: 0
   m_Name: RoostPoint
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 2944867490680336539}
   m_Layer: 0
   m_Name: RoostPoint (1)
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 8778848815069303822}
   m_Layer: 0
   m_Name: RoostPoint (2)
-  m_TagString: Untagged
+  m_TagString: RoostPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

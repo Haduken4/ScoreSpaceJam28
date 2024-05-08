@@ -16,7 +16,12 @@ public class TreePlayEffect : OnPlayEffect
         foreach(GameObject tile in neighbors)
         {
             TileLogic tl = tile.GetComponent<TileLogic>();
-            if(tl.GetPlant() != null)
+            if(tl.GetPlant() == null) {}
+            else if(tl.GetPlant().GetComponent<PlantData>().Type == PlantType.TREE)
+            {
+                continue;
+            }
+            else
             {
                 Destroy(tl.GetPlant().gameObject);
                 tile.transform.DetachChildren();

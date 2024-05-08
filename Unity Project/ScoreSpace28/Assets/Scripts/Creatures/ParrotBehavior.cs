@@ -12,17 +12,21 @@ public class ParrotBehavior : CreatureBehavior
     public float SnapDist = 0.1f;
 
     Transform lastTree = null;
+    Transform lastPoint = null;
     Transform target = null;
     Vector3 curveAffectorPoint = Vector3.zero;
+    bool curving = true;
 
     bool goingToCoffee = false;
-    bool ateCoffee = false;
+    bool ateCoffee = false; // restrict to 1 coffee per turn with current implementation
     bool extraTree = false;
+
+    Rigidbody2D rb2d;
 
     // Start is called before the first frame update
     protected override void Start()
     {
-        
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,6 +40,20 @@ public class ParrotBehavior : CreatureBehavior
             {
                 ReachedTarget();
             }
+
+            Vector2 curveAdd = Vector2.zero;
+            if(curving && targetDist < NoCurveDist && false)
+            {
+                curveAdd = (curveAffectorPoint - transform.position) * CurveStrength;
+            }
+
+            Vector2 dir = (target.position - transform.position);
+            dir += curveAdd;
+            rb2d.velocity = MoveSpeed * dir.normalized;
+        }
+        else
+        {
+            rb2d.velocity = Vector2.zero;
         }
     }
 
@@ -58,13 +76,18 @@ public class ParrotBehavior : CreatureBehavior
         }
 
         // Gain score for going to a tree
-        target.GetComponent<PlantData>().AddScore(ScoreValue + JungleSetData.BirdOfParadiseBonus);
+        target.parent.GetComponent<PlantData>().AddScore(ScoreValue + JungleSetData.BirdOfParadiseBonus);
 
         if(extraTree)
         {
             extraTree = false;
             GoToNewTarget();
         }
+
+        lastPoint = target;
+        lastTree = target.parent;
+        target.GetComponent<RoostPoint>().RoostingParrot = null;
+        target = null;
     }
 
     void GoToNewTarget()
@@ -81,14 +104,31 @@ public class ParrotBehavior : CreatureBehavior
         GameObject[] roostPoints = GameObject.FindGameObjectsWithTag("RoostPoint");
 
         List<Transform> validPoints = new List<Transform>();
+        Transform repeatStorage = null;
 
         foreach (GameObject rp in roostPoints)
         {
+            if(rp.transform.parent != lastTree && rp.transform != lastPoint)
+            {
+                repeatStorage = rp.transform;
+            }
+
             if(rp.GetComponent<RoostPoint>().RoostingParrot == null && rp.transform.parent != lastTree)
             {
                 validPoints.Add(rp.transform);
             }
         }
+
+        target = validPoints.Count != 0 ? validPoints[Random.Range(0, validPoints.Count)] : repeatStorage;
+        if (target == null)
+        {
+            // Leave this mortal coil
+            return;
+        }
+
+        curving = true;
+        CalculateTargetTrajectory();
+        target.GetComponent<RoostPoint>().RoostingParrot = this;
     }
 
     bool AttemptGoToCoffee()
@@ -100,7 +140,8 @@ public class ParrotBehavior : CreatureBehavior
             if(coffee.HasFruitAvailable())
             {
                 coffee.ClaimFruit();
-                SetTarget(coffee.transform);
+                target = coffee.transform;
+                curving = false;
                 goingToCoffee = true;
                 break;
             }
@@ -109,26 +150,29 @@ public class ParrotBehavior : CreatureBehavior
         return goingToCoffee;
     }
 
-    void SetTarget(Transform t)
+    // Sets our curve affector to give the arcing flight effect
+    void CalculateTargetTrajectory()
     {
-        target = t;
         // Set curve affector
-    }
-
-    Vector2 PerpendicularUp(Vector2 v)
-    {
-        Vector2 vRet = v;
-        vRet.x = v.y;
-        vRet.y = v.x;
-        if(v.x < 0)
+        Vector2 dir = target.transform.position - transform.position;
+        Vector2 perp = Vector2.zero;
+        if (dir.x < 0)
         {
-            vRet.y *= -1;
+            perp.y = -dir.x;
+            perp.x = dir.y;
         }
         else
         {
-            vRet.x *= -1;
+            perp.y = dir.x;
+            perp.x = -dir.y;
         }
 
-        return vRet;
+        curveAffectorPoint = (Vector2)transform.position + (dir / 0.5f + perp / 0.5f);
+    }
+
+    public void TreeInit(Transform point)
+    {
+        lastPoint = point;
+        lastTree = point.parent;
     }
 }
