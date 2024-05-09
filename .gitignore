@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+hooks/post-checkout
+hooks/post-commit
+hooks/post-merge
+hooks/pre-push
+lfs/objects/07/45/074584f1bcc5302793cb03b2f3d7a1cebd729b16a1e0d7034b2ddbd96d7c84c7
+lfs/objects/42/2f/422f4cb6cac170af8aca41a37b49e131c7129276c36e00f6b0dcd2e0c4840895
+lfs/tmp/451030291
