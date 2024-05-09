@@ -55,10 +55,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7255624766691926392}
   - component: {fileID: 3303720172983306555}
-  - component: {fileID: 4104512057988466343}
   - component: {fileID: 5549631775426107543}
+  - component: {fileID: 7134520519500268328}
   m_Layer: 0
-  m_Name: MahoganyTree
+  m_Name: IpeTree
   m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,25 +135,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4104512057988466343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6461040438136815093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56e963b4d10f2d4ead90c5937d4029b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ActivationDelay: 0.1
-  VisualEffect: {fileID: 0}
-  VFXPoint: {fileID: 0}
-  ScoreValue: 40
-  RootPrefab: {fileID: 7426930988540409359, guid: 1614d203e85b5394596b1ef061918be4, type: 3}
-  rootPosOffset: {x: 0, y: -0.65, z: 0}
-  GlobalMultiplierAdd: 0
 --- !u!114 &5549631775426107543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +152,22 @@ MonoBehaviour:
   ScoreTextPoint: {fileID: 6963062689904203659}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!114 &7134520519500268328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6461040438136815093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5bb639f17be3a46a59ddbbe4847bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivationDelay: 0.1
+  VisualEffect: {fileID: 0}
+  VFXPoint: {fileID: 0}
+  ScoreValue: 12
 --- !u!1 &8283010238398452331
 GameObject:
   m_ObjectHideFlags: 0

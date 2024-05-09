@@ -102,9 +102,9 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 3
+  ScoreValue: 2
   NeighborBonus: 2
-  BonusType: 0
+  BonusType: 5
   Parasitic: 0
   MushroomPrefab: {fileID: 0}
   SpawnOffset: {x: 0, y: 0, z: 0}

@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Creates roots which destroy adjacent plants
+  m_text: Doesn't create roots
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 4760325075012859029}
   - component: {fileID: 1611380932363937636}
   m_Layer: 5
-  m_Name: MahoganyCard
+  m_Name: IpeCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '40
+  m_text: '12
 
 '
   m_isRightToLeft: 0

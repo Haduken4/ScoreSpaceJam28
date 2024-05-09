@@ -259,7 +259,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 10
+  ScoreValue: 15
   RootPrefab: {fileID: 4739318726843245153, guid: e982769e7ec0b0747bf85504c9e55178, type: 3}
   rootPosOffset: {x: 0, y: -0.65, z: 0}
   GlobalMultiplierAdd: 0

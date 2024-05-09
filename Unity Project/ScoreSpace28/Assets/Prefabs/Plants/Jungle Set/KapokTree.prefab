@@ -199,7 +199,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 12
+  ScoreValue: 20
   ParrotPrefab: {fileID: 5889086739470752340, guid: 2b9560c1e74f8d241b8f64e267ec95d9, type: 3}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
 --- !u!114 &6196434178856050652

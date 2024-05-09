@@ -30,7 +30,7 @@ public enum PlantIdentifier
     JUNGLE_GINGER = 26,
     JUNGLE_KAPOK = 27,
     JUNGLE_CANNONBALL = 28,
-    JUNGLE_MAHOGANY = 29
+    JUNGLE_IPE = 29
 }
 
 public class PlantData : MonoBehaviour

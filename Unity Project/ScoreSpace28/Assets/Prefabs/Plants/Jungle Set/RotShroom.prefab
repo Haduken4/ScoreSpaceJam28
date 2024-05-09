@@ -42,8 +42,7 @@ GameObject:
   - component: {fileID: 5061222937345006734}
   - component: {fileID: 5464689437813438507}
   - component: {fileID: 2397582509752110416}
-  - component: {fileID: 2010816974110025165}
-  - component: {fileID: 5630928241113184582}
+  - component: {fileID: 1381691073072987146}
   m_Layer: 0
   m_Name: RotShroom
   m_TagString: Plant
@@ -136,7 +135,7 @@ MonoBehaviour:
   ScoreTextPoint: {fileID: 3022911455396220004}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
---- !u!114 &2010816974110025165
+--- !u!114 &1381691073072987146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,23 +144,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7041635796199970432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b472ebb09f3b74040b7cb8e90734e47e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DestroyType: 5
---- !u!114 &5630928241113184582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041635796199970432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5bb639f17be3a46a59ddbbe4847bac, type: 3}
+  m_Script: {fileID: 11500000, guid: 856ec1bc16f5b184eb6e3ca0f1376ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
   ScoreValue: 0
+  DestroyType: 5
+  ScorePerDestroy: 3

@@ -39,6 +39,10 @@ public class ParrotBehavior : CreatureBehavior
             if (targetDist <= SnapDist)
             {
                 ReachedTarget();
+                if (target == null)
+                {
+                    return;
+                }
             }
 
             Vector2 curveAdd = Vector2.zero;
