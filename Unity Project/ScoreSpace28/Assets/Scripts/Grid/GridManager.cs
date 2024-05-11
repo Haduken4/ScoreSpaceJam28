@@ -61,8 +61,9 @@ public class GridManager : MonoBehaviour
                         {
                             tiles[x][y].SetActive(true);
                             TileInitialAnimation tia = tiles[x][y].GetComponent<TileInitialAnimation>();
-                            tia.Bottom += Vector3.forward * -(y / 10.0f);
-                            tia.Top += Vector3.forward * -(y / 10.0f);
+                            tia.Bottom += Vector3.forward * (y / 10.0f);
+                            tia.Top += Vector3.forward * (y / 10.0f);
+                            tia.InitZ(y / 10.0f);
                         }
                     }
                 }

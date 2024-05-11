@@ -18,15 +18,22 @@ public class CardLogic : MonoBehaviour
     bool inPlayArea = false;
 
     GridManager gm = null;
+    TurnManager tm = null;
+
     private void Start()
     {
         gm = FindFirstObjectByType<GridManager>();
+        tm = FindFirstObjectByType<TurnManager>();
     }
 
     // Create indicators
     public void EnterPlayArea()
     {
-        inPlayArea = true;
+        // Make sure its still our turn
+        if (!tm.TurnEnded)
+        {
+            inPlayArea = true;
+        }
 
         BroadcastMessage("OnEnterPlayArea", SendMessageOptions.DontRequireReceiver);
     }

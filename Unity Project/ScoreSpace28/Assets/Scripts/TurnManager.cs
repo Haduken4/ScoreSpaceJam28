@@ -32,6 +32,9 @@ public class TurnManager : MonoBehaviour
     [HideInInspector]
     public bool GameEnded = false;
 
+    [HideInInspector]
+    public bool TurnEnded = false;
+
     void Awake()
     {
         GlobalGameData.Score = 0;
@@ -83,6 +86,7 @@ public class TurnManager : MonoBehaviour
             if(timer <= 0.0f)
             {
                 TurnStart();
+                TurnEnded = false;
             }
             return;
         }
@@ -149,6 +153,8 @@ public class TurnManager : MonoBehaviour
     void TurnEnd()
     {
         Debug.Log("Turn Ended");
+        TurnEnded = true;
+
         hm.DiscardHand();
 
         // Reset turn specific plant data
