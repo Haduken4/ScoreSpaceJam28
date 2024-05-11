@@ -5,6 +5,7 @@ using UnityEngine;
 public class ParasiticMushroomPlayEffect : OnPlayEffect
 {
     public GameObject BeePrefab = null;
+    public GameObject TextPrefab = null;
     public float ScoreGainsPerSiphon = 0.5f;
     public float SizeGainsPerSiphon = 0.1f;
     public float PerfectScore = 5.0f;
@@ -37,6 +38,8 @@ public class ParasiticMushroomPlayEffect : OnPlayEffect
             sizeMult += PerfectSize;
 
             // Spawn effect text
+            GameObject t = Instantiate(TextPrefab, FindFirstObjectByType<Canvas>().transform);
+            t.transform.position = pd.ScoreTextPoint.position + Vector3.up;
         }
 
         GameObject bee = Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);

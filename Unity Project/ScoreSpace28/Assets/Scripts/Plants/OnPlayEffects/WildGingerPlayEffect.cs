@@ -21,8 +21,8 @@ public class WildGingerPlayEffect : OnPlayEffect
 
             if (plant && plant.GetComponent<PlantData>().Type == SubtractType)
             {
-                pd.AddScoreNoDisplay(SubtractValue);
-                plant.GetComponent<PlantData>().DisplayScore(Mathf.Floor(SubtractValue));
+                pd.AddScoreNoDisplay(-SubtractValue);
+                plant.GetComponent<PlantData>().DisplayScore(Mathf.Floor(-SubtractValue));
             }
         }
 
