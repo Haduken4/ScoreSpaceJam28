@@ -163,6 +163,9 @@ public class HummingbirdBehavior : CreatureBehavior
 
         target = possibleTargets[Random.Range(0, possibleTargets.Count)];
         fake = fakeTargets.Contains(target);
+        Vector3 myPos = transform.position;
+        myPos.z = target.position.z - 0.01f;
+        transform.position = myPos;
 
         // If we chose the same plant as last time for some reason
         if (Vector2.Distance(transform.position, target.position) <= 0.1f)

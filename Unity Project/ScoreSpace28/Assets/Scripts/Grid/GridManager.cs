@@ -63,7 +63,7 @@ public class GridManager : MonoBehaviour
                             TileInitialAnimation tia = tiles[x][y].GetComponent<TileInitialAnimation>();
                             tia.Bottom += Vector3.forward * (y / 10.0f);
                             tia.Top += Vector3.forward * (y / 10.0f);
-                            tia.InitZ(y / 10.0f);
+                            //tia.InitZ(y / 10.0f);
                         }
                     }
                 }
@@ -88,14 +88,15 @@ public class GridManager : MonoBehaviour
         for (int x = 0; x < Width; ++x)
         {
             tiles.Add(new List<GameObject>());
-            Vector2 pos = startPos;
+            Vector3 pos = startPos;
 
             for (int y = 0; y < Height; ++y)
             {
                 pos.x += TileSize.x * 0.7f;
                 pos.y += TileSize.y * 0.7f;
+                pos.z = pos.y / 10.0f;
 
-                Vector2 addPos = transform.position;
+                Vector3 addPos = transform.position;
 
                 GameObject tile = Instantiate(TilePrefab, pos + addPos, Quaternion.identity, transform);
                 tile.transform.localScale = tileScale;
