@@ -28,9 +28,10 @@ public class LeaderboardButton : MonoBehaviour
         {
             cheated = ccm.UsedCheats;
 
-            StatusText.text = "Used cheats! No leaderboard submission allowed.";
-
-            // Hello
+            if (ccm.UsedCheats)
+            {
+                StatusText.text = "Used cheats! No leaderboard submission allowed.";
+            }
         }
     }
 
