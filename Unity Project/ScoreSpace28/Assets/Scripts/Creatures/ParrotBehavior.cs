@@ -26,6 +26,8 @@ public class ParrotBehavior : CreatureBehavior
     // Start is called before the first frame update
     protected override void Start()
     {
+        base.Start();
+
         rb2d = GetComponent<Rigidbody2D>();
     }
 

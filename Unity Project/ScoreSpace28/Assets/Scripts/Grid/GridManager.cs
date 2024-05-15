@@ -159,6 +159,58 @@ public class GridManager : MonoBehaviour
         return adjacents;
     }
 
+    public List<GameObject> GetPlayableTiles(List<GameObject> cards)
+    {
+        List<GameObject> playableTiles = new List<GameObject>();
+        List<PlantType> checkedTypes = new List<PlantType>();
+
+        foreach (GameObject card in cards)
+        {
+            PlantType type = card.GetComponent<CardLogic>().CardType;
+            if (checkedTypes.Contains(type))
+            {
+                continue;
+            }
+
+            for (int x = 0; x < Width; ++x)
+            {
+                for(int y = 0; y < Height; ++y)
+                {
+                    TileLogic tl = tiles[x][y].GetComponent<TileLogic>();
+                    if (tl.CanPlant(type))
+                    {
+                        playableTiles.Add(tiles[x][y]);
+                    }
+                }
+            }
+
+            checkedTypes.Add(type);
+        }
+
+        return playableTiles;
+    }
+
+    public List<GameObject> GetPlayableTiles(GameObject card)
+    {
+        List<GameObject> playableTiles = new List<GameObject>();
+
+        PlantType type = card.GetComponent<CardLogic>().CardType;
+
+        for (int x = 0; x < Width; ++x)
+        {
+            for (int y = 0; y < Height; ++y)
+            {
+                TileLogic tl = tiles[x][y].GetComponent<TileLogic>();
+                if (tl.CanPlant(type))
+                {
+                    playableTiles.Add(tiles[x][y]);
+                }
+            }
+        }
+
+        return playableTiles;
+    }
+
     public void SetHoveredTile(ReactiveTile newTile)
     {
         if(HoveredTile != newTile)

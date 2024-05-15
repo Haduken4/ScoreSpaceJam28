@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3d8235fd28f334a904b86c3e630cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayingOpacity: 0.5
-  LerpSpeed: 0.3
+  PlayingOpacity: 0.3
+  LerpSpeed: 0.1
 --- !u!1 &6884010325731894602
 GameObject:
   m_ObjectHideFlags: 0

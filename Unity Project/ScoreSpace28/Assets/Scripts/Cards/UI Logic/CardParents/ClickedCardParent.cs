@@ -79,5 +79,15 @@ public class ClickedCardParent : CardParent
             return;
         }
         childPos = t.localPosition;
+
+        List<GameObject> remainingPlayableTiles = FindFirstObjectByType<GridManager>().GetPlayableTiles(t.gameObject);
+
+        if (remainingPlayableTiles.Count <= 3)
+        {
+            foreach (GameObject tile in remainingPlayableTiles)
+            {
+                tile.GetComponent<ReactiveTile>().FinalThreeTile();
+            }
+        }
     }
 }
