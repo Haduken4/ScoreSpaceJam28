@@ -22,18 +22,39 @@ public class LeaderboardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LootLockerSDKManager.StartGuestSession((response) =>
+        if (PlayerPrefs.HasKey("LootLockerID"))
         {
-            if (!response.success)
+            playerID = PlayerPrefs.GetString("LootLockerID");
+            LootLockerSDKManager.StartGuestSession(playerID, (response) =>
             {
-                // Failed to start session
-                loaded = false;
-                return;
-            }
+                if (!response.success)
+                {
+                    // Failed to start session
+                    loaded = false;
+                    return;
+                }
 
-            playerID = response.player_identifier;
-            loaded = true;
-        });
+                playerID = response.player_identifier;
+                PlayerPrefs.SetString("LootLockerID", playerID);
+                loaded = true;
+            });
+        }
+        else
+        {
+            LootLockerSDKManager.StartGuestSession((response) =>
+            {
+                if (!response.success)
+                {
+                    // Failed to start session
+                    loaded = false;
+                    return;
+                }
+
+                playerID = response.player_identifier;
+                PlayerPrefs.SetString("LootLockerID", playerID);
+                loaded = true;
+            });
+        }        
     }
 
     public bool SubmitScore(int score)
