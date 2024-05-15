@@ -154,6 +154,13 @@ MonoBehaviour:
   ScoreValue: 1
   PollinatorTypes: 01000000
   FakePollinators: 15000000
+  OnMoveSound:
+    Guid:
+      Data1: -1524054531
+      Data2: 1181651542
+      Data3: 598563508
+      Data4: -193198969
+    Path: event:/SFX/PlantSFX/HummingBird
 --- !u!50 &-8510584377113053038
 Rigidbody2D:
   serializedVersion: 4

@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,8 @@ public class HummingbirdBehavior : CreatureBehavior
     bool fake = false;
 
     bool leavingGarden = false;
+
+    public EventReference OnMoveSound;
 
     override protected void Start()
     {
@@ -190,6 +193,8 @@ public class HummingbirdBehavior : CreatureBehavior
         CalculateNextPos();
         lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
+
+        AudioManager.instance.PlayOneShot(OnMoveSound, this.transform.position);
     }
 
     void GoToDespawnPoint()
@@ -204,6 +209,7 @@ public class HummingbirdBehavior : CreatureBehavior
         CalculateNextPos();
         lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
+
     }
 
     public override void SetSpawnerPlant(Transform plant)
