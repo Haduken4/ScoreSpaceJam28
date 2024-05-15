@@ -35,6 +35,9 @@ public class TurnManager : MonoBehaviour
     [HideInInspector]
     public bool TurnEnded = false;
 
+    [HideInInspector]
+    public bool TutorialPopup = true;
+
     int activeGameplayEffects = 0;
 
     void Awake()
@@ -49,6 +52,11 @@ public class TurnManager : MonoBehaviour
 
     void Update()
     {
+        if (TutorialPopup)
+        {
+            return;
+        }
+
         if(InitialTimer > 0.0f)
         {
             InitialTimer -= Time.deltaTime;
