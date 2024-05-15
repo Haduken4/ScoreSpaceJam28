@@ -64,6 +64,7 @@ public class ParrotBehavior : CreatureBehavior
     public override void OnEndOfTurn()
     {
         ateCoffee = false;
+        tm.GameplayEffectStart();
         GoToNewTarget();
     }
 
@@ -86,6 +87,10 @@ public class ParrotBehavior : CreatureBehavior
         {
             extraTree = false;
             GoToNewTarget();
+        }
+        else // Otherwise this was our last tree
+        {
+            tm.GameplayEffectStop();
         }
 
         lastPoint = target;
@@ -126,7 +131,8 @@ public class ParrotBehavior : CreatureBehavior
         target = validPoints.Count != 0 ? validPoints[Random.Range(0, validPoints.Count)] : repeatStorage;
         if (target == null)
         {
-            // Leave this mortal coil
+            // Leave this mortal coil, this should be impossible since you can't destroy trees in jungle set
+            tm.GameplayEffectStop();
             return;
         }
 

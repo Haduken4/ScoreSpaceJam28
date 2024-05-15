@@ -40,6 +40,7 @@ public class BeeBehavior : CreatureBehavior
                 target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
                 lastTarget = target;
                 target = null;
+                tm.GameplayEffectStop();
             }
         }
     }
@@ -51,6 +52,8 @@ public class BeeBehavior : CreatureBehavior
 
     void GoToNewTarget()
     {
+        tm.GameplayEffectStart();
+
         GameObject[] plants = GameObject.FindGameObjectsWithTag("Plant");
 
         List<Transform> validPlants = new List<Transform>();
@@ -92,6 +95,7 @@ public class BeeBehavior : CreatureBehavior
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
             target = null;
+            tm.GameplayEffectStop();
             return;
         }
 

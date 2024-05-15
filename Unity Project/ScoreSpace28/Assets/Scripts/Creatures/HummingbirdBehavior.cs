@@ -78,6 +78,8 @@ public class HummingbirdBehavior : CreatureBehavior
 
         if (moveCount == 0) // Done moving
         {
+            tm.GameplayEffectStop();
+
             if(leavingGarden)
             {
                 Destroy(gameObject);
@@ -121,6 +123,8 @@ public class HummingbirdBehavior : CreatureBehavior
 
     void GoToNewTarget()
     {
+        tm.GameplayEffectStart();
+
         GameObject[] plants = GameObject.FindGameObjectsWithTag("Plant");
 
         List<Transform> possibleTargets = new List<Transform>();
@@ -180,6 +184,7 @@ public class HummingbirdBehavior : CreatureBehavior
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
             target = null;
+            tm.GameplayEffectStop();
             return;
         }
 
