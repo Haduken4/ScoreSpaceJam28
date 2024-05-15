@@ -18,4 +18,9 @@ public class CreatureBehavior : MonoBehaviour
     {
 
     }
+
+    public virtual void UnParent()
+    {
+        
+    }
 }

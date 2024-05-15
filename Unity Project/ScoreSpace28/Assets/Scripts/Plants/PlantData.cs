@@ -104,6 +104,7 @@ public class PlantData : MonoBehaviour
     public void ResetPollinate()
     {
         pollinatedThisTurn = false;
+        Pollinator = null;
     }
 
     public void DisplayScore(float val)

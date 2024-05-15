@@ -87,9 +87,11 @@ public class CardLogic : MonoBehaviour
         plant.transform.position -= Vector3.forward;
         plant.transform.localScale *= 0.1f; // Start plant small so it can grow
 
-        FindFirstObjectByType<TurnManager>().CardPlayed();
+        tm.CardPlayed();
 
         AudioManager.instance.PlayOneShot(OnPlaySound, this.transform.position);
+
+        //tm.GameplayEffectStart();
 
         return true;
     }

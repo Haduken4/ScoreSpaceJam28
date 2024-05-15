@@ -209,6 +209,7 @@ public class HummingbirdBehavior : CreatureBehavior
         CalculateNextPos();
         lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
+        //FindFirstObjectByType<TurnManager>().GameplayEffectStop();
 
     }
 

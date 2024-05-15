@@ -14,8 +14,8 @@ public class TurnManager : MonoBehaviour
     public int TrashesPerTurn = 2;
     int cardsTrashed = 0;
 
-    public float TurnTransitionTime = 2.0f;
-    public float TurnTransitionTimeBees = 4.0f;
+    public float TurnTransitionMinTime = 2.0f;
+    public float CreatureDelay = 0.1f;
 
     public int GameEndMusicSwap = 2;
 
@@ -34,6 +34,8 @@ public class TurnManager : MonoBehaviour
 
     [HideInInspector]
     public bool TurnEnded = false;
+
+    int activeGameplayEffects = 0;
 
     void Awake()
     {
@@ -73,13 +75,13 @@ public class TurnManager : MonoBehaviour
 
             return;
         }
-        else
+        else if(activeGameplayEffects != 0)
         {
             CheckEndCondition();
         }
 
         // Counting down to next turn
-        if(timer > 0.0f && cardsPlayed == PlaysPerTurn)
+        if(timer > 0.0f && cardsPlayed == PlaysPerTurn && activeGameplayEffects == 0)
         {
             timer -= Time.deltaTime;
 
@@ -91,7 +93,7 @@ public class TurnManager : MonoBehaviour
             return;
         }
         
-        if(cardsPlayed >= PlaysPerTurn)
+        if(cardsPlayed >= PlaysPerTurn && activeGameplayEffects == 0)
         {
             TurnEnd();
         }
@@ -173,18 +175,20 @@ public class TurnManager : MonoBehaviour
 
         // Activate creature end of turns
         CreatureBehavior[] creatures = FindObjectsOfType<CreatureBehavior>();
+        int i = 0;
         foreach(CreatureBehavior creature in creatures)
         {
-            creature.OnEndOfTurn();
+            StartCoroutine(ActivateCreatureEffect(creature, i * CreatureDelay));
+            ++i;
         }
 
-        timer = creatures.Length > 0 ? TurnTransitionTimeBees : TurnTransitionTime;
+        timer = TurnTransitionMinTime;
     }
 
     public void CardPlayed()
     {
         cardsPlayed++;
-        CheckEndCondition();
+        //CheckEndCondition();
     }
 
     public bool CanTrash()
@@ -195,5 +199,22 @@ public class TurnManager : MonoBehaviour
     public void CardTrashed()
     {
         cardsTrashed++;
+    }
+
+    public void GameplayEffectStart()
+    {
+        activeGameplayEffects += 1;
+    }
+
+    public void GameplayEffectStop()
+    {
+        activeGameplayEffects -= 1;
+    }
+
+    IEnumerator ActivateCreatureEffect(CreatureBehavior creature, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        creature.OnEndOfTurn();
     }
 }
