@@ -7374,19 +7374,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8297566522687087956, guid: 2fc202471f5f79247907afc697fab050, type: 3}
       propertyPath: MusicSet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8297566522687087956, guid: 2fc202471f5f79247907afc697fab050, type: 3}
       propertyPath: MusicSwap
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8297566522687087956, guid: 2fc202471f5f79247907afc697fab050, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8297566522687087956, guid: 2fc202471f5f79247907afc697fab050, type: 3}
       propertyPath: AmbienceSwap
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8732932647648386551, guid: 2fc202471f5f79247907afc697fab050, type: 3}
       propertyPath: m_Name
@@ -10356,21 +10356,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <music>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  MusicStateParameter: 
-  MusicSetParameter: 
+      Data1: -989432671
+      Data2: 1231265716
+      Data3: -964421491
+      Data4: 884806818
+    Path: event:/Music/CoreMusicSETUP
+  MusicStateParameter: MusicState
+  MusicSetParameter: MusicSet
   <ambience>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  AmbienceSwitchParameter: 
+      Data1: 178485083
+      Data2: 1196329148
+      Data3: 281933456
+      Data4: -57190615
+    Path: event:/Ambience/AmbienceMaster
+  AmbienceSwitchParameter: AmbienceSwitch
 --- !u!114 &1917634579
 MonoBehaviour:
   m_ObjectHideFlags: 0

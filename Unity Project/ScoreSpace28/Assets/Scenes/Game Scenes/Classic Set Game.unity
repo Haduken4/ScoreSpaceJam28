@@ -648,11 +648,11 @@ MonoBehaviour:
   MusicSetParameter: MusicSet
   <ambience>k__BackingField:
     Guid:
-      Data1: 1647099981
-      Data2: 1100600119
-      Data3: -978869333
-      Data4: -867520249
-    Path: event:/Ambience/ForestAmbience
+      Data1: 178485083
+      Data2: 1196329148
+      Data3: 281933456
+      Data4: -57190615
+    Path: event:/Ambience/AmbienceMaster
   AmbienceSwitchParameter: AmbienceSwitch
 --- !u!114 &97880039
 MonoBehaviour:
