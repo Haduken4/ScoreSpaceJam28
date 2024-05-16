@@ -83,7 +83,7 @@ public class TurnManager : MonoBehaviour
 
             return;
         }
-        else if(activeGameplayEffects != 0)
+        else if(activeGameplayEffects == 0)
         {
             CheckEndCondition();
         }
