@@ -29,7 +29,7 @@ public class OnPlayEffect : MonoBehaviour
         tm = FindFirstObjectByType<TurnManager>();
         pd = GetComponent<PlantData>();
         timer = ActivationDelay;
-        tm.GameplayEffectStart();
+        //tm.GameplayEffectStart();
     }
 
     // Update is called once per frame

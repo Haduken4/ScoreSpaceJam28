@@ -67,7 +67,8 @@ public class CardLogic : MonoBehaviour
         {
             // Get tile modifier component and modify the tile I guess
             GetComponent<CardTileModifier>().ModifyTile(tl);
-            FindFirstObjectByType<TurnManager>().CardPlayed();
+            tm.CardPlayed();
+            tm.GameplayEffectStop();
             AudioManager.instance.PlayOneShot(OnPlaySound, this.transform.position);
             return true;
         }

@@ -88,7 +88,12 @@ public class ParrotBehavior : CreatureBehavior
         if(extraTree)
         {
             extraTree = false;
+            lastPoint = target;
+            lastTree = target.parent;
+            target.GetComponent<RoostPoint>().RoostingParrot = null;
+            target = null;
             GoToNewTarget();
+            return;
         }
         else // Otherwise this was our last tree
         {

@@ -196,6 +196,7 @@ public class TurnManager : MonoBehaviour
     public void CardPlayed()
     {
         cardsPlayed++;
+        GameplayEffectStart();
         //CheckEndCondition();
     }
 
