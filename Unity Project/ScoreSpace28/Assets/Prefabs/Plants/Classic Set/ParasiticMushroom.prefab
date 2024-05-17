@@ -126,6 +126,8 @@ MonoBehaviour:
   SizeGainsPerSiphon: 0.1
   PerfectScore: 5
   PerfectSize: 0.5
+  PerfectBeeAnimation: {fileID: 9100000, guid: f36531d9da135e543b6a607c7b72b970, type: 2}
+  PerfectBeeSprite: {fileID: 915833341, guid: dd096a9ee5c8a6a41951cacf1c8a90d8, type: 3}
   SiphonTargets: 00000000
 --- !u!1 &8962274306792231802
 GameObject:
