@@ -16,6 +16,7 @@ public class TurnManager : MonoBehaviour
 
     public float TurnTransitionMinTime = 2.0f;
     public float CreatureDelay = 0.1f;
+    public float CreatureGraceTimer = 5.0f;
 
     public int GameEndMusicSwap = 2;
 
@@ -39,6 +40,7 @@ public class TurnManager : MonoBehaviour
     public bool TutorialPopup = true;
 
     int activeGameplayEffects = 0;
+    float changeTimer = 0;
 
     void Awake()
     {
@@ -67,7 +69,13 @@ public class TurnManager : MonoBehaviour
             return;
         }
 
-        if(Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
+        if (changeTimer >= 0.0f)
+        {
+            activeGameplayEffects = 0;
+            changeTimer = CreatureGraceTimer;
+        }
+
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -213,11 +221,13 @@ public class TurnManager : MonoBehaviour
     public void GameplayEffectStart()
     {
         activeGameplayEffects += 1;
+        changeTimer = CreatureGraceTimer;
     }
 
     public void GameplayEffectStop()
     {
         activeGameplayEffects = Mathf.Max(0, activeGameplayEffects - 1);
+        changeTimer = CreatureGraceTimer;
     }
 
     IEnumerator ActivateCreatureEffect(CreatureBehavior creature, float delay)
