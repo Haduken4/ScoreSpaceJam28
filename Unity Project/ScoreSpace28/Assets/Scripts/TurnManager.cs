@@ -130,26 +130,29 @@ public class TurnManager : MonoBehaviour
             return;
         }
 
-        if(!gm.DoneMakingGrid())
+        if (TurnEnded)
         {
             return;
         }
 
-        foreach (TileLogic tl in FindObjectsOfType<TileLogic>())
+        if (!gm.DoneMakingGrid())
         {
-            if (tl.GetPlant() == null)
-            {
-                return;
-            }
+            return;
         }
 
         // Check if we can still play any cards
-        if (cards.CheckCardsPlayable(hm.GetCardObjects()))
+        if (hm.GetCardObjects().Count == 0 || cards.CheckCardsPlayable(hm.GetCardObjects()))
         {
             return;
         }
 
-        GameEnded = true;
+        if (!GameEnded)
+        {
+            GameEnded = true;
+            TurnEnded = true;
+            return;
+        }
+        
         if (GlobalGameData.Score > GlobalGameData.HighScore)
         {
             NewHighScore = true;
