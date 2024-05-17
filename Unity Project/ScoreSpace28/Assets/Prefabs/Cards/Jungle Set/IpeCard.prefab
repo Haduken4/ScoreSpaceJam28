@@ -295,11 +295,11 @@ MonoBehaviour:
   CardType: 3
   OnPlaySound:
     Guid:
-      Data1: -927985774
-      Data2: 1324947883
-      Data3: 642079635
-      Data4: 2017895744
-    Path: event:/SFX/PlantSFX/TreePlanting
+      Data1: 2102305866
+      Data2: 1077918278
+      Data3: -1678366073
+      Data4: 847489894
+    Path: event:/SFX/PlantSFX/IpeTree
 --- !u!1 &2700711572520444908
 GameObject:
   m_ObjectHideFlags: 0

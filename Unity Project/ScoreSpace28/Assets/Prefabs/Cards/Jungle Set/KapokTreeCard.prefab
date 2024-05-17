@@ -371,11 +371,11 @@ MonoBehaviour:
   CardType: 3
   OnPlaySound:
     Guid:
-      Data1: -927985774
-      Data2: 1324947883
-      Data3: 642079635
-      Data4: 2017895744
-    Path: event:/SFX/PlantSFX/TreePlanting
+      Data1: 1142577734
+      Data2: 1154040062
+      Data3: 290327730
+      Data4: 506915452
+    Path: event:/SFX/PlantSFX/KopakTree
 --- !u!1 &8214564174803188278
 GameObject:
   m_ObjectHideFlags: 0

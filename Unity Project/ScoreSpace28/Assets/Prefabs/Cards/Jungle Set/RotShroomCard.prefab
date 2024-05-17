@@ -160,11 +160,11 @@ MonoBehaviour:
   CardType: 0
   OnPlaySound:
     Guid:
-      Data1: -674571389
-      Data2: 1322512371
-      Data3: -148995676
-      Data4: 638150655
-    Path: event:/SFX/PlantSFX/Planting
+      Data1: 188628793
+      Data2: 1129642441
+      Data3: -1429393242
+      Data4: 1034169452
+    Path: event:/SFX/PlantSFX/Stump
 --- !u!1 &5367799959303407593
 GameObject:
   m_ObjectHideFlags: 0
