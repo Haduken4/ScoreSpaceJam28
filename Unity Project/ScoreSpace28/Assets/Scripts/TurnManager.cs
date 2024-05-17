@@ -46,6 +46,7 @@ public class TurnManager : MonoBehaviour
     {
         GlobalGameData.Score = 0;
         GlobalGameData.PlantValueMultiplier = 1.0f;
+        JungleSetData.BirdOfParadiseBonus = 0;
     }
 
     private void Start()

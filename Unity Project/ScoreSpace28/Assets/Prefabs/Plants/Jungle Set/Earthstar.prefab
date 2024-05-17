@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 5011773037727316564}
   - component: {fileID: 6323912537989348072}
   - component: {fileID: -4005808211158625398}
-  - component: {fileID: 5538105328444588414}
   m_Layer: 0
   m_Name: Earthstar
   m_TagString: Plant
@@ -152,7 +151,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 3
+  ScoreValue: 5
 --- !u!114 &-4005808211158625398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,22 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BuffEffectType: 0
-  BuffEffectValue: 1
---- !u!114 &5538105328444588414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7784778396630310558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f12f29681eb4c14f9f4b90fecb1f30e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ActivationDelay: 0.1
-  VisualEffect: {fileID: 0}
-  VFXPoint: {fileID: 0}
-  ScoreValue: 0
-  SubtractType: 1
-  SubtractValue: 1
+  BuffEffectValue: 3

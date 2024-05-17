@@ -18,7 +18,7 @@ public class EarthstarPollinateEffect : OnPollinateEffect
 
             if(plant && plant.GetComponent<PlantData>().Type == BuffEffectType)
             {
-                plant.GetComponent<PlantData>().AddScore(BuffEffectValue + JungleSetData.BirdOfParadiseBonus);
+                plant.GetComponent<PlantData>().AddScore(BuffEffectValue);
             }
         }
     }
