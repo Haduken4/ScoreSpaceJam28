@@ -430,11 +430,11 @@ MonoBehaviour:
   CardType: 0
   OnPlaySound:
     Guid:
-      Data1: -674571389
-      Data2: 1322512371
-      Data3: -148995676
-      Data4: 638150655
-    Path: event:/SFX/PlantSFX/Planting
+      Data1: -1580174609
+      Data2: 1252412045
+      Data3: 732277692
+      Data4: 236086141
+    Path: event:/SFX/PlantSFX/GoldMushrooms
 --- !u!1 &8888746597938132320
 GameObject:
   m_ObjectHideFlags: 0
