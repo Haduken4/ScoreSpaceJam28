@@ -216,7 +216,7 @@ public class TurnManager : MonoBehaviour
 
     public void GameplayEffectStop()
     {
-        activeGameplayEffects -= 1;
+        activeGameplayEffects = Mathf.Max(0, activeGameplayEffects - 1);
     }
 
     IEnumerator ActivateCreatureEffect(CreatureBehavior creature, float delay)
