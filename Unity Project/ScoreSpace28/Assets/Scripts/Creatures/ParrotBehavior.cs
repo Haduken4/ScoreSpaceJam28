@@ -10,6 +10,11 @@ public class ParrotBehavior : CreatureBehavior
     public float CurveStrength = 0.2f;
     public float NoCurveDist = 2.0f;
     public float SnapDist = 0.1f;
+    public float MinSpeed = 1.0f;
+    public float Acceleration = 2.5f;
+
+    public RuntimeAnimatorController LandingAnimation = null;
+    public RuntimeAnimatorController TakeoffAnimation = null;
 
     Transform lastTree = null;
     Transform lastPoint = null;
@@ -21,14 +26,19 @@ public class ParrotBehavior : CreatureBehavior
     bool ateCoffee = false; // restrict to 1 coffee per turn with current implementation
     bool extraTree = false;
 
+    Animator animator = null;
+    bool animating = false;
     Rigidbody2D rb2d;
+    Vector2 vel = Vector2.zero;
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
 
+        animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        animator.StopPlayback();
     }
 
     // Update is called once per frame
@@ -47,15 +57,26 @@ public class ParrotBehavior : CreatureBehavior
                 }
             }
 
-            Vector2 curveAdd = Vector2.zero;
-            if(curving && targetDist < NoCurveDist && false)
+            if(!animating && targetDist <= NoCurveDist)
             {
-                curveAdd = (curveAffectorPoint - transform.position) * CurveStrength;
+                animator.speed = 1;
+                animator.runtimeAnimatorController = LandingAnimation;
+                animating = true;
             }
+            
+            // CURVE STUFF
+            //Vector2 curveAdd = Vector2.zero;
+            //if(curving && targetDist < NoCurveDist && false)
+            //{
+            //    curveAdd = (curveAffectorPoint - transform.position) * CurveStrength;
+            //}
 
-            Vector2 dir = (target.position - transform.position);
-            dir += curveAdd;
-            rb2d.velocity = MoveSpeed * dir.normalized;
+            
+            vel += vel.normalized * (targetDist < NoCurveDist ? -Acceleration : Acceleration) * Time.deltaTime;
+            vel = Vector2.ClampMagnitude(vel, MoveSpeed);
+            vel = vel.magnitude <= MinSpeed ? vel.normalized * MinSpeed : vel;
+            //dir += curveAdd;
+            rb2d.velocity = vel;
         }
         else
         {
@@ -66,6 +87,7 @@ public class ParrotBehavior : CreatureBehavior
     public override void OnEndOfTurn()
     {
         ateCoffee = false;
+        animating = false;
         tm.GameplayEffectStart();
         GoToNewTarget();
     }
@@ -146,6 +168,16 @@ public class ParrotBehavior : CreatureBehavior
         curving = true;
         CalculateTargetTrajectory();
         target.GetComponent<RoostPoint>().RoostingParrot = this;
+        animator.runtimeAnimatorController = TakeoffAnimation;
+        if (target.position.x <= transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        vel = (target.position - transform.position).normalized;
     }
 
     bool AttemptGoToCoffee()
@@ -160,6 +192,15 @@ public class ParrotBehavior : CreatureBehavior
                 target = coffee.transform;
                 curving = false;
                 goingToCoffee = true;
+                vel = (target.position - transform.position).normalized;
+                if (target.position.x <= transform.position.x)
+                {
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else
+                {
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
                 break;
             }
         }
