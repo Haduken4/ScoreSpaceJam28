@@ -176,10 +176,10 @@ MonoBehaviour:
   MoveSpeed: 4
   CoffeeSpeed: 5
   CurveStrength: 0.2
-  NoCurveDist: 3
+  NoCurveDist: 2.5
   SnapDist: 0.15
-  MinSpeed: 1
-  Acceleration: 2.5
+  MinSpeed: 2
+  Acceleration: 3
   LandingAnimation: {fileID: 9100000, guid: 9afaf80c12d406b46a86741e0a56e905, type: 2}
   TakeoffAnimation: {fileID: 9100000, guid: 793e3cfc8c1ca694285826eb636e7d66, type: 2}
 --- !u!95 &706652917328833744

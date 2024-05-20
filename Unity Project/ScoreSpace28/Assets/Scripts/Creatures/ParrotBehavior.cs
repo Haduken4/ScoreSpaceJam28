@@ -115,6 +115,7 @@ public class ParrotBehavior : CreatureBehavior
             target.GetComponent<RoostPoint>().RoostingParrot = null;
             target = null;
             GoToNewTarget();
+            animating = false;
             return;
         }
         else // Otherwise this was our last tree
