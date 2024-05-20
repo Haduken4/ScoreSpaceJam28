@@ -61,8 +61,9 @@ public class GridManager : MonoBehaviour
                         {
                             tiles[x][y].SetActive(true);
                             TileInitialAnimation tia = tiles[x][y].GetComponent<TileInitialAnimation>();
-                            tia.Bottom += Vector3.forward * -(y / 10.0f);
-                            tia.Top += Vector3.forward * -(y / 10.0f);
+                            tia.Bottom += Vector3.forward * (y / 10.0f);
+                            tia.Top += Vector3.forward * (y / 10.0f);
+                            //tia.InitZ(y / 10.0f);
                         }
                     }
                 }
@@ -87,14 +88,15 @@ public class GridManager : MonoBehaviour
         for (int x = 0; x < Width; ++x)
         {
             tiles.Add(new List<GameObject>());
-            Vector2 pos = startPos;
+            Vector3 pos = startPos;
 
             for (int y = 0; y < Height; ++y)
             {
                 pos.x += TileSize.x * 0.7f;
                 pos.y += TileSize.y * 0.7f;
+                pos.z = pos.y / 10.0f;
 
-                Vector2 addPos = transform.position;
+                Vector3 addPos = transform.position;
 
                 GameObject tile = Instantiate(TilePrefab, pos + addPos, Quaternion.identity, transform);
                 tile.transform.localScale = tileScale;
@@ -155,6 +157,58 @@ public class GridManager : MonoBehaviour
         }
 
         return adjacents;
+    }
+
+    public List<GameObject> GetPlayableTiles(List<GameObject> cards)
+    {
+        List<GameObject> playableTiles = new List<GameObject>();
+        List<PlantType> checkedTypes = new List<PlantType>();
+
+        foreach (GameObject card in cards)
+        {
+            PlantType type = card.GetComponent<CardLogic>().CardType;
+            if (checkedTypes.Contains(type))
+            {
+                continue;
+            }
+
+            for (int x = 0; x < Width; ++x)
+            {
+                for(int y = 0; y < Height; ++y)
+                {
+                    TileLogic tl = tiles[x][y].GetComponent<TileLogic>();
+                    if (tl.CanPlant(type))
+                    {
+                        playableTiles.Add(tiles[x][y]);
+                    }
+                }
+            }
+
+            checkedTypes.Add(type);
+        }
+
+        return playableTiles;
+    }
+
+    public List<GameObject> GetPlayableTiles(GameObject card)
+    {
+        List<GameObject> playableTiles = new List<GameObject>();
+
+        PlantType type = card.GetComponent<CardLogic>().CardType;
+
+        for (int x = 0; x < Width; ++x)
+        {
+            for (int y = 0; y < Height; ++y)
+            {
+                TileLogic tl = tiles[x][y].GetComponent<TileLogic>();
+                if (tl.CanPlant(type))
+                {
+                    playableTiles.Add(tiles[x][y]);
+                }
+            }
+        }
+
+        return playableTiles;
     }
 
     public void SetHoveredTile(ReactiveTile newTile)

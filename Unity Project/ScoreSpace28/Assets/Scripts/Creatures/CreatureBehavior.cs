@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CreatureBehavior : MonoBehaviour
 {
+    protected TurnManager tm = null;
+
     protected virtual void Start()
     {
-
+        tm = FindFirstObjectByType<TurnManager>();
     }
 
     public virtual void OnEndOfTurn()
@@ -17,5 +19,10 @@ public class CreatureBehavior : MonoBehaviour
     public virtual void SetSpawnerPlant(Transform plant)
     {
 
+    }
+
+    public virtual void UnParent()
+    {
+        
     }
 }

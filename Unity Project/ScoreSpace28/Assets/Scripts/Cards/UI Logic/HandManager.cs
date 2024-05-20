@@ -185,7 +185,10 @@ public class HandManager : MonoBehaviour
 
         foreach(Transform c in cards)
         {
-            ret.Add(c.gameObject);
+            if(c)
+            {
+                ret.Add(c.gameObject);
+            }
         }
 
         return ret;

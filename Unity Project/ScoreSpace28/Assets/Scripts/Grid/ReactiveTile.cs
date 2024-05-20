@@ -7,6 +7,7 @@ public class ReactiveTile : MonoBehaviour
 {
     public Color DefaultTint = Color.white;
     public Color HoveredTint = new Color(0.9f, 0.9f, 0.7f, 1.0f);
+    public Color LastThreeTilesTint = new Color(1.0f, 1.0f, 0.5f, 1.0f);
 
     public float LerpSpeed = 4.0f;
     public float SnapDist = 0.05f;
@@ -16,6 +17,7 @@ public class ReactiveTile : MonoBehaviour
     Color targetColor = Color.white;
     SpriteRenderer sr = null;
     TurnManager tm = null;
+    ClickedCardParent ccp = null;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class ReactiveTile : MonoBehaviour
         gm = FindFirstObjectByType<GridManager>();
         tm = FindFirstObjectByType<TurnManager>();
         sr = GetComponent<SpriteRenderer>();
+        ccp = FindFirstObjectByType<ClickedCardParent>();
     }
 
     // Update is called once per frame
@@ -33,6 +36,11 @@ public class ReactiveTile : MonoBehaviour
         {
             sr.color = DefaultTint;
             return;
+        }
+
+        if(targetColor == LastThreeTilesTint && ccp.transform.childCount == 0)
+        {
+            targetColor = DefaultTint;
         }
 
         sr.color = Color.Lerp(sr.color, targetColor, Time.deltaTime * LerpSpeed);
@@ -50,6 +58,11 @@ public class ReactiveTile : MonoBehaviour
         }
         gm.HoveredTile = this;
         targetColor = HoveredTint;
+    }
+
+    public void FinalThreeTile()
+    {
+        targetColor = LastThreeTilesTint;
     }
 
     public void CursorExit()

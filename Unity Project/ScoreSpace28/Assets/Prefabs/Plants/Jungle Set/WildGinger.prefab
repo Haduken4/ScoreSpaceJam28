@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 6802377558607892267}
   - component: {fileID: 3473479294256509594}
   - component: {fileID: 4927483744317409953}
-  - component: {fileID: 6967192173549221381}
-  - component: {fileID: 2783676590723662941}
+  - component: {fileID: 8062712320640225451}
   m_Layer: 0
   m_Name: WildGinger
   m_TagString: Plant
@@ -105,25 +104,7 @@ MonoBehaviour:
   ScoreTextPoint: {fileID: 4762558896204806208}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
---- !u!114 &6967192173549221381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4688007220609341625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f12f29681eb4c14f9f4b90fecb1f30e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ActivationDelay: 0.1
-  VisualEffect: {fileID: 0}
-  VFXPoint: {fileID: 0}
-  ScoreValue: 2
-  SubtractType: 5
-  SubtractValue: 2
---- !u!114 &2783676590723662941
+--- !u!114 &8062712320640225451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,8 +119,8 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 0
-  NeighborBonus: 2
+  ScoreValue: 6
+  NeighborBonus: 3
   BonusType: 1
   Parasitic: 0
   MushroomPrefab: {fileID: 0}

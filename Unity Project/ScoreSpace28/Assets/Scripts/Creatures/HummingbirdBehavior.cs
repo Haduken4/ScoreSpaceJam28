@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,8 @@ public class HummingbirdBehavior : CreatureBehavior
     bool fake = false;
 
     bool leavingGarden = false;
+
+    public EventReference OnMoveSound;
 
     override protected void Start()
     {
@@ -75,6 +78,8 @@ public class HummingbirdBehavior : CreatureBehavior
 
         if (moveCount == 0) // Done moving
         {
+            tm.GameplayEffectStop();
+
             if(leavingGarden)
             {
                 Destroy(gameObject);
@@ -118,6 +123,8 @@ public class HummingbirdBehavior : CreatureBehavior
 
     void GoToNewTarget()
     {
+        tm.GameplayEffectStart();
+
         GameObject[] plants = GameObject.FindGameObjectsWithTag("Plant");
 
         List<Transform> possibleTargets = new List<Transform>();
@@ -163,6 +170,9 @@ public class HummingbirdBehavior : CreatureBehavior
 
         target = possibleTargets[Random.Range(0, possibleTargets.Count)];
         fake = fakeTargets.Contains(target);
+        Vector3 myPos = transform.position;
+        myPos.z = target.position.z - 0.01f;
+        transform.position = myPos;
 
         // If we chose the same plant as last time for some reason
         if (Vector2.Distance(transform.position, target.position) <= 0.1f)
@@ -174,6 +184,7 @@ public class HummingbirdBehavior : CreatureBehavior
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
             target = null;
+            tm.GameplayEffectStop();
             return;
         }
 
@@ -187,6 +198,8 @@ public class HummingbirdBehavior : CreatureBehavior
         CalculateNextPos();
         lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
+
+        AudioManager.instance.PlayOneShot(OnMoveSound, this.transform.position);
     }
 
     void GoToDespawnPoint()
@@ -201,6 +214,8 @@ public class HummingbirdBehavior : CreatureBehavior
         CalculateNextPos();
         lastPos = transform.position;
         GetComponent<SpriteRenderer>().flipX = target.position.x < transform.position.x;
+        //FindFirstObjectByType<TurnManager>().GameplayEffectStop();
+
     }
 
     public override void SetSpawnerPlant(Transform plant)

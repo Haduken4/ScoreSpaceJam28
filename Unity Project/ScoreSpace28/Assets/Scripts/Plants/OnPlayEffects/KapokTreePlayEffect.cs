@@ -24,7 +24,7 @@ public class KapokTreePlayEffect : OnPlayEffect
 
         Transform spawnPoint = points[Random.Range(0, points.Length)].transform;
 
-        GameObject pollinator = Instantiate(ParrotPrefab, spawnPoint.position + (Vector3.forward * -0.2f), Quaternion.identity);
+        GameObject pollinator = Instantiate(ParrotPrefab, spawnPoint.position - Vector3.forward, Quaternion.identity);
         pollinator.transform.localScale *= Random.Range(ScaleMultiplierRange.x, ScaleMultiplierRange.y);
         pollinator.GetComponent<CreatureBehavior>().SetSpawnerPlant(transform);
         pollinator.GetComponent<ParrotBehavior>().TreeInit(spawnPoint);

@@ -5,10 +5,13 @@ using UnityEngine;
 public class ParasiticMushroomPlayEffect : OnPlayEffect
 {
     public GameObject BeePrefab = null;
+    public GameObject TextPrefab = null;
     public float ScoreGainsPerSiphon = 0.5f;
     public float SizeGainsPerSiphon = 0.1f;
     public float PerfectScore = 5.0f;
     public float PerfectSize = 0.5f;
+    public RuntimeAnimatorController PerfectBeeAnimation = null;
+    public Sprite PerfectBeeSprite = null;
 
     public List<PlantType> SiphonTargets = new List<PlantType>();
 
@@ -30,6 +33,8 @@ public class ParasiticMushroomPlayEffect : OnPlayEffect
         float extraScore = Mathf.Floor(ScoreGainsPerSiphon * siphonCount);
         float sizeMult = 1.0f + (SizeGainsPerSiphon * siphonCount);
 
+        GameObject bee = Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
+
         // Perfect
         if (siphonCount == 8)
         {
@@ -37,9 +42,12 @@ public class ParasiticMushroomPlayEffect : OnPlayEffect
             sizeMult += PerfectSize;
 
             // Spawn effect text
+            GameObject t = Instantiate(TextPrefab, FindFirstObjectByType<Canvas>().transform);
+            t.transform.position = pd.ScoreTextPoint.position + Vector3.up;
+            bee.GetComponent<SpriteRenderer>().sprite = PerfectBeeSprite;
+            bee.GetComponent<Animator>().runtimeAnimatorController = PerfectBeeAnimation;
         }
-
-        GameObject bee = Instantiate(BeePrefab, transform.position + (Vector3.forward * -0.2f), Quaternion.identity);
+       
         bee.transform.localScale *= sizeMult;
         bee.GetComponent<BeeBehavior>().SetSpawnerPlant(transform);
         bee.GetComponent<BeeBehavior>().ScoreValue += extraScore;

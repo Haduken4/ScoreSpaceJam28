@@ -20,12 +20,16 @@ public class OnPlayEffect : MonoBehaviour
 
     protected PlantData pd = null;
 
+    protected TurnManager tm = null;
+
     // Start is called before the first frame update
     void Start()
     {
         gm = FindFirstObjectByType<GridManager>();
+        tm = FindFirstObjectByType<TurnManager>();
         pd = GetComponent<PlantData>();
         timer = ActivationDelay;
+        //tm.GameplayEffectStart();
     }
 
     // Update is called once per frame
@@ -37,10 +41,11 @@ public class OnPlayEffect : MonoBehaviour
         }
 
         timer -= Time.deltaTime;
-        if(timer <= 0.0f)
+        if(timer <= 0.0f && !played)
         {
             PlayEffect();
             played = true;
+            tm.GameplayEffectStop();
         }
     }
 

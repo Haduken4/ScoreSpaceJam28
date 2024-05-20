@@ -27,7 +27,9 @@ public class BeeBehavior : CreatureBehavior
 
             if(timer >= moveTime)
             {
-                if(leavingGarden)
+                tm.GameplayEffectStop();
+
+                if (leavingGarden)
                 {
                     Destroy(gameObject);
                     target = null;
@@ -51,6 +53,8 @@ public class BeeBehavior : CreatureBehavior
 
     void GoToNewTarget()
     {
+        tm.GameplayEffectStart();
+
         GameObject[] plants = GameObject.FindGameObjectsWithTag("Plant");
 
         List<Transform> validPlants = new List<Transform>();
@@ -92,6 +96,7 @@ public class BeeBehavior : CreatureBehavior
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
             lastTarget = target;
             target = null;
+            tm.GameplayEffectStop();
             return;
         }
 

@@ -14,24 +14,29 @@ public class AudioManager : MonoBehaviour
 
     private EventInstance musicEventInstance;
 
+    private bool shouldCleanUp = true;
+
  
     public static AudioManager instance { get; private set; }
 
     [field: Header("Music")]
 
     [field: SerializeField] public EventReference music { get; private set; }
-    public string MusicSwitchParameter = "";
+    public string MusicStateParameter = "";
+    public string MusicSetParameter = "";
 
 
     [field: Header("Ambience")]
 
     [field: SerializeField] public EventReference ambience { get; private set; }
+    public string AmbienceSwitchParameter = "";
 
 
     private void Awake()
     {
         if (instance != null)
         {
+            shouldCleanUp = false;
             Destroy(gameObject);
             return;
         }
@@ -67,7 +72,17 @@ public class AudioManager : MonoBehaviour
 
     public void SetMusicParameter(int value)
     {
-        musicEventInstance.setParameterByName(MusicSwitchParameter, value);
+        musicEventInstance.setParameterByName(MusicStateParameter, value);
+    }
+
+    public void SetMusicSetParameter(int value)
+    {
+        musicEventInstance.setParameterByName(MusicSetParameter, value);
+    }
+
+    public void SetAmbienceParameter(int value)
+    {
+        ambienceEventInstance.setParameterByName(AmbienceSwitchParameter, value);
     }
 
     public void PlayOneShot(EventReference sound, Vector2 worldPos)
@@ -92,6 +107,9 @@ public class AudioManager : MonoBehaviour
     }
     private void OnDestroy()
     {
-        CleanUp();
+        if (shouldCleanUp)
+        {
+            CleanUp();
+        }
     }
 }

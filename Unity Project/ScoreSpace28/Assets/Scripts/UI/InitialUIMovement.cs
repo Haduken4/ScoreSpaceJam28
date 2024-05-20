@@ -27,6 +27,6 @@ public class InitialUIMovement : MonoBehaviour
     {
         vel += Acceleration * Time.deltaTime;
         vel = Vector3.Max(vel, VelocityMin);
-        transform.parent.position += vel * Time.deltaTime;
+        toMove.position += vel * Time.deltaTime;
     }
 }

@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultTint: {r: 1, g: 1, b: 1, a: 1}
   HoveredTint: {r: 0.764151, g: 0.764151, b: 0.46497867, a: 1}
+  LastThreeTilesTint: {r: 0.65343046, g: 1, b: 0, a: 1}
   LerpSpeed: 8
   SnapDist: 0.05
 --- !u!60 &4794759610230083476
@@ -486,6 +487,7 @@ MonoBehaviour:
   Alignment: 0
   AllowedPlants: 
   IsPlant: 0
+  BaseScoreValue: 0
 --- !u!114 &-6976528870161703925
 MonoBehaviour:
   m_ObjectHideFlags: 0

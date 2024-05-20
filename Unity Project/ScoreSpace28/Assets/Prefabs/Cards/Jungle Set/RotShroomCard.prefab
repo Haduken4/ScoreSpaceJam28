@@ -155,16 +155,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantToSpawn: {fileID: 7041635796199970432, guid: d67151431021e8d4e87d327e04d85afe, type: 3}
-  SpawnOffset: {x: -0.05, y: -0.575, z: 0}
+  SpawnOffset: {x: 0, y: -0.45, z: 0}
   TileModifier: 0
   CardType: 0
   OnPlaySound:
     Guid:
-      Data1: -674571389
-      Data2: 1322512371
-      Data3: -148995676
-      Data4: 638150655
-    Path: event:/SFX/PlantSFX/Planting
+      Data1: 188628793
+      Data2: 1129642441
+      Data3: -1429393242
+      Data4: 1034169452
+    Path: event:/SFX/PlantSFX/Stump
 --- !u!1 &5367799959303407593
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,9 +231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '5
-
-'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -368,7 +366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8f58a176330f4434294e2a77b826f19d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea28df379f5727f47b6a49f826a31897, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -444,7 +442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Destroy a random adjacent tree root each turn
+  m_text: Destroy adjacent tree roots for +3 score each
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -471,7 +469,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.3
+  m_fontSize: 16
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7375785326783229868}
   - component: {fileID: 2726612611592634904}
   - component: {fileID: 7154928412511822530}
+  - component: {fileID: -8479949351787498446}
   - component: {fileID: 9075712942921429762}
   m_Layer: 0
   m_Name: GlowingFungus
@@ -102,9 +103,30 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 3
+  ScoreValue: 2
   NeighborBonus: 2
-  BonusType: 0
+  BonusType: 5
+  Parasitic: 0
+  MushroomPrefab: {fileID: 0}
+  SpawnOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &-8479949351787498446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837276492809421058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ae295f6f740ef4ab817ff6d722a30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivationDelay: 0.1
+  VisualEffect: {fileID: 0}
+  VFXPoint: {fileID: 0}
+  ScoreValue: 0
+  NeighborBonus: 10
+  BonusType: 3
   Parasitic: 0
   MushroomPrefab: {fileID: 0}
   SpawnOffset: {x: 0, y: 0, z: 0}

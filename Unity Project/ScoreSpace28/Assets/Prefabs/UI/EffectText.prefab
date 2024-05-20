@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4384493979170300706}
   - component: {fileID: 3467263028834858490}
   - component: {fileID: 795001358153455721}
+  - component: {fileID: 4349008264219695236}
+  - component: {fileID: 8318423412394421993}
   m_Layer: 5
   m_Name: EffectText
   m_TagString: Untagged
@@ -93,13 +95,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.95
+  m_fontSize: 52.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -135,3 +137,32 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4349008264219695236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792121024746176552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20719ac26617ffd46a54c0879af98e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toMove: {fileID: 0}
+  VelocityStart: {x: 0, y: 0.5, z: 0}
+  Acceleration: {x: 0, y: -0.25, z: 0}
+  VelocityMin: {x: 0, y: 0, z: 0}
+--- !u!114 &8318423412394421993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792121024746176552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5cb2ce3a39be424eb57bfdbbb100c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeUntilDestroyed: 2

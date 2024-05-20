@@ -54,6 +54,11 @@ public class TileInitialAnimation : MonoBehaviour
         scale = StartScale;
     }
 
+    public void InitZ(float z)
+    {
+        basePos.z += z;
+    }
+
     // Update is called once per frame
     void Update()
     {

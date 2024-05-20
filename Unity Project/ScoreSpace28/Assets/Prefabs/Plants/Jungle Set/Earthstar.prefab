@@ -151,7 +151,7 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreValue: 3
+  ScoreValue: 5
 --- !u!114 &-4005808211158625398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BuffEffectType: 0
-  BuffEffectValue: 1
+  BuffEffectValue: 3

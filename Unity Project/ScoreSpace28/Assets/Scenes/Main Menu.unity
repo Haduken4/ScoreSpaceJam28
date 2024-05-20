@@ -1058,14 +1058,16 @@ MonoBehaviour:
       Data3: -964421491
       Data4: 884806818
     Path: event:/Music/CoreMusicSETUP
-  MusicSwitchParameter: MusicSwitches
+  MusicStateParameter: MusicState
+  MusicSetParameter: MusicSet
   <ambience>k__BackingField:
     Guid:
-      Data1: 1647099981
-      Data2: 1100600119
-      Data3: -978869333
-      Data4: -867520249
-    Path: event:/Ambience/ForestAmbience
+      Data1: 178485083
+      Data2: 1196329148
+      Data3: 281933456
+      Data4: -57190615
+    Path: event:/Ambience/AmbienceMaster
+  AmbienceSwitchParameter: AmbienceSwitch
 --- !u!114 &1337090945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,11 +1081,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadEvent: 1
-  UnloadEvent: 2
+  UnloadEvent: 0
   Banks:
   - Master
   - SFX
   - Music
+  - Ambience
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &1337090946

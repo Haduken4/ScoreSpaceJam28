@@ -36,15 +36,6 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
         ReactiveState lastState = CurrState;
         if(lastState == ReactiveState.L_CLICKED && cl.InPlayArea())
         {
-            FollowCursor fc = FindFirstObjectByType<FollowCursor>();
-            if(fc.GetTrash() != null && tm.CanTrash())
-            {
-                Destroy(gameObject);
-                tm.CardTrashed();
-                fc.GetTrash().CloseLid();
-                return;
-            }
-
             if(cl.PlayCard())
             {
                 Debug.Log("Destroying card");
