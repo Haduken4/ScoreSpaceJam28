@@ -70,7 +70,8 @@ public class TurnManager : MonoBehaviour
             return;
         }
 
-        if (changeTimer >= 0.0f)
+        changeTimer -= Time.deltaTime;
+        if (changeTimer <= 0.0f)
         {
             activeGameplayEffects = 0;
             changeTimer = CreatureGraceTimer;
@@ -203,6 +204,7 @@ public class TurnManager : MonoBehaviour
         }
 
         timer = TurnTransitionMinTime;
+        changeTimer = CreatureGraceTimer;
     }
 
     public void CardPlayed()
