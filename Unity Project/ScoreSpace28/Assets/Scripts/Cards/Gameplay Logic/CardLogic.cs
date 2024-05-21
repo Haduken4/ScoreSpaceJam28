@@ -48,12 +48,18 @@ public class CardLogic : MonoBehaviour
 
     public bool PlayCard()
     {
-        if(gm.HoveredTile == null)
+        ReactiveTile backupTile = FindFirstObjectByType<FollowCursor>().GetFirstHitTile();
+        if(gm.HoveredTile == null && backupTile == null)
         {
             return false;
         }
 
         TileLogic tl = gm.HoveredTile.GetComponent<TileLogic>();
+        if (tl == null)
+        {
+            tl = backupTile.GetComponent<TileLogic>();
+        }
+
         if(!tl.CanPlant(CardType))
         {
             return false;

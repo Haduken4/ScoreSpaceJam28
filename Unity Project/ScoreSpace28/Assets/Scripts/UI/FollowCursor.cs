@@ -18,6 +18,21 @@ public class FollowCursor : MonoBehaviour
         tm = FindFirstObjectByType<TurnManager>();
     }
 
+    public ReactiveTile GetFirstHitTile()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, MouseCollisionSize);
+
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.gameObject.CompareTag("Tile"))
+            {
+                return hit.GetComponent<ReactiveTile>();
+            }
+        }
+
+        return null;
+    }
+
     // Update is called once per frame
     void Update()
     {
