@@ -1,0 +1,1227 @@
+fileFormatVersion: 2
+guid: dcf3308994d5fff4da94e51d77d4e5fd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1412
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12429
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92049e63b8656c943b0e3c1ce9445b39
+      internalID: -976101969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_1
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 12429
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd14fe791ea9874dbb313709d566260
+      internalID: -1525575783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_2
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 12429
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c7bdf1610e54f4aa627ed11a74ac1c
+      internalID: -198550666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_3
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 12429
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae576ded5802b1f45a3a0caaa4db5c77
+      internalID: 711965388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_4
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 12429
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263b609d8fa914e45b8f57b2a53457bd
+      internalID: 183935289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11048
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e177af8a2b4bb489e7b87e4c56df22
+      internalID: -1980713454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_6
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 11048
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b965a021f9eec2438128b585bfb04e4
+      internalID: -944626891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_7
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 11048
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bf62243d4381e4a8347dd60bb1e0d5
+      internalID: 202219539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_8
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 11048
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9ae5e1419007c449b103f15026d0f3
+      internalID: -1797671457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_9
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 11048
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813ee86be9adf0a4fa260b44f8a9b536
+      internalID: -690045246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9667
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b660ec590e35d046b3d6383881aa704
+      internalID: 502653141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_11
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 9667
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88998134ad98e44a9ba7e0d634fa395
+      internalID: -1082465556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_12
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 9667
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abd76ca078227c479705d4cd25fd1f7
+      internalID: 1255037075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_13
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 9667
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e595b270c3f8c7d4abb809804e8e91a2
+      internalID: 1745525644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_14
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 9667
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81de43991af91594e8ba42be59b16deb
+      internalID: 1540758618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8286
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32c6c8217b17d84a96ee581e3bc42a2
+      internalID: 2000919847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_16
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 8286
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930f0a85da5e36e4ea05393888d35ac8
+      internalID: 876597062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_17
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 8286
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2d1327c510fcf43b8240def89cb8ca
+      internalID: -41000270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_18
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 8286
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cec472227f92ab4f8d63eba5b8a717b
+      internalID: 889033326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_19
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 8286
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aff2b554c41eb14bb84932f3c460d15
+      internalID: 535220256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6905
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50fce282e05faa42bd27637f3438666
+      internalID: -1245163530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_21
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 6905
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e429dd1c4eb5948af0478168a549be
+      internalID: -100874261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_22
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 6905
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1e2f5687b6ed646937d84eb65a51cf
+      internalID: 2095648043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_23
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 6905
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ae877ac93e50640bc95d1acaafd9ab
+      internalID: -2091260542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_24
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 6905
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482dad72cd5ae574b97f1130793ecb9e
+      internalID: -247281248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5524
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e191cdffcaf3d84fb54d3eb244bd96d
+      internalID: 1759994344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_26
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 5524
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4570c3fb103b1a4cbaafbf2bca995fd
+      internalID: 173751551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_27
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 5524
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111153fb3253835489e29c4e5dc4c290
+      internalID: 1610083379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_28
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 5524
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce3287ad9b23354a987b9e5ed449ef8
+      internalID: 612795552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_29
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 5524
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdff5b348efb0941a18081bdead561c
+      internalID: 383032627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4143
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab14a46ef2d1c5941bfe7f6d37cc5b0e
+      internalID: -1769440869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_31
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 4143
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fec9dca2c68cf6499aab3ff9c6d0ad3
+      internalID: 456940287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_32
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 4143
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d7354237bad8245a3156ac84290367
+      internalID: 1993215278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_33
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 4143
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85674ded75d36a84c8474404e3707fdd
+      internalID: -585776099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_34
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 4143
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b28ea8e1d887747a62b968691746f7
+      internalID: -1467480951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2762
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ba8ea4136d8264b81982fb5c1c2090
+      internalID: 410444344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_36
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 2762
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d82754fe63b01441aedf31f425bf51f
+      internalID: -685492540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_37
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 2762
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea355ec1999eb5418d2b2f7a54b8379
+      internalID: 1793799150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_38
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 2762
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21ad004ff89ecd4182cf0a8ebc25993
+      internalID: 1735579750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_39
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 2762
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c997d5f68a9cf418223b9db537cfc0
+      internalID: -1896222073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1381
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f437f27450aa141ab812bf3ef0aaaf
+      internalID: 996319298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_41
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1381
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b076962e69682a64783ea51aa5199c39
+      internalID: -1068525184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_42
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 1381
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91e22f941437ec47baeee51b4854302
+      internalID: 519271086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_43
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 1381
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639f133000ffac34da83c75f87e344a6
+      internalID: -2083141513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_44
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 1381
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a06707219c948a4e9f47d4f3937495e
+      internalID: 625963758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60eb115827d3bda4abf0c8ebaf088c86
+      internalID: 2061353668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_46
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 0
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cff8333b1adba74ca780617edba5d5e
+      internalID: 966218168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_47
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 0
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daa5fafb7f4fc544a8e955684e3d8a1
+      internalID: 151066130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_48
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 0
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141c9349d8c8a6d448550265accb76f7
+      internalID: -1710163906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_WillowTree_Idle 1_49
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 0
+        width: 1412
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2ebd282136ad341999e11b6531d5ba
+      internalID: -207074924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteSheet_WillowTree_Idle 1_0: -976101969
+      SpriteSheet_WillowTree_Idle 1_1: -1525575783
+      SpriteSheet_WillowTree_Idle 1_10: 502653141
+      SpriteSheet_WillowTree_Idle 1_11: -1082465556
+      SpriteSheet_WillowTree_Idle 1_12: 1255037075
+      SpriteSheet_WillowTree_Idle 1_13: 1745525644
+      SpriteSheet_WillowTree_Idle 1_14: 1540758618
+      SpriteSheet_WillowTree_Idle 1_15: 2000919847
+      SpriteSheet_WillowTree_Idle 1_16: 876597062
+      SpriteSheet_WillowTree_Idle 1_17: -41000270
+      SpriteSheet_WillowTree_Idle 1_18: 889033326
+      SpriteSheet_WillowTree_Idle 1_19: 535220256
+      SpriteSheet_WillowTree_Idle 1_2: -198550666
+      SpriteSheet_WillowTree_Idle 1_20: -1245163530
+      SpriteSheet_WillowTree_Idle 1_21: -100874261
+      SpriteSheet_WillowTree_Idle 1_22: 2095648043
+      SpriteSheet_WillowTree_Idle 1_23: -2091260542
+      SpriteSheet_WillowTree_Idle 1_24: -247281248
+      SpriteSheet_WillowTree_Idle 1_25: 1759994344
+      SpriteSheet_WillowTree_Idle 1_26: 173751551
+      SpriteSheet_WillowTree_Idle 1_27: 1610083379
+      SpriteSheet_WillowTree_Idle 1_28: 612795552
+      SpriteSheet_WillowTree_Idle 1_29: 383032627
+      SpriteSheet_WillowTree_Idle 1_3: 711965388
+      SpriteSheet_WillowTree_Idle 1_30: -1769440869
+      SpriteSheet_WillowTree_Idle 1_31: 456940287
+      SpriteSheet_WillowTree_Idle 1_32: 1993215278
+      SpriteSheet_WillowTree_Idle 1_33: -585776099
+      SpriteSheet_WillowTree_Idle 1_34: -1467480951
+      SpriteSheet_WillowTree_Idle 1_35: 410444344
+      SpriteSheet_WillowTree_Idle 1_36: -685492540
+      SpriteSheet_WillowTree_Idle 1_37: 1793799150
+      SpriteSheet_WillowTree_Idle 1_38: 1735579750
+      SpriteSheet_WillowTree_Idle 1_39: -1896222073
+      SpriteSheet_WillowTree_Idle 1_4: 183935289
+      SpriteSheet_WillowTree_Idle 1_40: 996319298
+      SpriteSheet_WillowTree_Idle 1_41: -1068525184
+      SpriteSheet_WillowTree_Idle 1_42: 519271086
+      SpriteSheet_WillowTree_Idle 1_43: -2083141513
+      SpriteSheet_WillowTree_Idle 1_44: 625963758
+      SpriteSheet_WillowTree_Idle 1_45: 2061353668
+      SpriteSheet_WillowTree_Idle 1_46: 966218168
+      SpriteSheet_WillowTree_Idle 1_47: 151066130
+      SpriteSheet_WillowTree_Idle 1_48: -1710163906
+      SpriteSheet_WillowTree_Idle 1_49: -207074924
+      SpriteSheet_WillowTree_Idle 1_5: -1980713454
+      SpriteSheet_WillowTree_Idle 1_6: -944626891
+      SpriteSheet_WillowTree_Idle 1_7: 202219539
+      SpriteSheet_WillowTree_Idle 1_8: -1797671457
+      SpriteSheet_WillowTree_Idle 1_9: -690045246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,356 @@
+
+SpriteSheet_WillowTree_Idle.png
+size: 7060,13810
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Plant Sprites_Animation-animation_00
+  rotate: false
+  xy: 0, 0
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_01
+  rotate: false
+  xy: 1412, 0
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_02
+  rotate: false
+  xy: 2824, 0
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_03
+  rotate: false
+  xy: 4236, 0
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_04
+  rotate: false
+  xy: 5648, 0
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_05
+  rotate: false
+  xy: 0, 1381
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_06
+  rotate: false
+  xy: 1412, 1381
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_07
+  rotate: false
+  xy: 2824, 1381
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_08
+  rotate: false
+  xy: 4236, 1381
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_09
+  rotate: false
+  xy: 5648, 1381
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_10
+  rotate: false
+  xy: 0, 2762
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_11
+  rotate: false
+  xy: 1412, 2762
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_12
+  rotate: false
+  xy: 2824, 2762
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_13
+  rotate: false
+  xy: 4236, 2762
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_14
+  rotate: false
+  xy: 5648, 2762
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_15
+  rotate: false
+  xy: 0, 4143
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_16
+  rotate: false
+  xy: 1412, 4143
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_17
+  rotate: false
+  xy: 2824, 4143
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_18
+  rotate: false
+  xy: 4236, 4143
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_19
+  rotate: false
+  xy: 5648, 4143
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_20
+  rotate: false
+  xy: 0, 5524
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_21
+  rotate: false
+  xy: 1412, 5524
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_22
+  rotate: false
+  xy: 2824, 5524
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_23
+  rotate: false
+  xy: 4236, 5524
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_24
+  rotate: false
+  xy: 5648, 5524
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_25
+  rotate: false
+  xy: 0, 6905
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_26
+  rotate: false
+  xy: 1412, 6905
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_27
+  rotate: false
+  xy: 2824, 6905
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_28
+  rotate: false
+  xy: 4236, 6905
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_29
+  rotate: false
+  xy: 5648, 6905
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_30
+  rotate: false
+  xy: 0, 8286
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_31
+  rotate: false
+  xy: 1412, 8286
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_32
+  rotate: false
+  xy: 2824, 8286
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_33
+  rotate: false
+  xy: 4236, 8286
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_34
+  rotate: false
+  xy: 5648, 8286
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_35
+  rotate: false
+  xy: 0, 9667
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_36
+  rotate: false
+  xy: 1412, 9667
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_37
+  rotate: false
+  xy: 2824, 9667
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_38
+  rotate: false
+  xy: 4236, 9667
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_39
+  rotate: false
+  xy: 5648, 9667
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_40
+  rotate: false
+  xy: 0, 11048
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_41
+  rotate: false
+  xy: 1412, 11048
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_42
+  rotate: false
+  xy: 2824, 11048
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_43
+  rotate: false
+  xy: 4236, 11048
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_44
+  rotate: false
+  xy: 5648, 11048
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_45
+  rotate: false
+  xy: 0, 12429
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_46
+  rotate: false
+  xy: 1412, 12429
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_47
+  rotate: false
+  xy: 2824, 12429
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_48
+  rotate: false
+  xy: 4236, 12429
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_49
+  rotate: false
+  xy: 5648, 12429
+  size: 1412, 1381
+  orig: 1412, 1381
+  offset: 0, 0
+  index: -1
