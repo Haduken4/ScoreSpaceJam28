@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantToSpawn: {fileID: 6690405453201354691, guid: 1579d6ea2dcd6ec46a731a0aa08b6e2a, type: 3}
-  SpawnOffset: {x: 0.05, y: -0.4, z: 0}
+  SpawnOffset: {x: 0.05, y: -0.5, z: 0}
   TileModifier: 0
   CardType: 0
   OnPlaySound:

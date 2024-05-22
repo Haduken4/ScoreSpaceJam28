@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6870064191334042781}
   - component: {fileID: 4516532023517421490}
   - component: {fileID: -5217891921936376723}
+  - component: {fileID: 9112863965747741347}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Plant
@@ -156,3 +157,24 @@ MonoBehaviour:
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!95 &9112863965747741347
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690405453201354691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8949e03f7486e0847b06b368ebcb5cb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

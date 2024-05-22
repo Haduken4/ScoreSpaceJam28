@@ -1,0 +1,76 @@
+{ "skeleton": { "images": "/d/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/Red Cap Mushroom/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "back right fern", "bone": "root", "attachment": "back right fern" },
+	{ "name": "back right plant", "bone": "root", "attachment": "back right plant" },
+	{ "name": "back center fern", "bone": "root", "attachment": "back center fern" },
+	{ "name": "back left plant", "bone": "root", "attachment": "back left plant" },
+	{ "name": "back left fern", "bone": "root", "attachment": "back left fern" },
+	{ "name": "main mushroom", "bone": "root", "attachment": "main mushroom" },
+	{ "name": "main mushroom top", "bone": "root", "attachment": "main mushroom top" },
+	{ "name": "right stalk", "bone": "root", "attachment": "right stalk" },
+	{ "name": "right cap", "bone": "root", "attachment": "right cap" },
+	{ "name": "left cap", "bone": "root", "attachment": "left cap" },
+	{ "name": "left stalk", "bone": "root", "attachment": "left stalk" },
+	{ "name": "front right grass", "bone": "root", "attachment": "front right grass" },
+	{ "name": "front fern", "bone": "root", "attachment": "front fern" },
+	{ "name": "front center grass", "bone": "root", "attachment": "front center grass" },
+	{ "name": "front left grass", "bone": "root", "attachment": "front left grass" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1497, "y": -1731, "width": 1866, "height": 638 }
+		},
+		"back right fern": {
+			"back right fern": { "x": 1926.5, "y": -1833, "width": 379, "height": 250 }
+		},
+		"back right plant": {
+			"back right plant": { "x": 1759.5, "y": -1641.5, "width": 931, "height": 397 }
+		},
+		"back center fern": {
+			"back center fern": { "x": 1400.5, "y": -1639.5, "width": 1431, "height": 481 }
+		},
+		"back left plant": {
+			"back left plant": { "x": 976, "y": -1601, "width": 642, "height": 588 }
+		},
+		"back left fern": {
+			"back left fern": { "x": 710.5, "y": -1861, "width": 369, "height": 132 }
+		},
+		"main mushroom": {
+			"main mushroom": { "x": 1442, "y": -1724.5, "width": 614, "height": 585 }
+		},
+		"main mushroom top": {
+			"main mushroom top": { "x": 1408.5, "y": -1238.5, "width": 1241, "height": 655 }
+		},
+		"right stalk": {
+			"right stalk": { "x": 1683.5, "y": -1853, "width": 321, "height": 410 }
+		},
+		"right cap": {
+			"right cap": { "x": 1692.5, "y": -1605.5, "width": 437, "height": 301 }
+		},
+		"left cap": {
+			"left cap": { "x": 1088, "y": -1714, "width": 238, "height": 194 }
+		},
+		"left stalk": {
+			"left stalk": { "x": 1106.5, "y": -1875, "width": 193, "height": 236 }
+		},
+		"front right grass": {
+			"front right grass": { "x": 1615.5, "y": -1992, "width": 71, "height": 134 }
+		},
+		"front fern": {
+			"front fern": { "x": 1449, "y": -1936.5, "width": 136, "height": 255 }
+		},
+		"front center grass": {
+			"front center grass": { "x": 1188.5, "y": -1920, "width": 167, "height": 152 }
+		},
+		"front left grass": {
+			"front left grass": { "x": 1004, "y": -1970, "width": 212, "height": 112 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

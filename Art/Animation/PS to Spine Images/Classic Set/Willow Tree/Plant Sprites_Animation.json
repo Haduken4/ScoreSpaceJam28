@@ -1,0 +1,56 @@
+{ "skeleton": { "images": "/d/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/Willow Tree/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "back 01", "bone": "root", "attachment": "back 01" },
+	{ "name": "back 02", "bone": "root", "attachment": "back 02" },
+	{ "name": "back 03", "bone": "root", "attachment": "back 03" },
+	{ "name": "trunk", "bone": "root", "attachment": "trunk" },
+	{ "name": "main canopy", "bone": "root", "attachment": "main canopy" },
+	{ "name": "leaves 05", "bone": "root", "attachment": "leaves 05" },
+	{ "name": "leaves 04", "bone": "root", "attachment": "leaves 04" },
+	{ "name": "leaves 03", "bone": "root", "attachment": "leaves 03" },
+	{ "name": "leaves 02", "bone": "root", "attachment": "leaves 02" },
+	{ "name": "leaves 01", "bone": "root", "attachment": "leaves 01" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1768.5, "y": -2112.5, "width": 2629, "height": 1595 }
+		},
+		"back 01": {
+			"back 01": { "x": 739, "y": -1740, "width": 646, "height": 1118 }
+		},
+		"back 02": {
+			"back 02": { "x": 1422, "y": -1638, "width": 994, "height": 1268 }
+		},
+		"back 03": {
+			"back 03": { "x": 2207.5, "y": -1654, "width": 655, "height": 1256 }
+		},
+		"trunk": {
+			"trunk": { "x": 1532, "y": -1703.5, "width": 2170, "height": 2417 }
+		},
+		"main canopy": {
+			"main canopy": { "x": 1470, "y": -1218.5, "width": 2278, "height": 2135 }
+		},
+		"leaves 05": {
+			"leaves 05": { "x": 1770.5, "y": -1652, "width": 1649, "height": 1378 }
+		},
+		"leaves 04": {
+			"leaves 04": { "x": 1558.5, "y": -1851, "width": 1745, "height": 870 }
+		},
+		"leaves 03": {
+			"leaves 03": { "x": 1407.5, "y": -1713, "width": 603, "height": 1052 }
+		},
+		"leaves 02": {
+			"leaves 02": { "x": 931.5, "y": -1755.5, "width": 585, "height": 1215 }
+		},
+		"leaves 01": {
+			"leaves 01": { "x": 524.5, "y": -1831.5, "width": 387, "height": 1273 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

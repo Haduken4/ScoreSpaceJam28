@@ -1,0 +1,356 @@
+
+SpriteSheet_RedCapMushroom_Idle.png
+size: 4755,6060
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Plant Sprites_Animation-animation_00
+  rotate: false
+  xy: 0, 0
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_01
+  rotate: false
+  xy: 951, 0
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_02
+  rotate: false
+  xy: 1902, 0
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_03
+  rotate: false
+  xy: 2853, 0
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_04
+  rotate: false
+  xy: 3804, 0
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_05
+  rotate: false
+  xy: 0, 606
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_06
+  rotate: false
+  xy: 951, 606
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_07
+  rotate: false
+  xy: 1902, 606
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_08
+  rotate: false
+  xy: 2853, 606
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_09
+  rotate: false
+  xy: 3804, 606
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_10
+  rotate: false
+  xy: 0, 1212
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_11
+  rotate: false
+  xy: 951, 1212
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_12
+  rotate: false
+  xy: 1902, 1212
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_13
+  rotate: false
+  xy: 2853, 1212
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_14
+  rotate: false
+  xy: 3804, 1212
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_15
+  rotate: false
+  xy: 0, 1818
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_16
+  rotate: false
+  xy: 951, 1818
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_17
+  rotate: false
+  xy: 1902, 1818
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_18
+  rotate: false
+  xy: 2853, 1818
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_19
+  rotate: false
+  xy: 3804, 1818
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_20
+  rotate: false
+  xy: 0, 2424
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_21
+  rotate: false
+  xy: 951, 2424
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_22
+  rotate: false
+  xy: 1902, 2424
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_23
+  rotate: false
+  xy: 2853, 2424
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_24
+  rotate: false
+  xy: 3804, 2424
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_25
+  rotate: false
+  xy: 0, 3030
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_26
+  rotate: false
+  xy: 951, 3030
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_27
+  rotate: false
+  xy: 1902, 3030
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_28
+  rotate: false
+  xy: 2853, 3030
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_29
+  rotate: false
+  xy: 3804, 3030
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_30
+  rotate: false
+  xy: 0, 3636
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_31
+  rotate: false
+  xy: 951, 3636
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_32
+  rotate: false
+  xy: 1902, 3636
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_33
+  rotate: false
+  xy: 2853, 3636
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_34
+  rotate: false
+  xy: 3804, 3636
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_35
+  rotate: false
+  xy: 0, 4242
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_36
+  rotate: false
+  xy: 951, 4242
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_37
+  rotate: false
+  xy: 1902, 4242
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_38
+  rotate: false
+  xy: 2853, 4242
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_39
+  rotate: false
+  xy: 3804, 4242
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_40
+  rotate: false
+  xy: 0, 4848
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_41
+  rotate: false
+  xy: 951, 4848
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_42
+  rotate: false
+  xy: 1902, 4848
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_43
+  rotate: false
+  xy: 2853, 4848
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_44
+  rotate: false
+  xy: 3804, 4848
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_45
+  rotate: false
+  xy: 0, 5454
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_46
+  rotate: false
+  xy: 951, 5454
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_47
+  rotate: false
+  xy: 1902, 5454
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_48
+  rotate: false
+  xy: 2853, 5454
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
+Plant Sprites_Animation-animation_49
+  rotate: false
+  xy: 3804, 5454
+  size: 951, 606
+  orig: 951, 606
+  offset: 0, 0
+  index: -1
