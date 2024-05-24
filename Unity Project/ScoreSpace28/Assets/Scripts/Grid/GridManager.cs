@@ -44,6 +44,7 @@ public class GridManager : MonoBehaviour
             {
                 tooltip = true;
                 HoveredTile.GetComponent<TileLogic>().CreateTooltip();
+                tooltipTile = HoveredTile;
             }
         }
         else if (HoveredTile == null)
@@ -53,6 +54,7 @@ public class GridManager : MonoBehaviour
         else if (tooltip && HoveredTile != tooltipTile)
         {
             tooltipTile?.GetComponent<TileLogic>().DestroyTooltip();
+            tooltipTile = null;
             tooltip = false;
             tooltipTimer = TooltipTime;
         }

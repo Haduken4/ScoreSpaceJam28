@@ -9,14 +9,16 @@ public class TileLogic : MonoBehaviour
     public float PlantScaleLerpSpeed = 8.0f;
     public float PlantScaleSnapDist = 0.05f;
 
-    //public Vector3 PlantLocalPos = new Vector3(0, 0, -1.0f);
     public PlantAlignment Alignment = PlantAlignment.CENTER_BOTTOM;
 
     public List<PlantType> AllowedPlants = new List<PlantType>();
 
+    public GameObject TooltipPrefab = null;
+
     Vector3 plantNormalSize = Vector3.one;
     Vector3 plantPosOffset = Vector3.zero;
     Transform plant = null;
+    GameObject currTooltip = null;
 
     [HideInInspector]
     public bool IsPlant = false;
