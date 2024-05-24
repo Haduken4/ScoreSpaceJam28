@@ -37,6 +37,10 @@ public class GridManager : MonoBehaviour
 
     void Update()
     {
+        if (HoveredTile == null)
+        {
+            tooltipTimer = TooltipTime;
+        }
         if (HoveredTile && !tooltip)
         {
             tooltipTimer -= Time.deltaTime;
@@ -46,10 +50,6 @@ public class GridManager : MonoBehaviour
                 HoveredTile.GetComponent<TileLogic>().CreateTooltip();
                 tooltipTile = HoveredTile;
             }
-        }
-        else if (HoveredTile == null)
-        {
-            tooltipTimer = TooltipTime;
         }
         else if (tooltip && HoveredTile != tooltipTile)
         {

@@ -14,6 +14,7 @@ public class TileLogic : MonoBehaviour
     public List<PlantType> AllowedPlants = new List<PlantType>();
 
     public GameObject TooltipPrefab = null;
+    public Vector3 TooltipOffset = new Vector3(2, 0, 0);
 
     Vector3 plantNormalSize = Vector3.one;
     Vector3 plantPosOffset = Vector3.zero;
@@ -71,12 +72,24 @@ public class TileLogic : MonoBehaviour
 
     public void CreateTooltip()
     {
+        if (currTooltip)
+        {
+            DestroyTooltip();
+        }
 
+        currTooltip = Instantiate(TooltipPrefab, GameObject.Find("Canvas").transform);
+
+        // placing left or right based on whether x is + or - should cover all side edge cases
+        currTooltip.transform.position = transform.position + (transform.position.x < 0.0f ? -TooltipOffset : TooltipOffset);
+        // position should consider canvas ceiling and floor (but the tooltip should do this itself, it needs to figure out how big it is first)
+        // send the tooltip data about our plant if we have one
     }
 
     public void DestroyTooltip()
     {
-
+        // Later on we will probably want to have some kind of "closing" animation, or something else to make it not instant (maybe a fade-out?)
+        Destroy(currTooltip);
+        currTooltip = null;
     }
 
     Vector3 CalcAlignedPosition()
