@@ -19,6 +19,7 @@ public class GridManager : MonoBehaviour
 
     float tooltipTimer = 1.0f;
     bool tooltip = false;
+    ReactiveTile tooltipTile = null;
 
     float waveTimer = 0.0f;
     float waveIndex = 0;
@@ -36,20 +37,28 @@ public class GridManager : MonoBehaviour
 
     void Update()
     {
-        if(HoveredTile && !tooltip)
+        if (HoveredTile && !tooltip)
         {
             tooltipTimer -= Time.deltaTime;
-            if(tooltipTimer <= 0.0f)
+            if (tooltipTimer <= 0.0f)
             {
                 tooltip = true;
                 HoveredTile.GetComponent<TileLogic>().CreateTooltip();
             }
         }
+        else if (HoveredTile == null)
+        {
+            tooltipTimer = TooltipTime;
+        }
+        else if (tooltip && HoveredTile != tooltipTile)
+        {
+            tooltipTile?.GetComponent<TileLogic>().DestroyTooltip();
+            tooltip = false;
+            tooltipTimer = TooltipTime;
+        }
 
         if(WaveActivationTimer != 0.0f && waveIndex <= Width + Height - 2)
         {
-            int maxIndex = Width + Height - 2;
-
             waveTimer += Time.deltaTime;
             if (waveTimer >= WaveActivationTimer)
             {
