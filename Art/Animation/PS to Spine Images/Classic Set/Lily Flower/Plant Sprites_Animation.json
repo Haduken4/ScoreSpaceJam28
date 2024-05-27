@@ -1,0 +1,77 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/Lily Flower/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "slower copy", "bone": "root", "attachment": "slower copy" },
+	{ "name": "grass", "bone": "root", "attachment": "grass" },
+	{ "name": "left fern", "bone": "root", "attachment": "left fern" },
+	{ "name": "middle fern", "bone": "root", "attachment": "middle fern" },
+	{ "name": "right fern", "bone": "root", "attachment": "right fern" },
+	{ "name": "stalk", "bone": "root", "attachment": "stalk" },
+	{ "name": "left top leaf", "bone": "root", "attachment": "left top leaf" },
+	{ "name": "mid right leaf", "bone": "root", "attachment": "mid right leaf" },
+	{ "name": "top right leaf", "bone": "root", "attachment": "top right leaf" },
+	{ "name": "left bot leaf", "bone": "root", "attachment": "left bot leaf" },
+	{ "name": "right bot leaf", "bone": "root", "attachment": "right bot leaf" },
+	{ "name": "right closed flower", "bone": "root", "attachment": "right closed flower" },
+	{ "name": "left closed flower", "bone": "root", "attachment": "left closed flower" },
+	{ "name": "right open flower", "bone": "root", "attachment": "right open flower" },
+	{ "name": "flower middle", "bone": "root", "attachment": "flower middle" },
+	{ "name": "left open flower", "bone": "root", "attachment": "left open flower" }
+],
+"skins": {
+	"default": {
+		"slower copy": {
+			"slower copy": { "x": 1674.5, "y": -1855.5, "width": 1431, "height": 745 }
+		},
+		"grass": {
+			"grass": { "x": 1432, "y": -1986.5, "width": 1092, "height": 491 }
+		},
+		"left fern": {
+			"left fern": { "x": 1098, "y": -1965.5, "width": 312, "height": 485 }
+		},
+		"middle fern": {
+			"middle fern": { "x": 1558.5, "y": -1880, "width": 631, "height": 384 }
+		},
+		"right fern": {
+			"right fern": { "x": 1394.5, "y": -2023, "width": 905, "height": 332 }
+		},
+		"stalk": {
+			"stalk": { "x": 1483, "y": -1641, "width": 772, "height": 1178 }
+		},
+		"left top leaf": {
+			"left top leaf": { "x": 1235, "y": -1568, "width": 704, "height": 442 }
+		},
+		"mid right leaf": {
+			"mid right leaf": { "x": 1497.5, "y": -1672.5, "width": 801, "height": 491 }
+		},
+		"top right leaf": {
+			"top right leaf": { "x": 1648, "y": -1559.5, "width": 442, "height": 983 }
+		},
+		"left bot leaf": {
+			"left bot leaf": { "x": 1464.5, "y": -1919.5, "width": 735, "height": 475 }
+		},
+		"right bot leaf": {
+			"right bot leaf": { "x": 1618.5, "y": -1870, "width": 445, "height": 336 }
+		},
+		"right closed flower": {
+			"right closed flower": { "x": 1553.5, "y": -1453.5, "width": 1323, "height": 1397 }
+		},
+		"left closed flower": {
+			"left closed flower": { "x": 1553.5, "y": -1517, "width": 1323, "height": 1270 }
+		},
+		"right open flower": {
+			"right open flower": { "x": 1553.5, "y": -1576.5, "width": 1323, "height": 1151 }
+		},
+		"flower middle": {
+			"flower middle": { "x": 1553.5, "y": -1724, "width": 1323, "height": 856 }
+		},
+		"left open flower": {
+			"left open flower": { "x": 1533.5, "y": -1595.5, "width": 1363, "height": 1113 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

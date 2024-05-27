@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2844375628811779606}
   - component: {fileID: 4744476718335957288}
   - component: {fileID: 8500657727020306294}
+  - component: {fileID: 8571441020818208605}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Plant
@@ -59,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 8836156947436353786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2414656718098190594}
@@ -153,3 +154,24 @@ MonoBehaviour:
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!95 &8571441020818208605
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836156947436353786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19ed2b10613e5664baa03fb8f3e98ae0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
