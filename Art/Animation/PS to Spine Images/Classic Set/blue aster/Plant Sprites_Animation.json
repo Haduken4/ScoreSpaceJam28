@@ -1,0 +1,73 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/blue aster/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "grsss", "bone": "root", "attachment": "grsss" },
+	{ "name": "left fern", "bone": "root", "attachment": "left fern" },
+	{ "name": "middle fern", "bone": "root", "attachment": "middle fern" },
+	{ "name": "right fern", "bone": "root", "attachment": "right fern" },
+	{ "name": "behind leaf", "bone": "root", "attachment": "behind leaf" },
+	{ "name": "stem", "bone": "root", "attachment": "stem" },
+	{ "name": "bottom leaf", "bone": "root", "attachment": "bottom leaf" },
+	{ "name": "left lead", "bone": "root", "attachment": "left lead" },
+	{ "name": "small flower", "bone": "root", "attachment": "small flower" },
+	{ "name": "small left flower", "bone": "root", "attachment": "small left flower" },
+	{ "name": "bottom right flower", "bone": "root", "attachment": "bottom right flower" },
+	{ "name": "right open flower", "bone": "root", "attachment": "right open flower" },
+	{ "name": "left open flower", "bone": "root", "attachment": "left open flower" },
+	{ "name": "middle open flower", "bone": "root", "attachment": "middle open flower" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1530, "y": -1873.5, "width": 1408, "height": 721 }
+		},
+		"grsss": {
+			"grsss": { "x": 1321.5, "y": -1943.5, "width": 1095, "height": 585 }
+		},
+		"left fern": {
+			"left fern": { "x": 1244.5, "y": -1926, "width": 679, "height": 550 }
+		},
+		"middle fern": {
+			"middle fern": { "x": 1367.5, "y": -1819, "width": 511, "height": 336 }
+		},
+		"right fern": {
+			"right fern": { "x": 1616.5, "y": -1935.5, "width": 351, "height": 569 }
+		},
+		"behind leaf": {
+			"behind leaf": { "x": 1418.5, "y": -1631.5, "width": 563, "height": 495 }
+		},
+		"stem": {
+			"stem": { "x": 1179, "y": -1620, "width": 810, "height": 1248 }
+		},
+		"bottom leaf": {
+			"bottom leaf": { "x": 1531, "y": -1936.5, "width": 348, "height": 383 }
+		},
+		"left lead": {
+			"left lead": { "x": 1109, "y": -1774.5, "width": 318, "height": 335 }
+		},
+		"small flower": {
+			"small flower": { "x": 1115.5, "y": -1677.5, "width": 683, "height": 913 }
+		},
+		"small left flower": {
+			"small left flower": { "x": 966, "y": -1554, "width": 384, "height": 1160 }
+		},
+		"bottom right flower": {
+			"bottom right flower": { "x": 1285.5, "y": -1744, "width": 1023, "height": 780 }
+		},
+		"right open flower": {
+			"right open flower": { "x": 1312, "y": -1557, "width": 1076, "height": 1154 }
+		},
+		"left open flower": {
+			"left open flower": { "x": 992, "y": -1664.5, "width": 436, "height": 939 }
+		},
+		"middle open flower": {
+			"middle open flower": { "x": 1133.5, "y": -1431, "width": 719, "height": 1406 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
