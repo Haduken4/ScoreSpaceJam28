@@ -15,7 +15,7 @@ public class MenuButton : MonoBehaviour
             Application.Quit();
             return;
         }
-        SceneManager.LoadScene(SceneToSwap);
+        FindFirstObjectByType<SceneTransitioner>().StartChangingScenes(SceneToSwap);
 
         AudioManager.instance.PlayOneShot(FmodEvents_UI.instance.ConfirmSound, this.transform.position);
     }
