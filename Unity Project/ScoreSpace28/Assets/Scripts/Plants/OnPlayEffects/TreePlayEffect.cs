@@ -34,6 +34,10 @@ public class TreePlayEffect : OnPlayEffect
         }
 
         GlobalGameData.PlantValueMultiplier += GlobalMultiplierAdd;
+        if(GlobalMultiplierAdd != 0)
+        {
+            FindFirstObjectByType<RainEffectBehavior>().RainTreePlanted();
+        }
 
         float score = 0;
         foreach(OnPlayEffect plant in FindObjectsOfType<OnPlayEffect>())

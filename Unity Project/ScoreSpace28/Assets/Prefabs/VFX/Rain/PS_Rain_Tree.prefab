@@ -41,6 +41,10 @@ PrefabInstance:
       value: PS_Rain_Tree
       objectReference: {fileID: 0}
     - target: {fileID: 5281397897584959465, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281397897584959465, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: SubModule.subEmitters.Array.data[0].emitter
       value: 
       objectReference: {fileID: 191529879551179074}
@@ -78,19 +82,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4758842
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.10524742
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.7705251
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalRotation.w
@@ -123,10 +127,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3188637561865904958, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7227003778407985887}
   m_SourcePrefab: {fileID: 100100000, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
 --- !u!198 &191529879551179074 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1349082675362509302, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
+  m_PrefabInstance: {fileID: 1157588804884285620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4346189236754770826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3188637561865904958, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
+  m_PrefabInstance: {fileID: 1157588804884285620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7227003778407985887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346189236754770826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326ffee510fbebf448fe96eac9fa44e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RainSystem: {fileID: 6438985856258873181}
+  InitialRate: 5
+  RatePerTree: 4
+--- !u!198 &6438985856258873181 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5281397897584959465, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
   m_PrefabInstance: {fileID: 1157588804884285620}
   m_PrefabAsset: {fileID: 0}
