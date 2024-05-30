@@ -37,6 +37,7 @@ public class PlantData : MonoBehaviour
 {
     public PlantType Type = PlantType.MUSHROOM;
     public PlantIdentifier Identifier = PlantIdentifier.INVALID;
+    public string FullPlantName = "";
 
     public Transform ScoreTextPoint = null;
 
@@ -112,8 +113,12 @@ public class PlantData : MonoBehaviour
         stm.SpawnScoreText(ScoreTextPoint.position, val);
     }
 
-    public void DisplayEffect(string effect)
+    public TooltipData GetTooltipData()
     {
+        TooltipData data = new TooltipData();
+        data.TotalScoreGained = (int)TotalScoreGained;
+        data.PlantName = FullPlantName;
 
+        return data;
     }
 }
