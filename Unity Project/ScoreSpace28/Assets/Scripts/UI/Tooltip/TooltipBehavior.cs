@@ -2,8 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class TooltipData
+{
+    public List<string> TooltipStrings = new List<string>();
+    public string PlantName = "";
+    public int TotalScoreGained = 0;
+}
+
 public class TooltipBehavior : MonoBehaviour
 {
+
+
     public float PaneWidth = 300.0f;
 
     // Set this in prefab editor
@@ -21,15 +30,12 @@ public class TooltipBehavior : MonoBehaviour
 
     void InitPanes()
     {
-        int children = transform.childCount;
-        for(int i = 0; i < children; ++i)
+        if (myPlant == null)
         {
-            Transform c = transform.GetChild(i);
-            if(c.gameObject != PaneBG && c.gameObject != PaneText)
-            {
-                Destroy(transform.GetChild(i).gameObject);
-            }
+            return;
         }
+
+        TooltipData data = myPlant.GetTooltipData();
     }
 
     // Start is called before the first frame update
