@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeskBehavior : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class DeskBehavior : MonoBehaviour
     public Sprite NormalSprite = null;
 
     Animator animator = null;
-    SpriteRenderer sr = null;
+    RawImage ri = null;
     float timer = 0.0f;
     bool animating = false;
     bool blinking = false;
@@ -20,14 +21,14 @@ public class DeskBehavior : MonoBehaviour
     void Start()
     {
         timer = Random.Range(BlinkCooldownRange.x, BlinkCooldownRange.y);
-        sr = GetComponent<SpriteRenderer>();
+        ri = GetComponent<RawImage>();
 
-        animator = GetComponent<Animator>();
-        AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-        if (clipInfo.Length > 0)
-        {
-            animDuration = clipInfo[0].clip.length;
-        }
+        //animator = GetComponent<Animator>();
+        //AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+        //if (clipInfo.Length > 0)
+        //{
+        //    animDuration = clipInfo[0].clip.length;
+        //}
     }
 
     // Update is called once per frame
@@ -51,7 +52,8 @@ public class DeskBehavior : MonoBehaviour
             if(timer <= 0.0f)
             {
                 blinking = false;
-                sr.sprite = NormalSprite;
+                ri.texture = NormalSprite.texture;
+                timer = Random.Range(BlinkCooldownRange.x, BlinkCooldownRange.y);
             }
 
             return;
@@ -60,16 +62,20 @@ public class DeskBehavior : MonoBehaviour
         if (timer <= 0.0f)
         {
             blinking = true;
-            sr.sprite = BlinkSprite;
+            ri.texture = BlinkSprite.texture;
             timer = BlinkTime;
         }
     }
 
     public void StartBounceAnimation()
     {
-        animating = true;
-        animator.playbackTime = 0;
-        animator.StartPlayback();
-        timer = animDuration;
+        //animating = true;
+        //animator.playbackTime = 0;
+        //animator.StartPlayback();
+        //timer = animDuration;
+
+        blinking = true;
+        ri.texture = BlinkSprite.texture;
+        timer = BlinkTime;
     }
 }
