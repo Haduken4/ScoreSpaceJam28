@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8333592950413735068}
   - component: {fileID: 8243744989553615025}
   - component: {fileID: -6574658466369300419}
+  - component: {fileID: 938118591780850884}
   m_Layer: 0
   m_Name: ParasiticMushroom
   m_TagString: Plant
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 59785727496515118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6157431222168057029}
@@ -101,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Identifier: 11
+  FullPlantName: 
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -129,6 +131,27 @@ MonoBehaviour:
   PerfectBeeAnimation: {fileID: 9100000, guid: f36531d9da135e543b6a607c7b72b970, type: 2}
   PerfectBeeSprite: {fileID: 915833341, guid: dd096a9ee5c8a6a41951cacf1c8a90d8, type: 3}
   SiphonTargets: 00000000
+--- !u!95 &938118591780850884
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59785727496515118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63a6a222da90e72468e8a9effb385045, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8962274306792231802
 GameObject:
   m_ObjectHideFlags: 0

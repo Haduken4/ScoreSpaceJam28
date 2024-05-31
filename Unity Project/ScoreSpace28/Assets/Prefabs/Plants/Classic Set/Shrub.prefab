@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8546072962861843372}
   - component: {fileID: 4159756215473724343}
   - component: {fileID: 1314383728637811694}
+  - component: {fileID: -2991406620359192833}
   m_Layer: 0
   m_Name: Shrub
   m_TagString: Plant
@@ -59,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 6197302424519206360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.1, y: 2.1, z: 2.1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8870012062052312223}
@@ -133,7 +134,6 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 8870012062052312223}
   ScoreValue: 7
 --- !u!114 &1314383728637811694
 MonoBehaviour:
@@ -149,5 +149,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 2
   Identifier: 14
+  FullPlantName: 
+  ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!95 &-2991406620359192833
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6197302424519206360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6336623721e09cb42aaa10a530933c05, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

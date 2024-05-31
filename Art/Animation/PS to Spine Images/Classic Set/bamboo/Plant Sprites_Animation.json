@@ -1,0 +1,53 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/bamboo/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "Layer 3", "bone": "root", "attachment": "Layer 3" },
+	{ "name": "stalk 3", "bone": "root", "attachment": "stalk 3" },
+	{ "name": "stalk 5", "bone": "root", "attachment": "stalk 5" },
+	{ "name": "stalk 6", "bone": "root", "attachment": "stalk 6" },
+	{ "name": "stalk 1", "bone": "root", "attachment": "stalk 1" },
+	{ "name": "stalk 2", "bone": "root", "attachment": "stalk 2" },
+	{ "name": "stalk 7", "bone": "root", "attachment": "stalk 7" },
+	{ "name": "stalk 4", "bone": "root", "attachment": "stalk 4" },
+	{ "name": "grass", "bone": "root", "attachment": "grass" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1553, "y": -1725, "width": 1490, "height": 1168 }
+		},
+		"Layer 3": {
+			"Layer 3": { "x": 1308, "y": -1991.5, "width": 930, "height": 537 }
+		},
+		"stalk 3": {
+			"stalk 3": { "x": 1250, "y": -1490.5, "width": 398, "height": 963 }
+		},
+		"stalk 5": {
+			"stalk 5": { "x": 1570, "y": -1282.5, "width": 562, "height": 1277 }
+		},
+		"stalk 6": {
+			"stalk 6": { "x": 1715, "y": -1515, "width": 530, "height": 888 }
+		},
+		"stalk 1": {
+			"stalk 1": { "x": 860.5, "y": -1670.5, "width": 317, "height": 881 }
+		},
+		"stalk 2": {
+			"stalk 2": { "x": 1044.5, "y": -1569.5, "width": 479, "height": 1409 }
+		},
+		"stalk 7": {
+			"stalk 7": { "x": 1798, "y": -1703.5, "width": 486, "height": 1093 }
+		},
+		"stalk 4": {
+			"stalk 4": { "x": 1392, "y": -1550, "width": 578, "height": 1602 }
+		},
+		"grass": {
+			"grass": { "x": 1352, "y": -2091, "width": 624, "height": 530 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

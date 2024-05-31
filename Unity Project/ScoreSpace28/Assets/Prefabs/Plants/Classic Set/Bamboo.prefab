@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2939403986612681835}
   - component: {fileID: 5863756096740025223}
   - component: {fileID: -5169609742129157265}
+  - component: {fileID: -8762525483263390029}
   m_Layer: 0
   m_Name: Bamboo
   m_TagString: Plant
@@ -118,9 +119,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 4
   Identifier: 19
+  FullPlantName: 
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!95 &-8762525483263390029
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3378818797764241267}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb0a003f6de603046b735023da8febad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3556614026663590568
 GameObject:
   m_ObjectHideFlags: 0

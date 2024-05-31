@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Identifier: 10
+  FullPlantName: 
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -167,7 +168,7 @@ Animator:
   m_GameObject: {fileID: 6690405453201354691}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8949e03f7486e0847b06b368ebcb5cb9, type: 2}
+  m_Controller: {fileID: 9100000, guid: c4ca26e770b64c047805cc6c7306f91b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
