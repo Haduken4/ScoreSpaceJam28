@@ -1,0 +1,37 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/Parasitic Mushroom/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "rot", "bone": "root", "attachment": "rot" },
+	{ "name": "cone 3", "bone": "root", "attachment": "cone 3" },
+	{ "name": "cone 4", "bone": "root", "attachment": "cone 4" },
+	{ "name": "cone 1", "bone": "root", "attachment": "cone 1" },
+	{ "name": "cone 2", "bone": "root", "attachment": "cone 2" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1725, "y": -1645, "width": 1542, "height": 676 }
+		},
+		"rot": {
+			"rot": { "x": 1386, "y": -1924.5, "width": 1766, "height": 905 }
+		},
+		"cone 3": {
+			"cone 3": { "x": 1621.5, "y": -1236.5, "width": 963, "height": 1227 }
+		},
+		"cone 4": {
+			"cone 4": { "x": 1696.5, "y": -1724.5, "width": 405, "height": 489 }
+		},
+		"cone 1": {
+			"cone 1": { "x": 998.5, "y": -1525.5, "width": 453, "height": 793 }
+		},
+		"cone 2": {
+			"cone 2": { "x": 1275.5, "y": -1383, "width": 791, "height": 1122 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

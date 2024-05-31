@@ -1,0 +1,29 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/Mangrove Tree/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "back leaves", "bone": "root", "attachment": "back leaves" },
+	{ "name": "trunk", "bone": "root", "attachment": "trunk" },
+	{ "name": "canopy", "bone": "root", "attachment": "canopy" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1763, "y": -2072.5, "width": 2458, "height": 1199 }
+		},
+		"back leaves": {
+			"back leaves": { "x": 1329.5, "y": -1059.5, "width": 2223, "height": 687 }
+		},
+		"trunk": {
+			"trunk": { "x": 1306, "y": -1707, "width": 2364, "height": 1928 }
+		},
+		"canopy": {
+			"canopy": { "x": 1412, "y": -1280.5, "width": 2592, "height": 1939 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
