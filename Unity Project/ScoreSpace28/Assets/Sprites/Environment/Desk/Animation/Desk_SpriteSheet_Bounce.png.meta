@@ -1,0 +1,669 @@
+fileFormatVersion: 2
+guid: 043e044a2329f624a87f3cf47c974258
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8688
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e111d81388784644e81f91e792f4b022
+      internalID: -244524559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_1
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 8688
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f794a0a35f8e60b4c97fecaba128460b
+      internalID: 1443340464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_2
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 8688
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bdd47e260abc246b89516dc1f0bcf3
+      internalID: 795227220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_3
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 8688
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28f62d412dda5e49b3f337e563b2d78
+      internalID: -423389659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_4
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 8688
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c381b2f5fa393f42b9a0d9d8f9219b1
+      internalID: -1524001614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6516
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7025fecf03b22e249943f41d6cbb05ee
+      internalID: -1337231432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_6
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 6516
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1d34553e6d60f4ab604217b67dc91a
+      internalID: -2128903020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_7
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 6516
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e1cad58139c244fa7e309abd7d99d2
+      internalID: -887288939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_8
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 6516
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569cdfc9ce6042345bb68794c7fb9593
+      internalID: 1343681872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_9
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 6516
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dab2ffcf1b3d04393ed95b4cd29cd1
+      internalID: -578961807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4344
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f229b02099e9a478c75241ae996080
+      internalID: 1947154052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_11
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 4344
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48beabeff71a6ee4ca59ea2360d3ca7c
+      internalID: -712973439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_12
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4344
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6380b3aeef2833448cfc2a1addc651c
+      internalID: -956318673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_13
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 4344
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f25f1df747cbe408dbb01f65e835f1
+      internalID: 106347643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_14
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 4344
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f287ff0767db8e41858bdcc250a6cdc
+      internalID: 650082864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f8f42e969fcbe4380f0d316451711e
+      internalID: 237487406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_16
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2172
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ecd500602b7d34ebc2efbcdf9fbf55
+      internalID: -1615666788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_17
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2172
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2934727e600bfa1438241c07e43a4539
+      internalID: 1833493053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_18
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 2172
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80710ffa6f7161f42b01b44706d0f264
+      internalID: -1146432188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_19
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 2172
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e8c5ea690ccce46a821cf2b81a5955
+      internalID: 1324033229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d302b73dfe6f14a81b3261244582cf
+      internalID: -1720404864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_21
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4de5fa926af4947a998e245095ebf4
+      internalID: 486186550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_22
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371523c190c4b8241b5ed13ac4f8e9e3
+      internalID: 868941511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk_SpriteSheet_Bounce_23
+      rect:
+        serializedVersion: 2
+        x: 8640
+        y: 0
+        width: 2880
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a0fb8d880b1e44eb14b0ced8f7d00d
+      internalID: -1238693924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Desk_SpriteSheet_Bounce_0: -244524559
+      Desk_SpriteSheet_Bounce_1: 1443340464
+      Desk_SpriteSheet_Bounce_10: 1947154052
+      Desk_SpriteSheet_Bounce_11: -712973439
+      Desk_SpriteSheet_Bounce_12: -956318673
+      Desk_SpriteSheet_Bounce_13: 106347643
+      Desk_SpriteSheet_Bounce_14: 650082864
+      Desk_SpriteSheet_Bounce_15: 237487406
+      Desk_SpriteSheet_Bounce_16: -1615666788
+      Desk_SpriteSheet_Bounce_17: 1833493053
+      Desk_SpriteSheet_Bounce_18: -1146432188
+      Desk_SpriteSheet_Bounce_19: 1324033229
+      Desk_SpriteSheet_Bounce_2: 795227220
+      Desk_SpriteSheet_Bounce_20: -1720404864
+      Desk_SpriteSheet_Bounce_21: 486186550
+      Desk_SpriteSheet_Bounce_22: 868941511
+      Desk_SpriteSheet_Bounce_23: -1238693924
+      Desk_SpriteSheet_Bounce_24: -1571943982
+      Desk_SpriteSheet_Bounce_3: -423389659
+      Desk_SpriteSheet_Bounce_4: -1524001614
+      Desk_SpriteSheet_Bounce_5: -1337231432
+      Desk_SpriteSheet_Bounce_6: -2128903020
+      Desk_SpriteSheet_Bounce_7: -887288939
+      Desk_SpriteSheet_Bounce_8: 1343681872
+      Desk_SpriteSheet_Bounce_9: -578961807
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
