@@ -55,11 +55,13 @@ public class TurnManager : MonoBehaviour
 
     void Update()
     {
+        // If the tutorial popup is open, don't start the game yet
         if (TutorialPopup)
         {
             return;
         }
 
+        // Countdown to starting the game
         if(InitialTimer > 0.0f)
         {
             InitialTimer -= Time.deltaTime;
@@ -70,6 +72,7 @@ public class TurnManager : MonoBehaviour
             return;
         }
 
+        // Timer to make sure we don't get softlocked by some bad gameplay effects
         changeTimer -= Time.deltaTime;
         if (changeTimer <= 0.0f)
         {
@@ -77,12 +80,14 @@ public class TurnManager : MonoBehaviour
             changeTimer = CreatureGraceTimer;
         }
 
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
+        // Restart cheat code
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.R) && Input.GetKey(KeyCode.S))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (GameEnded)
+        // When the game ends and we finish the last turn, start counting down to results
+        if (GameEnded && !TurnEnded)
         {
             hm.DiscardHand();
             timer -= Time.deltaTime;
@@ -93,13 +98,13 @@ public class TurnManager : MonoBehaviour
 
             return;
         }
-        else if(activeGameplayEffects == 0)
+        else if(activeGameplayEffects == 0) // Otherwise, if nothing is active right now check if the game is over
         {
             CheckEndCondition();
         }
 
         // Counting down to next turn
-        if(timer > 0.0f && cardsPlayed == PlaysPerTurn && activeGameplayEffects == 0)
+        if(timer > 0.0f && TurnEnded && activeGameplayEffects == 0)
         {
             timer -= Time.deltaTime;
 
@@ -111,6 +116,7 @@ public class TurnManager : MonoBehaviour
             return;
         }
         
+        // All cards have been played and no effects are still active
         if(cardsPlayed >= PlaysPerTurn && activeGameplayEffects == 0)
         {
             TurnEnd();
@@ -136,21 +142,29 @@ public class TurnManager : MonoBehaviour
             return;
         }
 
+        bool actuallyOver = GameEnded;
+        GameEnded = false;
+
         if (!gm.DoneMakingGrid())
         {
             return;
         }
 
-        // Check if we can still play any cards
-        if (hm.GetCardObjects().Count == 0 || cards.CheckCardsPlayable(hm.GetCardObjects()))
+        if(gm.UnresolvedTilesCheck())
         {
             return;
         }
 
-        if (!GameEnded)
+        // Check if we can still play any cards or we are still drawing some cards
+        if (hm.GetCardObjects().Count == 0 || cards.CheckCardsPlayable(hm.GetCardObjects()) || cards.CurrentlyDrawing)
+        {
+            return;
+        }
+
+        if (!actuallyOver)
         {
             GameEnded = true;
-            TurnEnded = true;
+            TurnEnd();
             return;
         }
         

@@ -237,6 +237,23 @@ public class GridManager : MonoBehaviour
         }
     }
 
+    public bool UnresolvedTilesCheck()
+    {
+        for (int x = 0; x < Width; ++x)
+        {
+            for (int y = 0; y < Height; ++y)
+            {
+                TileLogic tl = tiles[x][y].GetComponent<TileLogic>();
+                if (!tl.GetPlant() && !tl.IsPlant)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     public bool DoneMakingGrid()
     {
         return finishedMakingGrid;

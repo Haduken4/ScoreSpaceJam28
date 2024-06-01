@@ -16,6 +16,8 @@ public class CardPile : MonoBehaviour
     public List<GameObject> DebugDeckCards = new List<GameObject>();
     public int DebugInitialDraw = 0;
 
+    [HideInInspector]
+    public bool CurrentlyDrawing = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -39,10 +41,11 @@ public class CardPile : MonoBehaviour
             return;
         }
 
+        CurrentlyDrawing = true;
         int i = 0;
         foreach(GameObject prefab in drawn)
         {
-            StartCoroutine(CreateAndInitCard(prefab, i * CardDrawDelay));
+            StartCoroutine(CreateAndInitCard(prefab, i * CardDrawDelay, i == (toDraw - 1)));
             ++i;
         }
 
@@ -81,7 +84,7 @@ public class CardPile : MonoBehaviour
         return false;
     }
 
-    IEnumerator CreateAndInitCard(GameObject prefab, float delay)
+    IEnumerator CreateAndInitCard(GameObject prefab, float delay, bool final)
     {
         yield return new WaitForSeconds(delay);
 
@@ -90,5 +93,7 @@ public class CardPile : MonoBehaviour
         card.transform.localScale *= 0.1f;
 
         hm.AddCard(card.transform);
+
+        CurrentlyDrawing = !final;
     }
 }
