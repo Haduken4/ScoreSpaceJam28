@@ -9,13 +9,14 @@ public class DeskBehavior : MonoBehaviour
     public float BlinkTime = 0.2f;
     public Sprite BlinkSprite = null;
     public Sprite NormalSprite = null;
+    public Sprite AnimatingSprite = null;
 
     Animator animator = null;
     SpriteRenderer sr = null;
     float timer = 0.0f;
     bool animating = false;
     bool blinking = false;
-    float animDuration = 0;
+    float animDuration = 1.05f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,8 @@ public class DeskBehavior : MonoBehaviour
         if (clipInfo.Length > 0)
         {
             animDuration = clipInfo[0].clip.length;
-        }animator.enabled = false;
+        }
+        animator.enabled = false;
     }
 
     // Update is called once per frame
@@ -42,6 +44,7 @@ public class DeskBehavior : MonoBehaviour
             {
                 animating = false;
                 animator.enabled = false;
+                sr.sprite = NormalSprite;
                 timer = Random.Range(BlinkCooldownRange.x, BlinkCooldownRange.y);
             }
 
@@ -68,15 +71,12 @@ public class DeskBehavior : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    public void PlayBounceAnimation()
     {
         animating = true;
+        timer = animDuration;
+        sr.sprite = AnimatingSprite;
         animator.enabled = true;
-        animator.Play("BounceState");
-        Debug.Log("Hello");
-
-        //blinking = true;
-        //sr.sprite = BlinkSprite.sprite;
-        //timer = BlinkTime;
+        animator.Play("DeskBounceAnimation");
     }
 }

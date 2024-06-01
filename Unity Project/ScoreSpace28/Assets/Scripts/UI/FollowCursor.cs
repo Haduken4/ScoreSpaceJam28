@@ -7,7 +7,6 @@ public class FollowCursor : MonoBehaviour
     public float MouseCollisionSize = 0.05f;
 
     ReactiveTile last = null;
-    TrashCan lastTrash = null;
 
     ClickedCardParent clickParent = null;
     TurnManager tm = null;
@@ -45,7 +44,7 @@ public class FollowCursor : MonoBehaviour
             last.CursorExit();
             last = null;
         }
-        TrashCan trash = null;
+        DeskBehavior desk = null;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, MouseCollisionSize);
         foreach(Collider2D hit in hits)
@@ -56,30 +55,12 @@ public class FollowCursor : MonoBehaviour
                 last.CursorEnter();
             }
 
-            trash = hit.GetComponent<TrashCan>();
-
-            if (trash && clickParent.transform.childCount == 1 && tm.CanTrash())
-            {
-                // Open trash can
-                trash.OpenLid();
-                lastTrash = trash;
-            }
-        }        
-
-        if(!tm.CanTrash())
-        {
-            return;
+            desk = hit.GetComponent<DeskBehavior>();
         }
-        if(trash == null && lastTrash != null)
-        {
-            // Close trash can using lastTrash
-            lastTrash.CloseLid();
-            lastTrash = null;
-        }
-    }
 
-    public TrashCan GetTrash()
-    {
-        return lastTrash;
+        if(desk && Input.GetMouseButtonUp(0))
+        {
+            desk.PlayBounceAnimation();
+        }
     }
 }

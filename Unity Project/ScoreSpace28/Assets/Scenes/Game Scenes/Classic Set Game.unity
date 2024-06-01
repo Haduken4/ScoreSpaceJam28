@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 45790629}
   - component: {fileID: 45790628}
   - component: {fileID: 45790630}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Desk
   m_TagString: Desk
   m_Icon: {fileID: 0}
@@ -320,6 +320,7 @@ MonoBehaviour:
   BlinkTime: 0.15
   BlinkSprite: {fileID: 21300000, guid: ccb3361f446db4f49bf483b2e5ee9bc6, type: 3}
   NormalSprite: {fileID: 21300000, guid: 308ac4e7da7607641ae4903913dc94b9, type: 3}
+  AnimatingSprite: {fileID: 21300000, guid: 9c20e32ec7722a14d866d51fb9d4426c, type: 3}
 --- !u!95 &45790625
 Animator:
   serializedVersion: 5
@@ -382,15 +383,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6f12babb34a2ccd45a0e3af004778e23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 308ac4e7da7607641ae4903913dc94b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 28.8, y: 21.72656}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &45790627
@@ -445,13 +446,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 28.8, y: 21.72656}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 28.8, y: 21.72656}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30, y: 10}
+  m_Size: {x: 30, y: 15}
   m_EdgeRadius: 0
 --- !u!114 &45790629
 MonoBehaviour:
@@ -490,7 +491,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45790623}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -506,8 +507,8 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &51588765
 GameObject:
