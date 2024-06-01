@@ -34,9 +34,11 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
     protected override void ReactiveStateChanged(ReactiveState newState)
     {
         ReactiveState lastState = CurrState;
-        if(lastState == ReactiveState.L_CLICKED && cl.InPlayArea())
+        if(lastState == ReactiveState.L_CLICKED)
         {
-            if(cl.PlayCard())
+            Debug.Log("Card was just let go");
+
+            if(cl.InPlayArea() && cl.PlayCard())
             {
                 Debug.Log("Destroying card");
                 Destroy(gameObject);
@@ -119,14 +121,15 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //playsoundHere
-        AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.PlantSeedShuffle, transform.position);
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/PlantSeedShuffle", GetComponent<Transform>().position);
-
         if (ClickedParent.childCount == 1)
         {
             return;
         }
+
+        //playsoundHere
+        AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.PlantSeedShuffle, transform.position);
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/plantSFX/PlantSeedShuffle", GetComponent<Transform>().position);
+
         rm.ObjectHovered(this);
         BecomeHoveredCard();
     }
@@ -137,6 +140,7 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
         {
             return;
         }
+
         rm.ObjectUnhovered(this);
         UnhoverCard();
     }
