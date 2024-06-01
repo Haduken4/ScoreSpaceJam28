@@ -34,11 +34,11 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
     protected override void ReactiveStateChanged(ReactiveState newState)
     {
         ReactiveState lastState = CurrState;
-        if(lastState == ReactiveState.L_CLICKED)
-        {
-            Debug.Log("Card was just let go");
 
-            if(cl.InPlayArea() && cl.PlayCard())
+        // Try to play the card if we're in the play area and were clicked
+        if(lastState == ReactiveState.L_CLICKED && cl.InPlayArea())
+        {
+            if(cl.PlayCard())
             {
                 Debug.Log("Destroying card");
                 Destroy(gameObject);
@@ -90,6 +90,10 @@ public class ReactiveCard : Reactive, IPointerEnterHandler, IPointerExitHandler
             currParent = lastParent;
         }
         transform.SetParent(ClickedParent, true);
+        if(ClickedParent.GetComponent<ClickedCardParent>().GetInPlay())
+        {
+            cl.EnterPlayArea();
+        }
     }
 
     private void OnTransformParentChanged()

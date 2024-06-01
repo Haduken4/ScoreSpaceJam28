@@ -56,19 +56,25 @@ public class ClickedCardParent : CardParent
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(currChild && collision.name == "HandArea")
+        if(collision.name == "HandArea")
         {
             inPlay = false;
-            currChild.GetComponent<CardLogic>()?.ExitPlayArea();
+            if (currChild)
+            {
+                currChild.GetComponent<CardLogic>().ExitPlayArea();
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (currChild && collision.name == "HandArea")
+        if (collision.name == "HandArea")
         {
             inPlay = true;
-            currChild.GetComponent<CardLogic>()?.EnterPlayArea();
+            if (currChild)
+            {
+                currChild.GetComponent<CardLogic>().EnterPlayArea();
+            }
         }
     }
 
@@ -89,5 +95,10 @@ public class ClickedCardParent : CardParent
                 tile.GetComponent<ReactiveTile>().FinalThreeTile();
             }
         }
+    }
+
+    public bool GetInPlay()
+    {
+        return inPlay;
     }
 }
