@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlantToSpawn: {fileID: 8836156947436353786, guid: c6fbe43240f40f04697472d3df6ab313, type: 3}
-  SpawnOffset: {x: 0.15, y: -0.25, z: 0}
+  SpawnOffset: {x: 0.22, y: -0.19, z: 0}
   TileModifier: 0
   CardType: 1
   OnPlaySound:

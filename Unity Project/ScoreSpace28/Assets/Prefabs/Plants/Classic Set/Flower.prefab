@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 8836156947436353786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2414656718098190594}
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Identifier: 12
+  FullPlantName: 
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -164,7 +165,7 @@ Animator:
   m_GameObject: {fileID: 8836156947436353786}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 19ed2b10613e5664baa03fb8f3e98ae0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 102e7f240888d414fbaf9d515905d2e3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
