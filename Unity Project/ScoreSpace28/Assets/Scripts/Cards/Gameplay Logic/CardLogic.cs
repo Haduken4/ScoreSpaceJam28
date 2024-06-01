@@ -48,25 +48,31 @@ public class CardLogic : MonoBehaviour
 
     public bool PlayCard()
     {
+        Debug.Log("Trying to play card");
+
         ReactiveTile backupTile = FindFirstObjectByType<FollowCursor>().GetFirstHitTile();
         if(gm.HoveredTile == null && backupTile == null)
         {
+            Debug.Log("Backup AND hovered tile were null");
             return false;
         }
 
         TileLogic tl = gm.HoveredTile.GetComponent<TileLogic>();
         if (tl == null)
         {
+            Debug.Log("Hovered tile was null, using backup");
             tl = backupTile.GetComponent<TileLogic>();
         }
 
         if(!tl.CanPlant(CardType))
         {
+            Debug.Log("Not allowed to plant on this tile");
             return false;
         }
 
         if(PlantToSpawn != null)
         {
+            Debug.Log("Attempting to spawn plant");
             return PlayPlant(tl);
         }
         else if(TileModifier && tl.GetPlant() == null)
@@ -79,6 +85,8 @@ public class CardLogic : MonoBehaviour
             return true;
         }
 
+
+        Debug.Log("No plant to spawn and not a tile modifier");
         return false;
     }
 
@@ -86,6 +94,7 @@ public class CardLogic : MonoBehaviour
     {
         if (tl.GetPlant() != null)
         {
+            Debug.Log("The tile has a plant (should be impossible here)");
             return false;
         }
 
@@ -100,6 +109,7 @@ public class CardLogic : MonoBehaviour
 
         //tm.GameplayEffectStart();
 
+        Debug.Log("Successfuly spawned the plant and played the card");
         return true;
     }
 
