@@ -72,6 +72,11 @@ public class TileLogic : MonoBehaviour
 
     public void CreateTooltip()
     {
+        if(!TooltipPrefab)
+        {
+            return;
+        }
+
         if (currTooltip)
         {
             DestroyTooltip();
@@ -88,7 +93,8 @@ public class TileLogic : MonoBehaviour
     public void DestroyTooltip()
     {
         // Later on we will probably want to have some kind of "closing" animation, or something else to make it not instant (maybe a fade-out?)
-        Destroy(currTooltip);
+        if(currTooltip) Destroy(currTooltip);
+
         currTooltip = null;
     }
 

@@ -486,7 +486,7 @@ MonoBehaviour:
   PlantScaleSnapDist: 0.05
   Alignment: 0
   AllowedPlants: 
-  TooltipPrefab: {fileID: 116434869250335328, guid: 51add26cea544c448928703edee15bd7, type: 3}
+  TooltipPrefab: {fileID: 0}
   TooltipOffset: {x: 2.5, y: 0, z: 0}
   IsPlant: 0
   BaseScoreValue: 0
