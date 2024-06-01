@@ -1,0 +1,53 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/fly trap/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "left weed", "bone": "root", "attachment": "left weed" },
+	{ "name": "center weed", "bone": "root", "attachment": "center weed" },
+	{ "name": "right weed", "bone": "root", "attachment": "right weed" },
+	{ "name": "center stem", "bone": "root", "attachment": "center stem" },
+	{ "name": "center head", "bone": "root", "attachment": "center head" },
+	{ "name": "left stem", "bone": "root", "attachment": "left stem" },
+	{ "name": "left head", "bone": "root", "attachment": "left head" },
+	{ "name": "right stem", "bone": "root", "attachment": "right stem" },
+	{ "name": "right head", "bone": "root", "attachment": "right head" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1827, "y": -1839.5, "width": 1844, "height": 1087 }
+		},
+		"left weed": {
+			"left weed": { "x": 1019.5, "y": -1965.5, "width": 415, "height": 437 }
+		},
+		"center weed": {
+			"center weed": { "x": 1413.5, "y": -1817, "width": 93, "height": 298 }
+		},
+		"right weed": {
+			"right weed": { "x": 2016, "y": -2116.5, "width": 662, "height": 387 }
+		},
+		"center stem": {
+			"center stem": { "x": 1645, "y": -1612.5, "width": 300, "height": 1135 }
+		},
+		"center head": {
+			"center head": { "x": 1727.5, "y": -880, "width": 769, "height": 568 }
+		},
+		"left stem": {
+			"left stem": { "x": 1235.5, "y": -1794.5, "width": 409, "height": 1105 }
+		},
+		"left head": {
+			"left head": { "x": 1069, "y": -1315, "width": 676, "height": 674 }
+		},
+		"right stem": {
+			"right stem": { "x": 1828.5, "y": -1927.5, "width": 343, "height": 953 }
+		},
+		"right head": {
+			"right head": { "x": 2098.5, "y": -1531, "width": 721, "height": 564 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

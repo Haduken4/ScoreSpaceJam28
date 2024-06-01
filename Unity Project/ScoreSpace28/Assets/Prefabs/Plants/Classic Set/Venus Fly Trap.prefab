@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 118491310642548998}
   - component: {fileID: 1241157335661765939}
   - component: {fileID: -2637551164846315323}
+  - component: {fileID: 7221752961442722813}
   m_Layer: 0
   m_Name: Venus Fly Trap
   m_TagString: Plant
@@ -61,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 7193602633764507786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.125}
+  m_LocalScale: {x: 2, y: 2, z: 1.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8362948055850572583}
@@ -197,7 +198,6 @@ MonoBehaviour:
   ActivationDelay: 0.1
   VisualEffect: {fileID: 0}
   VFXPoint: {fileID: 0}
-  ScoreTextPoint: {fileID: 8362948055850572583}
   ScoreValue: 5
   ScorePerBee: 5
 --- !u!114 &-2637551164846315323
@@ -214,5 +214,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 2
   Identifier: 15
+  FullPlantName: 
+  ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!95 &7221752961442722813
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193602633764507786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3c32fff9bfc01e4399fcaaeb13e76fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
