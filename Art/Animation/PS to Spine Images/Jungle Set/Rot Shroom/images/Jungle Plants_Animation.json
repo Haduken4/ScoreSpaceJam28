@@ -1,4 +1,4 @@
-{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Rot Shroom/" },
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Rot Shroom/images/" },
 "PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
 "bones": [
 	{ "name": "root" }
