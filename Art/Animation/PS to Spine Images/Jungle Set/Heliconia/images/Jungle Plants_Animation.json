@@ -1,0 +1,97 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Heliconia/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "stem01", "bone": "root", "attachment": "stem01" },
+	{ "name": "stwm02", "bone": "root", "attachment": "stwm02" },
+	{ "name": "stm03", "bone": "root", "attachment": "stm03" },
+	{ "name": "stem04", "bone": "root", "attachment": "stem04" },
+	{ "name": "stem05", "bone": "root", "attachment": "stem05" },
+	{ "name": "stem06", "bone": "root", "attachment": "stem06" },
+	{ "name": "stem07", "bone": "root", "attachment": "stem07" },
+	{ "name": "stem08", "bone": "root", "attachment": "stem08" },
+	{ "name": "leaf07", "bone": "root", "attachment": "leaf07" },
+	{ "name": "leaf08", "bone": "root", "attachment": "leaf08" },
+	{ "name": "leaf05", "bone": "root", "attachment": "leaf05" },
+	{ "name": "leaf03", "bone": "root", "attachment": "leaf03" },
+	{ "name": "leaf01", "bone": "root", "attachment": "leaf01" },
+	{ "name": "leaf04", "bone": "root", "attachment": "leaf04" },
+	{ "name": "flower01", "bone": "root", "attachment": "flower01" },
+	{ "name": "flower02", "bone": "root", "attachment": "flower02" },
+	{ "name": "flower03", "bone": "root", "attachment": "flower03" },
+	{ "name": "flower04", "bone": "root", "attachment": "flower04" },
+	{ "name": "leaf02", "bone": "root", "attachment": "leaf02" },
+	{ "name": "leaf06", "bone": "root", "attachment": "leaf06" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1589, "y": -1724.5, "width": 1826, "height": 959 }
+		},
+		"stem01": {
+			"stem01": { "x": 1061, "y": -2029, "width": 136, "height": 248 }
+		},
+		"stwm02": {
+			"stwm02": { "x": 1178.5, "y": -1989, "width": 113, "height": 388 }
+		},
+		"stm03": {
+			"stm03": { "x": 1160.5, "y": -1813, "width": 187, "height": 544 }
+		},
+		"stem04": {
+			"stem04": { "x": 1213, "y": -1617, "width": 164, "height": 704 }
+		},
+		"stem05": {
+			"stem05": { "x": 1330, "y": -1601, "width": 44, "height": 484 }
+		},
+		"stem06": {
+			"stem06": { "x": 1334.5, "y": -1983.5, "width": 119, "height": 477 }
+		},
+		"stem07": {
+			"stem07": { "x": 1406.5, "y": -1829, "width": 149, "height": 498 }
+		},
+		"stem08": {
+			"stem08": { "x": 1477.5, "y": -2012, "width": 173, "height": 308 }
+		},
+		"leaf07": {
+			"leaf07": { "x": 1681, "y": -1360.5, "width": 624, "height": 595 }
+		},
+		"leaf08": {
+			"leaf08": { "x": 1821.5, "y": -1792, "width": 663, "height": 284 }
+		},
+		"leaf05": {
+			"leaf05": { "x": 1529, "y": -1125.5, "width": 454, "height": 673 }
+		},
+		"leaf03": {
+			"leaf03": { "x": 811, "y": -1339, "width": 622, "height": 618 }
+		},
+		"leaf01": {
+			"leaf01": { "x": 784, "y": -1891.5, "width": 542, "height": 195 }
+		},
+		"leaf04": {
+			"leaf04": { "x": 983, "y": -1118, "width": 524, "height": 534 }
+		},
+		"flower01": {
+			"flower01": { "x": 990.5, "y": -1945, "width": 305, "height": 512 }
+		},
+		"flower02": {
+			"flower02": { "x": 1037, "y": -1575.5, "width": 448, "height": 1097 }
+		},
+		"flower03": {
+			"flower03": { "x": 1349.5, "y": -1368, "width": 417, "height": 1252 }
+		},
+		"flower04": {
+			"flower04": { "x": 1625, "y": -1697, "width": 514, "height": 862 }
+		},
+		"leaf02": {
+			"leaf02": { "x": 826, "y": -1731.5, "width": 738, "height": 405 }
+		},
+		"leaf06": {
+			"leaf06": { "x": 1670.5, "y": -1646.5, "width": 767, "height": 305 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

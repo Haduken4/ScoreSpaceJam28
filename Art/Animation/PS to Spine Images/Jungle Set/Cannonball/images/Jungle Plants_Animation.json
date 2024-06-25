@@ -1,0 +1,85 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Cannonball/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "under canopy", "bone": "root", "attachment": "under canopy" },
+	{ "name": "trunk", "bone": "root", "attachment": "trunk" },
+	{ "name": "bloom 01", "bone": "root", "attachment": "bloom 01" },
+	{ "name": "bloom 02", "bone": "root", "attachment": "bloom 02" },
+	{ "name": "bloom 03", "bone": "root", "attachment": "bloom 03" },
+	{ "name": "bloom 04", "bone": "root", "attachment": "bloom 04" },
+	{ "name": "blom 05", "bone": "root", "attachment": "blom 05" },
+	{ "name": "flower 01", "bone": "root", "attachment": "flower 01" },
+	{ "name": "flower 04", "bone": "root", "attachment": "flower 04" },
+	{ "name": "flower 02", "bone": "root", "attachment": "flower 02" },
+	{ "name": "flower 03", "bone": "root", "attachment": "flower 03" },
+	{ "name": "flower 05", "bone": "root", "attachment": "flower 05" },
+	{ "name": "canopy 01", "bone": "root", "attachment": "canopy 01" },
+	{ "name": "canopy 02", "bone": "root", "attachment": "canopy 02" },
+	{ "name": "canopy 03", "bone": "root", "attachment": "canopy 03" },
+	{ "name": "canopy 05", "bone": "root", "attachment": "canopy 05" },
+	{ "name": "canopy 04", "bone": "root", "attachment": "canopy 04" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1698, "y": -1942.5, "width": 2214, "height": 1511 }
+		},
+		"under canopy": {
+			"under canopy": { "x": 1180, "y": -1195.5, "width": 1890, "height": 1403 }
+		},
+		"trunk": {
+			"trunk": { "x": 1271, "y": -1536.5, "width": 1538, "height": 2357 }
+		},
+		"bloom 01": {
+			"bloom 01": { "x": 1202.5, "y": -2150, "width": 689, "height": 1002 }
+		},
+		"bloom 02": {
+			"bloom 02": { "x": 898, "y": -1356.5, "width": 444, "height": 227 }
+		},
+		"bloom 03": {
+			"bloom 03": { "x": 1275, "y": -1053.5, "width": 316, "height": 345 }
+		},
+		"bloom 04": {
+			"bloom 04": { "x": 1568.5, "y": -1667, "width": 421, "height": 602 }
+		},
+		"blom 05": {
+			"blom 05": { "x": 1923, "y": -1288.5, "width": 236, "height": 327 }
+		},
+		"flower 01": {
+			"flower 01": { "x": 1217, "y": -2156, "width": 750, "height": 1042 }
+		},
+		"flower 04": {
+			"flower 04": { "x": 1568, "y": -1691.5, "width": 504, "height": 651 }
+		},
+		"flower 02": {
+			"flower 02": { "x": 874.5, "y": -1375, "width": 491, "height": 264 }
+		},
+		"flower 03": {
+			"flower 03": { "x": 1269.5, "y": -1053.5, "width": 401, "height": 345 }
+		},
+		"flower 05": {
+			"flower 05": { "x": 1923.5, "y": -1292, "width": 343, "height": 414 }
+		},
+		"canopy 01": {
+			"canopy 01": { "x": 1227, "y": -820.5, "width": 2306, "height": 1097 }
+		},
+		"canopy 02": {
+			"canopy 02": { "x": 1858.5, "y": -956, "width": 1043, "height": 712 }
+		},
+		"canopy 03": {
+			"canopy 03": { "x": 1408.5, "y": -1267.5, "width": 1051, "height": 615 }
+		},
+		"canopy 05": {
+			"canopy 05": { "x": 1591.5, "y": -1783.5, "width": 1005, "height": 707 }
+		},
+		"canopy 04": {
+			"canopy 04": { "x": 811.5, "y": -1729.5, "width": 753, "height": 633 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

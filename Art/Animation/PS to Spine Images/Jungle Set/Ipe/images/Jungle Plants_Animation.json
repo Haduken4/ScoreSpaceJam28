@@ -1,0 +1,41 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Ipe/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "back canopy", "bone": "root", "attachment": "back canopy" },
+	{ "name": "trunk", "bone": "root", "attachment": "trunk" },
+	{ "name": "vines copy", "bone": "root", "attachment": "vines copy" },
+	{ "name": "vines copy 2", "bone": "root", "attachment": "vines copy 2" },
+	{ "name": "vines copy 3", "bone": "root", "attachment": "vines copy 3" },
+	{ "name": "canopy", "bone": "root", "attachment": "canopy" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1680, "y": -1875, "width": 2418, "height": 1454 }
+		},
+		"back canopy": {
+			"back canopy": { "x": 1219.5, "y": -1058, "width": 2255, "height": 1196 }
+		},
+		"trunk": {
+			"trunk": { "x": 1228.5, "y": -1557.5, "width": 2149, "height": 2089 }
+		},
+		"vines copy": {
+			"vines copy": { "x": 543, "y": -1580.5, "width": 92, "height": 483 }
+		},
+		"vines copy 2": {
+			"vines copy 2": { "x": 1413, "y": -2042, "width": 172, "height": 438 }
+		},
+		"vines copy 3": {
+			"vines copy 3": { "x": 1332.5, "y": -1249.5, "width": 161, "height": 419 }
+		},
+		"canopy": {
+			"canopy": { "x": 1214, "y": -907.5, "width": 2430, "height": 1039 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

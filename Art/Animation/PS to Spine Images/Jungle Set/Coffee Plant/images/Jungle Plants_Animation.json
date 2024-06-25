@@ -1,0 +1,129 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Coffee Plant/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "trunk", "bone": "root", "attachment": "trunk" },
+	{ "name": "back leaves", "bone": "root", "attachment": "back leaves" },
+	{ "name": "berries", "bone": "root", "attachment": "berries" },
+	{ "name": "berries copy", "bone": "root", "attachment": "berries copy" },
+	{ "name": "berries copy 2", "bone": "root", "attachment": "berries copy 2" },
+	{ "name": "berries copy 3", "bone": "root", "attachment": "berries copy 3" },
+	{ "name": "berries copy 4", "bone": "root", "attachment": "berries copy 4" },
+	{ "name": "berries copy 5", "bone": "root", "attachment": "berries copy 5" },
+	{ "name": "berries copy 6", "bone": "root", "attachment": "berries copy 6" },
+	{ "name": "berries copy 7", "bone": "root", "attachment": "berries copy 7" },
+	{ "name": "dark leaves", "bone": "root", "attachment": "dark leaves" },
+	{ "name": "dark leaves copy", "bone": "root", "attachment": "dark leaves copy" },
+	{ "name": "dark leaves copy 2", "bone": "root", "attachment": "dark leaves copy 2" },
+	{ "name": "dark leaves copy 3", "bone": "root", "attachment": "dark leaves copy 3" },
+	{ "name": "dark leaves copy 4", "bone": "root", "attachment": "dark leaves copy 4" },
+	{ "name": "dark leaves copy 5", "bone": "root", "attachment": "dark leaves copy 5" },
+	{ "name": "mid leaves", "bone": "root", "attachment": "mid leaves" },
+	{ "name": "mid leaves copy", "bone": "root", "attachment": "mid leaves copy" },
+	{ "name": "mid leaves copy 2", "bone": "root", "attachment": "mid leaves copy 2" },
+	{ "name": "mid leaves copy 3", "bone": "root", "attachment": "mid leaves copy 3" },
+	{ "name": "mid leaves copy 4", "bone": "root", "attachment": "mid leaves copy 4" },
+	{ "name": "mid leaves copy 5", "bone": "root", "attachment": "mid leaves copy 5" },
+	{ "name": "top leaves", "bone": "root", "attachment": "top leaves" },
+	{ "name": "top leaves copy", "bone": "root", "attachment": "top leaves copy" },
+	{ "name": "top leaves copy 3", "bone": "root", "attachment": "top leaves copy 3" },
+	{ "name": "top leaves copy 4", "bone": "root", "attachment": "top leaves copy 4" },
+	{ "name": "top leaves copy 5", "bone": "root", "attachment": "top leaves copy 5" },
+	{ "name": "top leaves copy 6", "bone": "root", "attachment": "top leaves copy 6" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1610.5, "y": -1728.5, "width": 1755, "height": 1069 }
+		},
+		"trunk": {
+			"trunk": { "x": 1182.5, "y": -1507, "width": 871, "height": 1534 }
+		},
+		"back leaves": {
+			"back leaves": { "x": 1230.5, "y": -1412.5, "width": 1067, "height": 1147 }
+		},
+		"berries": {
+			"berries": { "x": 765, "y": -1381.5, "width": 88, "height": 239 }
+		},
+		"berries copy": {
+			"berries copy": { "x": 923, "y": -1064, "width": 88, "height": 238 }
+		},
+		"berries copy 2": {
+			"berries copy 2": { "x": 1189, "y": -1167.5, "width": 88, "height": 239 }
+		},
+		"berries copy 3": {
+			"berries copy 3": { "x": 916, "y": -1868, "width": 88, "height": 238 }
+		},
+		"berries copy 4": {
+			"berries copy 4": { "x": 1147, "y": -1599.5, "width": 88, "height": 239 }
+		},
+		"berries copy 5": {
+			"berries copy 5": { "x": 1414, "y": -1312.5, "width": 88, "height": 239 }
+		},
+		"berries copy 6": {
+			"berries copy 6": { "x": 1522.5, "y": -1670.5, "width": 87, "height": 239 }
+		},
+		"berries copy 7": {
+			"berries copy 7": { "x": 1758, "y": -1476.5, "width": 88, "height": 239 }
+		},
+		"dark leaves": {
+			"dark leaves": { "x": 821.5, "y": -1623.5, "width": 423, "height": 369 }
+		},
+		"dark leaves copy": {
+			"dark leaves copy": { "x": 1077.5, "y": -1242.5, "width": 565, "height": 337 }
+		},
+		"dark leaves copy 2": {
+			"dark leaves copy 2": { "x": 1391.5, "y": -1067.5, "width": 673, "height": 313 }
+		},
+		"dark leaves copy 3": {
+			"dark leaves copy 3": { "x": 1268.5, "y": -1561.5, "width": 439, "height": 279 }
+		},
+		"dark leaves copy 4": {
+			"dark leaves copy 4": { "x": 1331, "y": -1841.5, "width": 554, "height": 257 }
+		},
+		"dark leaves copy 5": {
+			"dark leaves copy 5": { "x": 1587.5, "y": -1586.5, "width": 403, "height": 419 }
+		},
+		"mid leaves": {
+			"mid leaves": { "x": 959, "y": -927, "width": 494, "height": 366 }
+		},
+		"mid leaves copy": {
+			"mid leaves copy": { "x": 1495.5, "y": -1151.5, "width": 533, "height": 257 }
+		},
+		"mid leaves copy 2": {
+			"mid leaves copy 2": { "x": 1711, "y": -1388, "width": 442, "height": 280 }
+		},
+		"mid leaves copy 3": {
+			"mid leaves copy 3": { "x": 1247, "y": -1485.5, "width": 606, "height": 271 }
+		},
+		"mid leaves copy 4": {
+			"mid leaves copy 4": { "x": 1112.5, "y": -1766.5, "width": 673, "height": 267 }
+		},
+		"mid leaves copy 5": {
+			"mid leaves copy 5": { "x": 1498, "y": -1962, "width": 350, "height": 314 }
+		},
+		"top leaves": {
+			"top leaves": { "x": 828, "y": -1908, "width": 394, "height": 262 }
+		},
+		"top leaves copy": {
+			"top leaves copy": { "x": 779, "y": -1175, "width": 678, "height": 546 }
+		},
+		"top leaves copy 3": {
+			"top leaves copy 3": { "x": 1472, "y": -831.5, "width": 430, "height": 297 }
+		},
+		"top leaves copy 4": {
+			"top leaves copy 4": { "x": 1813.5, "y": -1262, "width": 497, "height": 410 }
+		},
+		"top leaves copy 5": {
+			"top leaves copy 5": { "x": 1084.5, "y": -1439.5, "width": 575, "height": 319 }
+		},
+		"top leaves copy 6": {
+			"top leaves copy 6": { "x": 1591.5, "y": -1776, "width": 515, "height": 238 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

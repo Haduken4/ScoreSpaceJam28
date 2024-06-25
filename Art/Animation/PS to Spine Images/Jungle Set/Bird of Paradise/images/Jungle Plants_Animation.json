@@ -1,0 +1,129 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Bird of Paradise/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "back stem 01", "bone": "root", "attachment": "back stem 01" },
+	{ "name": "back stem 02", "bone": "root", "attachment": "back stem 02" },
+	{ "name": "back stem 03", "bone": "root", "attachment": "back stem 03" },
+	{ "name": "back stem 04", "bone": "root", "attachment": "back stem 04" },
+	{ "name": "back leaf 01", "bone": "root", "attachment": "back leaf 01" },
+	{ "name": "back leaf 02", "bone": "root", "attachment": "back leaf 02" },
+	{ "name": "back leaf 03", "bone": "root", "attachment": "back leaf 03" },
+	{ "name": "back leaf 04", "bone": "root", "attachment": "back leaf 04" },
+	{ "name": "stem01", "bone": "root", "attachment": "stem01" },
+	{ "name": "stem02", "bone": "root", "attachment": "stem02" },
+	{ "name": "stem 03", "bone": "root", "attachment": "stem 03" },
+	{ "name": "stem 04", "bone": "root", "attachment": "stem 04" },
+	{ "name": "stem 05", "bone": "root", "attachment": "stem 05" },
+	{ "name": "stem 06", "bone": "root", "attachment": "stem 06" },
+	{ "name": "stem 07", "bone": "root", "attachment": "stem 07" },
+	{ "name": "leaf06", "bone": "root", "attachment": "leaf06" },
+	{ "name": "leaf02", "bone": "root", "attachment": "leaf02" },
+	{ "name": "leaf07", "bone": "root", "attachment": "leaf07" },
+	{ "name": "leaf05", "bone": "root", "attachment": "leaf05" },
+	{ "name": "leaf01", "bone": "root", "attachment": "leaf01" },
+	{ "name": "leaf03", "bone": "root", "attachment": "leaf03" },
+	{ "name": "leaf04", "bone": "root", "attachment": "leaf04" },
+	{ "name": "left stem", "bone": "root", "attachment": "left stem" },
+	{ "name": "left flower", "bone": "root", "attachment": "left flower" },
+	{ "name": "mid stem", "bone": "root", "attachment": "mid stem" },
+	{ "name": "mid flower", "bone": "root", "attachment": "mid flower" },
+	{ "name": "right stem", "bone": "root", "attachment": "right stem" },
+	{ "name": "right slower", "bone": "root", "attachment": "right slower" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1695, "y": -1213.5, "width": 1564, "height": 995 }
+		},
+		"back stem 01": {
+			"back stem 01": { "x": 1161, "y": -1331, "width": 294, "height": 420 }
+		},
+		"back stem 02": {
+			"back stem 02": { "x": 1307, "y": -1198.5, "width": 120, "height": 547 }
+		},
+		"back stem 03": {
+			"back stem 03": { "x": 1467, "y": -1283.5, "width": 34, "height": 533 }
+		},
+		"back stem 04": {
+			"back stem 04": { "x": 1638.5, "y": -1389.5, "width": 213, "height": 355 }
+		},
+		"back leaf 01": {
+			"back leaf 01": { "x": 861.5, "y": -1132.5, "width": 403, "height": 173 }
+		},
+		"back leaf 02": {
+			"back leaf 02": { "x": 1196.5, "y": -818.5, "width": 233, "height": 281 }
+		},
+		"back leaf 03": {
+			"back leaf 03": { "x": 1567, "y": -901.5, "width": 218, "height": 347 }
+		},
+		"back leaf 04": {
+			"back leaf 04": { "x": 1897.5, "y": -1246.5, "width": 357, "height": 169 }
+		},
+		"stem01": {
+			"stem01": { "x": 1147, "y": -1244, "width": 150, "height": 660 }
+		},
+		"stem02": {
+			"stem02": { "x": 1280.5, "y": -1337, "width": 213, "height": 664 }
+		},
+		"stem 03": {
+			"stem 03": { "x": 1295, "y": -1090.5, "width": 252, "height": 807 }
+		},
+		"stem 04": {
+			"stem 04": { "x": 1393, "y": -1152.5, "width": 66, "height": 687 }
+		},
+		"stem 05": {
+			"stem 05": { "x": 1555.5, "y": -1182.5, "width": 253, "height": 801 }
+		},
+		"stem 06": {
+			"stem 06": { "x": 1540, "y": -1486, "width": 156, "height": 480 }
+		},
+		"stem 07": {
+			"stem 07": { "x": 1688, "y": -1277, "width": 250, "height": 646 }
+		},
+		"leaf06": {
+			"leaf06": { "x": 1747, "y": -1377, "width": 506, "height": 372 }
+		},
+		"leaf02": {
+			"leaf02": { "x": 1030.5, "y": -1297.5, "width": 365, "height": 471 }
+		},
+		"leaf07": {
+			"leaf07": { "x": 1948.5, "y": -956.5, "width": 513, "height": 289 }
+		},
+		"leaf05": {
+			"leaf05": { "x": 1729, "y": -791.5, "width": 482, "height": 461 }
+		},
+		"leaf01": {
+			"leaf01": { "x": 875, "y": -890, "width": 544, "height": 214 }
+		},
+		"leaf03": {
+			"leaf03": { "x": 1057.5, "y": -632.5, "width": 423, "height": 383 }
+		},
+		"leaf04": {
+			"leaf04": { "x": 1491.5, "y": -667, "width": 279, "height": 460 }
+		},
+		"left stem": {
+			"left stem": { "x": 1280, "y": -1189.5, "width": 242, "height": 759 }
+		},
+		"left flower": {
+			"left flower": { "x": 1048, "y": -668, "width": 454, "height": 386 }
+		},
+		"mid stem": {
+			"mid stem": { "x": 1393, "y": -1069.5, "width": 80, "height": 1037 }
+		},
+		"mid flower": {
+			"mid flower": { "x": 1465, "y": -459.5, "width": 366, "height": 343 }
+		},
+		"right stem": {
+			"right stem": { "x": 1533, "y": -1222, "width": 136, "height": 724 }
+		},
+		"right slower": {
+			"right slower": { "x": 1719.5, "y": -773, "width": 373, "height": 304 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

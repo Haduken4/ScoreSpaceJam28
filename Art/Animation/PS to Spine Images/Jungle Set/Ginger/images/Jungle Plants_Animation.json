@@ -1,0 +1,73 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Ginger/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "underbrush", "bone": "root", "attachment": "underbrush" },
+	{ "name": "back lfeaf 01", "bone": "root", "attachment": "back lfeaf 01" },
+	{ "name": "back leaf 03", "bone": "root", "attachment": "back leaf 03" },
+	{ "name": "back leaf 02", "bone": "root", "attachment": "back leaf 02" },
+	{ "name": "mid leaf 02", "bone": "root", "attachment": "mid leaf 02" },
+	{ "name": "mid leaf 03", "bone": "root", "attachment": "mid leaf 03" },
+	{ "name": "mid leaf 01", "bone": "root", "attachment": "mid leaf 01" },
+	{ "name": "center leaf 02", "bone": "root", "attachment": "center leaf 02" },
+	{ "name": "center lead 01", "bone": "root", "attachment": "center lead 01" },
+	{ "name": "center leaf 03", "bone": "root", "attachment": "center leaf 03" },
+	{ "name": "top leaf 03", "bone": "root", "attachment": "top leaf 03" },
+	{ "name": "top leaf 02", "bone": "root", "attachment": "top leaf 02" },
+	{ "name": "top leaf 01", "bone": "root", "attachment": "top leaf 01" },
+	{ "name": "top leaf 04", "bone": "root", "attachment": "top leaf 04" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1439.5, "y": -2371, "width": 2135, "height": 748 }
+		},
+		"underbrush": {
+			"underbrush": { "x": 1401.5, "y": -2212.5, "width": 1563, "height": 831 }
+		},
+		"back lfeaf 01": {
+			"back lfeaf 01": { "x": 1239, "y": -2506.5, "width": 414, "height": 437 }
+		},
+		"back leaf 03": {
+			"back leaf 03": { "x": 2165.5, "y": -2321, "width": 623, "height": 374 }
+		},
+		"back leaf 02": {
+			"back leaf 02": { "x": 1399, "y": -2121, "width": 366, "height": 356 }
+		},
+		"mid leaf 02": {
+			"mid leaf 02": { "x": 1835.5, "y": -2371, "width": 421, "height": 444 }
+		},
+		"mid leaf 03": {
+			"mid leaf 03": { "x": 2061.5, "y": -2143.5, "width": 433, "height": 309 }
+		},
+		"mid leaf 01": {
+			"mid leaf 01": { "x": 881.5, "y": -2446.5, "width": 461, "height": 417 }
+		},
+		"center leaf 02": {
+			"center leaf 02": { "x": 835.5, "y": -2073.5, "width": 511, "height": 197 }
+		},
+		"center lead 01": {
+			"center lead 01": { "x": 691.5, "y": -2364.5, "width": 555, "height": 419 }
+		},
+		"center leaf 03": {
+			"center leaf 03": { "x": 1725.5, "y": -2146.5, "width": 525, "height": 209 }
+		},
+		"top leaf 03": {
+			"top leaf 03": { "x": 1525.5, "y": -2430, "width": 525, "height": 508 }
+		},
+		"top leaf 02": {
+			"top leaf 02": { "x": 1159, "y": -1915, "width": 586, "height": 358 }
+		},
+		"top leaf 01": {
+			"top leaf 01": { "x": 1045.5, "y": -2244, "width": 419, "height": 442 }
+		},
+		"top leaf 04": {
+			"top leaf 04": { "x": 1639, "y": -1930, "width": 508, "height": 392 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

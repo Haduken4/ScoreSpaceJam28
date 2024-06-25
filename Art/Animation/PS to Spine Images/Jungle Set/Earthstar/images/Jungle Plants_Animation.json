@@ -1,0 +1,45 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Earthstar/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "back leaves", "bone": "root", "attachment": "back leaves" },
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "star03", "bone": "root", "attachment": "star03" },
+	{ "name": "star02", "bone": "root", "attachment": "star02" },
+	{ "name": "star05", "bone": "root", "attachment": "star05" },
+	{ "name": "star04", "bone": "root", "attachment": "star04" },
+	{ "name": "star01", "bone": "root", "attachment": "star01" },
+	{ "name": "top leaves", "bone": "root", "attachment": "top leaves" }
+],
+"skins": {
+	"default": {
+		"back leaves": {
+			"back leaves": { "x": 1375, "y": -1473.5, "width": 1744, "height": 935 }
+		},
+		"shadow": {
+			"shadow": { "x": 1529.5, "y": -1599.5, "width": 1695, "height": 729 }
+		},
+		"star03": {
+			"star03": { "x": 1407.5, "y": -1290.5, "width": 719, "height": 411 }
+		},
+		"star02": {
+			"star02": { "x": 1282, "y": -1673.5, "width": 492, "height": 403 }
+		},
+		"star05": {
+			"star05": { "x": 1962, "y": -1308.5, "width": 612, "height": 465 }
+		},
+		"star04": {
+			"star04": { "x": 1768, "y": -1707.5, "width": 694, "height": 547 }
+		},
+		"star01": {
+			"star01": { "x": 966, "y": -1507.5, "width": 628, "height": 581 }
+		},
+		"top leaves": {
+			"top leaves": { "x": 1628, "y": -1556.5, "width": 892, "height": 679 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

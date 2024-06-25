@@ -1,0 +1,57 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Rot Shroom/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "leaft back leaves", "bone": "root", "attachment": "leaft back leaves" },
+	{ "name": "right back leaves", "bone": "root", "attachment": "right back leaves" },
+	{ "name": "stump", "bone": "root", "attachment": "stump" },
+	{ "name": "front left leaves", "bone": "root", "attachment": "front left leaves" },
+	{ "name": "front righ tleaves", "bone": "root", "attachment": "front righ tleaves" },
+	{ "name": "shrrom shadows", "bone": "root", "attachment": "shrrom shadows" },
+	{ "name": "idle shrooms", "bone": "root", "attachment": "idle shrooms" },
+	{ "name": "bottom shrooms", "bone": "root", "attachment": "bottom shrooms" },
+	{ "name": "side shroom tops", "bone": "root", "attachment": "side shroom tops" },
+	{ "name": "top shrooms", "bone": "root", "attachment": "top shrooms" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1419, "y": -1778, "width": 2108, "height": 1366 }
+		},
+		"leaft back leaves": {
+			"leaft back leaves": { "x": 721, "y": -1598, "width": 628, "height": 684 }
+		},
+		"right back leaves": {
+			"right back leaves": { "x": 1642, "y": -1863, "width": 1322, "height": 350 }
+		},
+		"stump": {
+			"stump": { "x": 1389, "y": -1767.5, "width": 1940, "height": 1115 }
+		},
+		"front left leaves": {
+			"front left leaves": { "x": 1456, "y": -2038, "width": 326, "height": 290 }
+		},
+		"front righ tleaves": {
+			"front righ tleaves": { "x": 1948.5, "y": -1972.5, "width": 183, "height": 191 }
+		},
+		"shrrom shadows": {
+			"shrrom shadows": { "x": 2016.5, "y": -585.5, "width": 1459, "height": 1647 }
+		},
+		"idle shrooms": {
+			"idle shrooms": { "x": 1316, "y": -1881.5, "width": 1494, "height": 685 }
+		},
+		"bottom shrooms": {
+			"bottom shrooms": { "x": 1370, "y": -2276, "width": 430, "height": 396 }
+		},
+		"side shroom tops": {
+			"side shroom tops": { "x": 1005.5, "y": -1582, "width": 565, "height": 370 }
+		},
+		"top shrooms": {
+			"top shrooms": { "x": 1562, "y": -1241.5, "width": 646, "height": 555 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
