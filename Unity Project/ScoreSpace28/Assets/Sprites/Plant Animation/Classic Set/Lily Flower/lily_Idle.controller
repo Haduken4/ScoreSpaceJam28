@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lily_Animation
+  m_Name: BoP Idle
   m_Speed: 0.175
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 349610cf154c4c645b0aced2cb789f3a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 712de339332291f4eb350671323ba2fe, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

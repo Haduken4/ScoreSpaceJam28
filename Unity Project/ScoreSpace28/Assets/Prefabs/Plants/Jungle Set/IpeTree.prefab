@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 5549631775426107543}
   - component: {fileID: 7134520519500268328}
   - component: {fileID: -4233273470445330969}
+  - component: {fileID: 2807473390200901910}
   m_Layer: 0
   m_Name: IpeTree
   m_TagString: Plant
@@ -74,7 +75,7 @@ Transform:
   m_GameObject: {fileID: 6461040438136815093}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6963062689904203659}
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   Identifier: 29
+  FullPlantName: 
   ScoreTextPoint: {fileID: 6963062689904203659}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -183,6 +185,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayingOpacity: 0.3
   LerpSpeed: 0.1
+--- !u!95 &2807473390200901910
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6461040438136815093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afbbfe15b7ab35746b67a167464cde33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8283010238398452331
 GameObject:
   m_ObjectHideFlags: 0

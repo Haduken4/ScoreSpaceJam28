@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 768264244395008869}
   - component: {fileID: 2973916184689503846}
   - component: {fileID: 7195107707233941608}
+  - component: {fileID: 2621872368347434579}
   m_Layer: 0
   m_Name: CoffeePlant
   m_TagString: Plant
@@ -133,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 2
   Identifier: 25
+  FullPlantName: 
   ScoreTextPoint: {fileID: 4534249268964740772}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -166,3 +168,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TurnsPerFruit: 2
   FruitSprite: {fileID: 21300000, guid: a1a9f93948b660b469b2c387d96b853d, type: 3}
+--- !u!95 &2621872368347434579
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250394936077455015}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07d13d1b6e23f9446a68732af8bc195f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

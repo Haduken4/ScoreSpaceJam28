@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 890368734598101839}
   - component: {fileID: 6192970057259020453}
   - component: {fileID: 258772494333480759}
+  - component: {fileID: -4866405149799271668}
   m_Layer: 0
   m_Name: BirdOfParadise
   m_TagString: Plant
@@ -101,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Identifier: 24
+  FullPlantName: 
   ScoreTextPoint: {fileID: 4496658086920192966}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -121,6 +123,27 @@ MonoBehaviour:
   VFXPoint: {fileID: 0}
   ScoreValue: 2
   BonusEffectStrength: 1
+--- !u!95 &-4866405149799271668
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861916035966256127}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10b71e9185d6adf4ea8a1eb55a0c3649, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2715044399194046545
 GameObject:
   m_ObjectHideFlags: 0

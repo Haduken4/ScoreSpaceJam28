@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 2961056532311191253}
   - component: {fileID: 3567752532870562827}
   - component: {fileID: -816080533220405790}
+  - component: {fileID: 7604935022935141584}
   m_Layer: 0
   m_Name: CannonballTree
   m_TagString: Plant
@@ -151,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 7348720078731216316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 900480425832136904}
@@ -227,6 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   Identifier: 28
+  FullPlantName: 
   ScoreTextPoint: {fileID: 900480425832136904}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -278,6 +280,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayingOpacity: 0.3
   LerpSpeed: 0.1
+--- !u!95 &7604935022935141584
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7348720078731216316}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 444ae9e1541b8bb4091ec553ebba1da7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9023157131928798812
 GameObject:
   m_ObjectHideFlags: 0

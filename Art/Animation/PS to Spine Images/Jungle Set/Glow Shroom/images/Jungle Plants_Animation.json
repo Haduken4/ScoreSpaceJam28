@@ -1,4 +1,4 @@
-{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Glow Shroom/" },
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Glow Shroom/images/" },
 "PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
 "bones": [
 	{ "name": "root" }
@@ -6,18 +6,18 @@
 "slots": [
 	{ "name": "Brightness/Contrast 567", "bone": "root", "attachment": "Brightness/Contrast 567" },
 	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
-	{ "name": "stem 01", "bone": "root", "attachment": "stem 01" },
-	{ "name": "stem 02", "bone": "root", "attachment": "stem 02" },
-	{ "name": "stem 03", "bone": "root", "attachment": "stem 03" },
-	{ "name": "stem 04", "bone": "root", "attachment": "stem 04" },
 	{ "name": "stem 05", "bone": "root", "attachment": "stem 05" },
-	{ "name": "stem 06", "bone": "root", "attachment": "stem 06" },
 	{ "name": "cap 05", "bone": "root", "attachment": "cap 05" },
 	{ "name": "cao 03", "bone": "root", "attachment": "cao 03" },
 	{ "name": "cap 06", "bone": "root", "attachment": "cap 06" },
 	{ "name": "cap 02", "bone": "root", "attachment": "cap 02" },
 	{ "name": "cap 04", "bone": "root", "attachment": "cap 04" },
 	{ "name": "cap 01", "bone": "root", "attachment": "cap 01" },
+	{ "name": "stem 01", "bone": "root", "attachment": "stem 01" },
+	{ "name": "stem 02", "bone": "root", "attachment": "stem 02" },
+	{ "name": "stem 03", "bone": "root", "attachment": "stem 03" },
+	{ "name": "stem 04", "bone": "root", "attachment": "stem 04" },
+	{ "name": "stem 06", "bone": "root", "attachment": "stem 06" },
 	{ "name": "dirt", "bone": "root", "attachment": "dirt" }
 ],
 "skins": {
@@ -28,23 +28,8 @@
 		"shadow": {
 			"shadow": { "x": 1571.5, "y": -1566.5, "width": 1651, "height": 871 }
 		},
-		"stem 01": {
-			"stem 01": { "x": 727.5, "y": -1649.5, "width": 129, "height": 275 }
-		},
-		"stem 02": {
-			"stem 02": { "x": 952, "y": -1610, "width": 158, "height": 626 }
-		},
-		"stem 03": {
-			"stem 03": { "x": 1190, "y": -1340.5, "width": 82, "height": 461 }
-		},
-		"stem 04": {
-			"stem 04": { "x": 1375.5, "y": -1781, "width": 145, "height": 432 }
-		},
 		"stem 05": {
 			"stem 05": { "x": 1551, "y": -1432, "width": 50, "height": 114 }
-		},
-		"stem 06": {
-			"stem 06": { "x": 1705.5, "y": -1605.5, "width": 305, "height": 569 }
 		},
 		"cap 05": {
 			"cap 05": { "x": 1525, "y": -1303.5, "width": 462, "height": 269 }
@@ -62,7 +47,22 @@
 			"cap 04": { "x": 1345, "y": -1581, "width": 272, "height": 204 }
 		},
 		"cap 01": {
-			"cap 01": { "x": 679, "y": -1571, "width": 222, "height": 198 }
+			"cap 01": { "x": 679, "y": -1572, "width": 222, "height": 200 }
+		},
+		"stem 01": {
+			"stem 01": { "x": 727.5, "y": -1674.5, "width": 129, "height": 225 }
+		},
+		"stem 02": {
+			"stem 02": { "x": 957.5, "y": -1616, "width": 147, "height": 614 }
+		},
+		"stem 03": {
+			"stem 03": { "x": 1190, "y": -1355.5, "width": 82, "height": 431 }
+		},
+		"stem 04": {
+			"stem 04": { "x": 1375.5, "y": -1789.5, "width": 145, "height": 415 }
+		},
+		"stem 06": {
+			"stem 06": { "x": 1705.5, "y": -1613, "width": 305, "height": 554 }
 		},
 		"dirt": {
 			"dirt": { "x": 1292.5, "y": -1931.5, "width": 671, "height": 171 }

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5464689437813438507}
   - component: {fileID: 2397582509752110416}
   - component: {fileID: 1381691073072987146}
+  - component: {fileID: 6005363458918911428}
   m_Layer: 0
   m_Name: RotShroom
   m_TagString: Plant
@@ -59,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 7041635796199970432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.7612561, y: 0.22096878, z: -1}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3022911455396220004}
@@ -132,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Identifier: 22
+  FullPlantName: 
   ScoreTextPoint: {fileID: 3022911455396220004}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -153,3 +155,24 @@ MonoBehaviour:
   ScoreValue: 0
   DestroyType: 5
   ScorePerDestroy: 3
+--- !u!95 &6005363458918911428
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041635796199970432}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c97f0e973f564642853a1f66a8e0d25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

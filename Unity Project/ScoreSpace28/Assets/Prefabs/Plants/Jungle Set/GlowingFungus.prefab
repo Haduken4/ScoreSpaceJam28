@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7154928412511822530}
   - component: {fileID: -8479949351787498446}
   - component: {fileID: 9075712942921429762}
+  - component: {fileID: 7815804383627088031}
   m_Layer: 0
   m_Name: GlowingFungus
   m_TagString: Plant
@@ -144,9 +145,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Identifier: 20
+  FullPlantName: 
   ScoreTextPoint: {fileID: 7138023652097450253}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!95 &7815804383627088031
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837276492809421058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71e07fa0701c6b34f81eaa770e5e82a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1715581376633312139
 GameObject:
   m_ObjectHideFlags: 0

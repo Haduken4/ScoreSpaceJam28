@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1511450857460089683}
   - component: {fileID: 5414618823055477811}
   - component: {fileID: 5997122339637263640}
+  - component: {fileID: -75249781427694857}
   m_Layer: 0
   m_Name: Heliconia
   m_TagString: Plant
@@ -101,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Identifier: 23
+  FullPlantName: 
   ScoreTextPoint: {fileID: 4473314429769740335}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
@@ -122,6 +124,27 @@ MonoBehaviour:
   ScoreValue: 4
   PollinatorPrefab: {fileID: 2525737197141914225, guid: 69818b502af407240bd6d7717ad8ecc3, type: 3}
   ScaleMultiplierRange: {x: 0.9, y: 1.1}
+--- !u!95 &-75249781427694857
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291989659152311963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d7965cf60a95e624382cdf0e9759e8c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6989654263530811017
 GameObject:
   m_ObjectHideFlags: 0
