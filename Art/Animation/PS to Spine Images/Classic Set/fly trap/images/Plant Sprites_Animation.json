@@ -1,4 +1,4 @@
-{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/fly trap/" },
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/fly trap/images/" },
 "PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
 "bones": [
 	{ "name": "root" }
