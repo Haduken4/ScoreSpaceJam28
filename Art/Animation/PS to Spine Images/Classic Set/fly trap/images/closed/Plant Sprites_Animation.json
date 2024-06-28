@@ -1,0 +1,25 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Classic Set/fly trap/images/closed/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "center closed", "bone": "root", "attachment": "center closed" },
+	{ "name": "left closed", "bone": "root", "attachment": "left closed" },
+	{ "name": "right closed", "bone": "root", "attachment": "right closed" }
+],
+"skins": {
+	"default": {
+		"center closed": {
+			"center closed": { "x": 1752.5, "y": -868.5, "width": 563, "height": 603 }
+		},
+		"left closed": {
+			"left closed": { "x": 1057, "y": -1259.5, "width": 612, "height": 737 }
+		},
+		"right closed": {
+			"right closed": { "x": 2040.5, "y": -1418.5, "width": 585, "height": 669 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
