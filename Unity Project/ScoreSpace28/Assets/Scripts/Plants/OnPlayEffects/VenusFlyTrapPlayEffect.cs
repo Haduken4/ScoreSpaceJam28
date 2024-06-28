@@ -6,6 +6,7 @@ public class VenusFlyTrapPlayEffect : OnPlayEffect
 {
     //public SoundPlayer MyPlayer = null;
     public float ScorePerBee = 10.0f;
+    public Animator animator = null;
 
     protected override void GameplayEffect()
     {
@@ -22,6 +23,8 @@ public class VenusFlyTrapPlayEffect : OnPlayEffect
             tm.GameplayEffectStop();
 
             AudioManager.instance.PlayOneShot(FMODEvents_InGame.instance.VenusFlyChomps, this.transform.position);
+
+            animator.SetTrigger("FlyTrapEat");
         }
     }
 }
