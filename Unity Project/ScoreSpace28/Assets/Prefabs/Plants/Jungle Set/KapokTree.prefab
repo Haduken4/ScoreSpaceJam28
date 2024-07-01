@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 970412042494957757}
   - component: {fileID: 6196434178856050652}
   - component: {fileID: -3265005779243196079}
+  - component: {fileID: 5368754732171123245}
   m_Layer: 0
   m_Name: KapokTree
   m_TagString: Plant
@@ -106,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 3727092934158407925}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2.1, y: 2.1, z: 1}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5764379535718560392}
@@ -157,12 +158,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ebbd31bf66d5bf948863bf1273d7f30d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7822c5e926408724799e349482358e5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 33.69028, y: 24.84}
+  m_Size: {x: 33.683323, y: 24.95}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -237,6 +238,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayingOpacity: 0.3
   LerpSpeed: 0.1
+--- !u!95 &5368754732171123245
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3727092934158407925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d37762c3fe4f904683545afb61f8ab3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6884010325731894602
 GameObject:
   m_ObjectHideFlags: 0

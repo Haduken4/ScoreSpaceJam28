@@ -1,0 +1,33 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Kapok/images/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "baclk canopy", "bone": "root", "attachment": "baclk canopy" },
+	{ "name": "trunk", "bone": "root", "attachment": "trunk" },
+	{ "name": "canopy", "bone": "root", "attachment": "canopy" },
+	{ "name": "twigs", "bone": "root", "attachment": "twigs" }
+],
+"skins": {
+	"default": {
+		"shadow": {
+			"shadow": { "x": 1959.5, "y": -1980.5, "width": 2871, "height": 1523 }
+		},
+		"baclk canopy": {
+			"baclk canopy": { "x": 1502, "y": -987, "width": 2406, "height": 1298 }
+		},
+		"trunk": {
+			"trunk": { "x": 1362, "y": -1676.5, "width": 2170, "height": 2163 }
+		},
+		"canopy": {
+			"canopy": { "x": 1433.5, "y": -989.5, "width": 2817, "height": 1435 }
+		},
+		"twigs": {
+			"twigs": { "x": 1485.5, "y": -851.5, "width": 1281, "height": 487 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

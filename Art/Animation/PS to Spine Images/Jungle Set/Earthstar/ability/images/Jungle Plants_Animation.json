@@ -1,0 +1,65 @@
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Earthstar/ability/images/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "back grass", "bone": "root", "attachment": "back grass" },
+	{ "name": "shadow", "bone": "root", "attachment": "shadow" },
+	{ "name": "star03 bottom leaves", "bone": "root", "attachment": "star03 bottom leaves" },
+	{ "name": "star03 center", "bone": "root", "attachment": "star03 center" },
+	{ "name": "star03 top leaves", "bone": "root", "attachment": "star03 top leaves" },
+	{ "name": "star02 leaves", "bone": "root", "attachment": "star02 leaves" },
+	{ "name": "star02 center", "bone": "root", "attachment": "star02 center" },
+	{ "name": "star05", "bone": "root", "attachment": "star05" },
+	{ "name": "star04 leaves", "bone": "root", "attachment": "star04 leaves" },
+	{ "name": "star04 center", "bone": "root", "attachment": "star04 center" },
+	{ "name": "star01 leaves", "bone": "root", "attachment": "star01 leaves" },
+	{ "name": "star01 center", "bone": "root", "attachment": "star01 center" },
+	{ "name": "top grass", "bone": "root", "attachment": "top grass" }
+],
+"skins": {
+	"default": {
+		"back grass": {
+			"back grass": { "x": 1375, "y": -1473.5, "width": 1744, "height": 935 }
+		},
+		"shadow": {
+			"shadow": { "x": 1529.5, "y": -1599.5, "width": 1695, "height": 729 }
+		},
+		"star03 bottom leaves": {
+			"star03 bottom leaves": { "x": 1407.5, "y": -1265, "width": 719, "height": 360 }
+		},
+		"star03 center": {
+			"star03 center": { "x": 1418.5, "y": -1314.5, "width": 273, "height": 177 }
+		},
+		"star03 top leaves": {
+			"star03 top leaves": { "x": 1381, "y": -1353, "width": 660, "height": 286 }
+		},
+		"star02 leaves": {
+			"star02 leaves": { "x": 1282, "y": -1673.5, "width": 492, "height": 403 }
+		},
+		"star02 center": {
+			"star02 center": { "x": 1266, "y": -1637, "width": 208, "height": 182 }
+		},
+		"star05": {
+			"star05": { "x": 1962, "y": -1308.5, "width": 612, "height": 465 }
+		},
+		"star04 leaves": {
+			"star04 leaves": { "x": 1768, "y": -1707.5, "width": 694, "height": 547 }
+		},
+		"star04 center": {
+			"star04 center": { "x": 1779, "y": -1663, "width": 290, "height": 238 }
+		},
+		"star01 leaves": {
+			"star01 leaves": { "x": 966, "y": -1507.5, "width": 628, "height": 581 }
+		},
+		"star01 center": {
+			"star01 center": { "x": 927, "y": -1460, "width": 266, "height": 260 }
+		},
+		"top grass": {
+			"top grass": { "x": 1628, "y": -1556.5, "width": 892, "height": 679 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
