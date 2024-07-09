@@ -1,4 +1,4 @@
-{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Coffee Plant/" },
+{ "skeleton": { "images": "D:/Garden Rivals Repository/ScoreSpaceJam28/ScoreSpaceJam28/Art/Animation/PS to Spine Images/Jungle Set/Coffee Plant/images/" },
 "PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
 "bones": [
 	{ "name": "root" }
@@ -15,6 +15,14 @@
 	{ "name": "berries copy 5", "bone": "root", "attachment": "berries copy 5" },
 	{ "name": "berries copy 6", "bone": "root", "attachment": "berries copy 6" },
 	{ "name": "berries copy 7", "bone": "root", "attachment": "berries copy 7" },
+	{ "name": "unripe 1", "bone": "root", "attachment": "unripe 1" },
+	{ "name": "unripe 2", "bone": "root", "attachment": "unripe 2" },
+	{ "name": "unripe 3", "bone": "root", "attachment": "unripe 3" },
+	{ "name": "unripe 4", "bone": "root", "attachment": "unripe 4" },
+	{ "name": "unripe 5", "bone": "root", "attachment": "unripe 5" },
+	{ "name": "unripe 6", "bone": "root", "attachment": "unripe 6" },
+	{ "name": "unripe 7", "bone": "root", "attachment": "unripe 7" },
+	{ "name": "unripe 8", "bone": "root", "attachment": "unripe 8" },
 	{ "name": "dark leaves", "bone": "root", "attachment": "dark leaves" },
 	{ "name": "dark leaves copy", "bone": "root", "attachment": "dark leaves copy" },
 	{ "name": "dark leaves copy 2", "bone": "root", "attachment": "dark leaves copy 2" },
@@ -68,6 +76,30 @@
 		},
 		"berries copy 7": {
 			"berries copy 7": { "x": 1758, "y": -1476.5, "width": 88, "height": 239 }
+		},
+		"unripe 1": {
+			"unripe 1": { "x": 765, "y": -1381.5, "width": 88, "height": 239 }
+		},
+		"unripe 2": {
+			"unripe 2": { "x": 923, "y": -1064, "width": 88, "height": 238 }
+		},
+		"unripe 3": {
+			"unripe 3": { "x": 1189, "y": -1167.5, "width": 88, "height": 239 }
+		},
+		"unripe 4": {
+			"unripe 4": { "x": 916, "y": -1868, "width": 88, "height": 238 }
+		},
+		"unripe 5": {
+			"unripe 5": { "x": 1147, "y": -1599.5, "width": 88, "height": 239 }
+		},
+		"unripe 6": {
+			"unripe 6": { "x": 1414, "y": -1312.5, "width": 88, "height": 239 }
+		},
+		"unripe 7": {
+			"unripe 7": { "x": 1522.5, "y": -1670.5, "width": 87, "height": 239 }
+		},
+		"unripe 8": {
+			"unripe 8": { "x": 1758, "y": -1476.5, "width": 88, "height": 239 }
 		},
 		"dark leaves": {
 			"dark leaves": { "x": 821.5, "y": -1623.5, "width": 423, "height": 369 }
