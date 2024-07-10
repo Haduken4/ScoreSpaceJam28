@@ -6,20 +6,16 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
 {
     public int TurnsPerFruit = 3;
 
-    public Sprite FruitSprite = null;
-
     int turnTimer = 0;
     bool hasFruit = false;
     bool fruitClaimed = false;
-    SpriteRenderer sr = null;
-    Sprite originalSprite;
+    Animator anim = null;
 
     protected override void Start()
     {
         base.Start();
 
-        sr = GetComponent<SpriteRenderer>();
-        originalSprite = sr.sprite;
+        anim = GetComponent<Animator>();
     }
 
     public override void OnEndOfTurn()
@@ -30,10 +26,11 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
         }
 
         ++turnTimer;
+        anim.SetTrigger("Coffee_Unripe_Idle");
 
         if (turnTimer >= TurnsPerFruit)
         {
-            sr.sprite = FruitSprite;
+            anim.SetTrigger("Coffee_Fruit_Idle");
             hasFruit = true;
             turnTimer = 0;
         }
@@ -53,6 +50,6 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
     {
         hasFruit = false;
         fruitClaimed = false;
-        sr.sprite = originalSprite;
+        anim.SetTrigger("Coffee_Parrot_Interaction");
     }
 }
