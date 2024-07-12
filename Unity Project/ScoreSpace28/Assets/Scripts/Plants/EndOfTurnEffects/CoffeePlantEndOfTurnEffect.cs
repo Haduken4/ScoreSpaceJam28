@@ -8,6 +8,7 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
 
     int turnTimer = 0;
     bool hasFruit = false;
+    bool hadFruit = false;
     bool fruitClaimed = false;
     Animator anim = null;
 
@@ -22,6 +23,12 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
     {
         if(hasFruit)
         {
+            return;
+        }
+
+        if(hadFruit)
+        {
+            hadFruit = false;
             return;
         }
 
@@ -49,6 +56,7 @@ public class CoffeePlantEndOfTurnEffect : EndOfTurnEffect
     public void EatFruit()
     {
         hasFruit = false;
+        hadFruit = true;
         fruitClaimed = false;
         anim.SetTrigger("Coffee_Parrot_Interaction");
     }

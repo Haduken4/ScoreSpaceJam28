@@ -13,6 +13,8 @@ public class ParrotBehavior : CreatureBehavior
     public float MinSpeed = 1.0f;
     public float Acceleration = 2.5f;
 
+    public ParticleSystem LandingParticles = null;
+
     public RuntimeAnimatorController LandingAnimation = null;
     public RuntimeAnimatorController TakeoffAnimation = null;
 
@@ -120,6 +122,7 @@ public class ParrotBehavior : CreatureBehavior
         }
         else // Otherwise this was our last tree
         {
+            LandingParticles.Play();
             tm.GameplayEffectStop();
         }
 
