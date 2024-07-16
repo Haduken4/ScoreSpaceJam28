@@ -7,6 +7,7 @@ public class BeeBehavior : CreatureBehavior
     public Vector2 MoveTimeRange = new Vector2(2.0f, 3.0f);
     public float ScoreValue = 1.0f;
     public List<PlantType> PollinatorTypes = new List<PlantType>();
+    public Transform TrailParticleTransform = null;
 
     Transform target = null;
     Transform lastTarget = null;
@@ -104,6 +105,15 @@ public class BeeBehavior : CreatureBehavior
         timer = 0.0f;
         moveTime = Random.Range(MoveTimeRange.x, MoveTimeRange.y);
         GetComponent<SpriteRenderer>().flipX = target.position.x < startPos.x;
+
+        // Trail direction
+        if (TrailParticleTransform)
+        {
+            Vector2 dir = target.transform.position - startPos;
+            dir.Normalize();
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            TrailParticleTransform.eulerAngles = new Vector3(0, 0, angle);
+        }
     }
 
     void GoToDespawnPoint()
