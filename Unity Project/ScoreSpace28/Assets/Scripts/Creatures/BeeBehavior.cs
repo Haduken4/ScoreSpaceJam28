@@ -8,6 +8,7 @@ public class BeeBehavior : CreatureBehavior
     public float ScoreValue = 1.0f;
     public List<PlantType> PollinatorTypes = new List<PlantType>();
     public Transform TrailParticleTransform = null;
+    public ParticleSystem PollinateParticles = null;
 
     Transform target = null;
     Transform lastTarget = null;
@@ -41,6 +42,10 @@ public class BeeBehavior : CreatureBehavior
                 target.GetComponent<PlantData>().Pollinator = null;
                 target.GetComponent<PlantData>().AddScore(ScoreValue);
                 target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
+                if (PollinateParticles)
+                {
+                    PollinateParticles.Play();
+                }
                 lastTarget = target;
                 target = null;
             }
@@ -95,6 +100,10 @@ public class BeeBehavior : CreatureBehavior
         {
             target.GetComponent<PlantData>().AddScore(ScoreValue);
             target.GetComponent<OnPollinateEffect>()?.PollinateEffect();
+            if (PollinateParticles)
+            {
+                PollinateParticles.Play();
+            }
             lastTarget = target;
             target = null;
             tm.GameplayEffectStop();
