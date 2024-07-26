@@ -80,9 +80,13 @@ PrefabInstance:
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[1].outWeight
       value: 0.33333334
       objectReference: {fileID: 0}
+    - target: {fileID: 5972110891078847485, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -94,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6765062952133232453, guid: e0c9ad1f36ae0b64ea4eff0fa23d4c73, type: 3}
       propertyPath: m_LocalRotation.w
