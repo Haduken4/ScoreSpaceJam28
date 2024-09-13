@@ -25,7 +25,8 @@ public class FMODEvents_InGame : MonoBehaviour
     {
         if(instance != null)
         {
-            Debug.LogError("Instance already exists");
+            Destroy(gameObject);
+            return;
         }
 
         instance = this;

@@ -22,7 +22,8 @@ public class FmodEvents_UI : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("Instance already exists");
+            Destroy(gameObject);
+            return;
         }
 
         instance = this;
