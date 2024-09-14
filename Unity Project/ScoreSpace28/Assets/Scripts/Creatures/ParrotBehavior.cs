@@ -50,6 +50,12 @@ public class ParrotBehavior : CreatureBehavior
         {
             float targetDist = Vector2.Distance(transform.position, target.position);
 
+            if (!animating && !goingToCoffee && !extraTree && targetDist <= NoCurveDist)
+            {
+                animator.runtimeAnimatorController = LandingAnimation;
+                animating = true;
+            }
+
             if (targetDist <= SnapDist)
             {
                 ReachedTarget();
@@ -59,13 +65,6 @@ public class ParrotBehavior : CreatureBehavior
                 }
             }
 
-            if(!animating && targetDist <= NoCurveDist)
-            {
-                animator.speed = 1;
-                animator.runtimeAnimatorController = LandingAnimation;
-                animating = true;
-            }
-            
             // CURVE STUFF
             //Vector2 curveAdd = Vector2.zero;
             //if(curving && targetDist < NoCurveDist && false)
@@ -117,7 +116,6 @@ public class ParrotBehavior : CreatureBehavior
             target.GetComponent<RoostPoint>().RoostingParrot = null;
             target = null;
             GoToNewTarget();
-            animating = false;
             return;
         }
         else // Otherwise this was our last tree
@@ -139,6 +137,7 @@ public class ParrotBehavior : CreatureBehavior
         {
             if(AttemptGoToCoffee())
             {
+                animator.runtimeAnimatorController = TakeoffAnimation;
                 return;
             }
         }
