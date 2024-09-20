@@ -19,6 +19,8 @@ public class RotShroomPlayEffect : OnPlayEffect
             if (plant && DestroyType == plant.GetComponent<PlantData>().Type)
             {
                 pd.AddScore(ScorePerDestroy);
+                RootParticleEffect particles = plant.GetComponent<RootParticleEffect>();
+                particles?.SpawnParticles();
                 Destroy(plant.gameObject);
             }
         }

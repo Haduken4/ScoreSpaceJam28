@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 993835909713790165}
   - component: {fileID: 4620379068085876849}
   - component: {fileID: 7096017300376265698}
+  - component: {fileID: -7002392112797452702}
   m_Layer: 0
   m_Name: KapokRoots
   m_TagString: Plant
@@ -25,6 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5282243181776957587}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.767503, y: -1.0205048, z: -1}
   m_LocalScale: {x: 1.6, y: 1.6, z: 0.8}
@@ -32,7 +34,6 @@ Transform:
   m_Children:
   - {fileID: 1457479265884161832}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4620379068085876849
 SpriteRenderer:
@@ -100,9 +101,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 5
   Identifier: 1
+  FullPlantName: 
   ScoreTextPoint: {fileID: 0}
   Pollinator: {fileID: 0}
   TotalScoreGained: 0
+--- !u!114 &-7002392112797452702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282243181776957587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051a31e5d7585b94baf2f691ece2833c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParticleEffect: {fileID: 323583357575785798, guid: 161ca7964e2520b44b5f6b2c1e19c71d, type: 3}
+  ZOffset: -0.2
 --- !u!1 &7171944492749070147
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,11 +142,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7171944492749070147}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.638, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 993835909713790165}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
