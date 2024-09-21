@@ -458,6 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MouseCollisionSize: 0.05
+  ClickParticles: {fileID: 323583357575785798, guid: 72bc9a7b3318cff4888e3fe4996a4598, type: 3}
 --- !u!4 &51588767
 Transform:
   m_ObjectHideFlags: 0

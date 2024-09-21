@@ -5,15 +5,18 @@ using UnityEngine;
 public class FollowCursor : MonoBehaviour
 {
     public float MouseCollisionSize = 0.05f;
+    public GameObject ClickParticles = null;
 
     ReactiveTile last = null;
 
     ClickedCardParent clickParent = null;
+    HoverCardParent hoverParent = null;
     TurnManager tm = null;
 
     private void Start()
     {
         clickParent = FindFirstObjectByType<ClickedCardParent>();
+        hoverParent = FindFirstObjectByType<HoverCardParent>();
         tm = FindFirstObjectByType<TurnManager>();
     }
 
@@ -38,6 +41,11 @@ public class FollowCursor : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0;
         transform.position = mousePos;
+
+        if (Input.GetMouseButtonDown(0) && !hoverParent.HasChild())
+        {
+            Instantiate(ClickParticles, mousePos - Vector3.forward * 0.3f, Quaternion.identity);
+        }
 
         if (last != null)
         {

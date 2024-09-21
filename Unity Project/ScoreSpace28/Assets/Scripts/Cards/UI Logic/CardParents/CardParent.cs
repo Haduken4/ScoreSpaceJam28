@@ -55,4 +55,9 @@ public abstract class CardParent : MonoBehaviour
     {
 
     }
+
+    public bool HasChild()
+    {
+        return currChild != null;
+    }
 }
